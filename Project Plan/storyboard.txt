@@ -1,4 +1,5 @@
 Habits
+Size: 9 Points, Risk Level: Medium
 
 US 01.01.01
 As a doer, I want to add a habit, giving it a brief title, reason, and date to start.
@@ -28,6 +29,7 @@ US 01.09.01
 As a doer, I want for each habit on the list, a visual indicator to show how closely I am following its plan over time.
 
 Habit Events
+Size: 6 Points, Risk Level: Medium
 
 US 02.01.01
 As a doer, I want to denote a habit event when I have done a habit as planned.
@@ -48,23 +50,26 @@ US 02.06.01
 As a doer, I want to delete a habit event of mine.
 
 Profile
+Size: 1 Points, Risk Level: Low
 
 US 03.01.01
 As a doer, I want to be uniquely identifiable in the system.
 
 Habit Following and Sharing
+Size: 3 Points, Risk Level: High
 
-US 05.01.01
+US 04.01.01
 As a doer, I want to ask another doer to follow all their habits.
 
-US 05.02.01
+US 04.02.01
 As a doer, I want to grant or deny another doer permission to follow all my habits.
 
-US 05.03.01
+US 04.03.01
 As a doer, I want to view the habits and visual indicators of the other doers I am granted to follow.
 
 Geolocation and Maps
+Size: 1 Points, Risk Level: Medium
 
-US 06.01.01
+US 05.01.01
 As a doer, I want to a habit event to have an optional location to record where it happened.
 
