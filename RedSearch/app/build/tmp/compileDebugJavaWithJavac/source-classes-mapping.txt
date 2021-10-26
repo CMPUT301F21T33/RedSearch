@@ -1,0 +1,10 @@
+com/example/redsearch/HabitView.java
+ com.example.redsearch.HabitView
+com/example/redsearch/MainActivity.java
+ com.example.redsearch.MainActivity
+com/example/redsearch/BuildConfig.java
+ com.example.redsearch.BuildConfig
+com/example/redsearch/HabitList.java
+ com.example.redsearch.HabitList
+com/example/redsearch/Habit.java
+ com.example.redsearch.Habit
