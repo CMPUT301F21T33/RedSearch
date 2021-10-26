@@ -1995,7 +1995,6 @@ id easeIn
 id easeInOut
 id easeOut
 id east
-id editTextTextPassword2
 id edit_query
 id elastic
 id end
@@ -2038,6 +2037,9 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView2
+id imageView3
+id imageView4
 id immediateStop
 id included
 id info
@@ -2281,7 +2283,9 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id username
 id vertical_only
+id viewAll
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
@@ -2367,7 +2371,10 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_habit_view
+layout activity_home
+layout activity_login
 layout activity_main
+layout activity_my_habits
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2385,7 +2392,6 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout habitcontent
-layout login
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
