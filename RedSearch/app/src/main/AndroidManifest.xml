@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RedSearch">
         <activity
+            android:name=".ViewHabitActivity"
+            android:exported="true" />
+        <activity
             android:name=".AddHabitActivity"
             android:exported="true" />
         <activity
