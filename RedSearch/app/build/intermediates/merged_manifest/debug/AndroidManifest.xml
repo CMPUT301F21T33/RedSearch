@@ -24,6 +24,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.RedSearch" >
         <activity
+            android:name="com.example.redsearch.ViewHabitActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.redsearch.AddHabitActivity"
+            android:exported="true" />
+        <activity
             android:name="com.example.redsearch.MyHabitsActivity"
             android:exported="true" />
         <activity

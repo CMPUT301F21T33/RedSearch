@@ -1,4 +1,4 @@
-#Tue Oct 26 17:55:17 MDT 2021
+#Fri Oct 29 13:53:48 MDT 2021
 base.2=/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/build/intermediates/dex/debug/mergeProjectDexDebug/4/classes.dex
 path.2=4/classes.dex
 base.1=/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
