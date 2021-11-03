@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
     /*
     * When the user clicks Sign In they will be taken to the home page
      */
-    public void goToHome(View view) {
-        Intent intent = new Intent(this, HomeActivity.class);
+    public void goToLogin(View view) {
+        Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }
 }
