@@ -137,4 +137,21 @@ public class Habit {
         float blue = 0;  // I think we can just set this to 0, don't need "value of"
         this.color = Color.valueOf(red,green,blue);
     }
+
+    /**
+     * Overridden equals method to compare habits.
+     * A habit is the same if the habit and reason are the exact same
+     * @param obj {@code Object} The object class used for comparison
+     * @return {@code boolean} True if objects are equal, False otherwise
+     */
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        } else if (!(obj instanceof Habit)) {
+            return false;
+        }
+        Habit habit = (Habit) obj;
+        return this.title.equals(habit.title) && this.reason.equals(habit.reason);
+    }
 }
