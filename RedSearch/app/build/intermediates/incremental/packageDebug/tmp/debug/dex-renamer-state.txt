@@ -1,10 +1,13 @@
-#Tue Oct 26 17:55:17 MDT 2021
-base.2=/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/build/intermediates/dex/debug/mergeProjectDexDebug/4/classes.dex
+#Wed Nov 03 13:38:51 MDT 2021
+path.3=classes2.dex
 path.2=4/classes.dex
-base.1=/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
 path.1=0/classes.dex
-base.0=/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+path.0=classes.dex
+base.3=D\:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.2=D\:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
+base.1=D\:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.0=D\:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-path.0=classes.dex
