@@ -1820,6 +1820,7 @@ int drawable googleg_disabled_color_18 0x7f070078
 int drawable googleg_standard_color_18 0x7f070079
 int drawable ic_baseline_account_circle_24 0x7f07007a
 int drawable ic_baseline_add_24 0x7f07007b
+int drawable ic_baseline_add_48 0x7f0700af
 int drawable ic_baseline_calendar_today_24 0x7f07007c
 int drawable ic_baseline_delete_24 0x7f07007d
 int drawable ic_baseline_edit_24 0x7f07007e

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:2:1-51:12
-INJECTED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:2:1-51:12
-INJECTED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:2:1-51:12
-INJECTED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:2:1-51:12
+ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:2:1-63:12
 MERGED from [com.google.firebase:firebase-analytics:19.0.2] /Users/LaurenHerman/.gradle/caches/transforms-3/a3745b3e5224e65eb98eed5e41031e1b/transformed/jetified-firebase-analytics-19.0.2/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.material:material:1.4.0] /Users/LaurenHerman/.gradle/caches/transforms-3/c2e76fb5e086b5c906002f45c03cd24a/transformed/material-1.4.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.1] /Users/LaurenHerman/.gradle/caches/transforms-3/3721de789aff74f2f52f02659b18895c/transformed/constraintlayout-2.1.1/AndroidManifest.xml:2:1-11:12
@@ -61,25 +61,25 @@ MERGED from [androidx.print:print:1.0.0] /Users/LaurenHerman/.gradle/caches/tran
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/LaurenHerman/.gradle/caches/transforms-3/9ccd4574ebca9c86103f7bd859ba1dfd/transformed/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/LaurenHerman/.gradle/caches/transforms-3/07ee67b71d61179709c3749373524324/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.28.0] /Users/LaurenHerman/.gradle/caches/transforms-3/a1b6a2558cae7a50244f7d82767cb4ec/transformed/jetified-grpc-android-1.28.0/AndroidManifest.xml:2:1-13:12
-INJECTED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:2:1-51:12
-INJECTED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:2:1-51:12
-INJECTED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:2:1-63:12
 	package
 		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:3:5-36
 		INJECTED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml
-		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:2:1-51:12
+		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:2:1-63:12
 		INJECTED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml
-		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:2:1-51:12
+		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:2:1-63:12
 		INJECTED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:5:5-49:19
+ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:5:5-61:19
 MERGED from [com.google.firebase:firebase-analytics:19.0.2] /Users/LaurenHerman/.gradle/caches/transforms-3/a3745b3e5224e65eb98eed5e41031e1b/transformed/jetified-firebase-analytics-19.0.2/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-analytics:19.0.2] /Users/LaurenHerman/.gradle/caches/transforms-3/a3745b3e5224e65eb98eed5e41031e1b/transformed/jetified-firebase-analytics-19.0.2/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.material:material:1.4.0] /Users/LaurenHerman/.gradle/caches/transforms-3/c2e76fb5e086b5c906002f45c03cd24a/transformed/material-1.4.0/AndroidManifest.xml:22:5-20
@@ -135,75 +135,89 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/Laur
 	android:theme
 		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:11:9-47
 activity#com.example.redsearch.ViewHabitEventActivity
-ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:12:9-14:39
+ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:12:9-19:24
+	android:parentActivityName
+		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:14:13-65
 	android:exported
-		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:14:13-36
+		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:15:13-36
 	android:name
 		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:13:13-51
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:16:13-18:55
+	android:value
+		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:18:13-52
+	android:name
+		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:17:13-59
 activity#com.example.redsearch.AddHabitEventActivity
-ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:15:9-17:39
+ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:20:9-23:39
+	android:parentActivityName
+		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:22:13-55
 	android:exported
-		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:17:13-36
+		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:23:13-36
 	android:name
-		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:16:13-50
+		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:21:13-50
 activity#com.example.redsearch.SignupActivity
-ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:18:9-20:38
-	android:exported
-		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:20:13-36
-	android:name
-		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:19:13-43
-activity#com.example.redsearch.LoginActivity
-ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:22:9-24:39
-	android:exported
-		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:24:13-36
-	android:name
-		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:23:13-42
-activity#com.example.redsearch.ViewHabitActivity
-ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:25:9-27:39
+ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:24:9-27:38
+	android:parentActivityName
+		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:26:13-55
 	android:exported
 		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:27:13-36
 	android:name
-		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:26:13-46
+		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:25:13-43
+activity#com.example.redsearch.ViewHabitActivity
+ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:29:9-32:39
+	android:parentActivityName
+		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:31:13-59
+	android:exported
+		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:32:13-36
+	android:name
+		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:30:13-46
 activity#com.example.redsearch.AddHabitActivity
-ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:28:9-30:39
-	android:exported
-		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:30:13-36
-	android:name
-		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:29:13-45
-activity#com.example.redsearch.MyHabitsActivity
-ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:31:9-33:39
-	android:exported
-		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:33:13-36
-	android:name
-		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:32:13-45
-activity#com.example.redsearch.HomeActivity
-ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:34:9-36:39
+ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:33:9-36:39
+	android:parentActivityName
+		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:35:13-59
 	android:exported
 		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:36:13-36
 	android:name
-		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:35:13-41
+		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:34:13-45
+activity#com.example.redsearch.MyHabitsActivity
+ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:37:9-44:20
+	android:parentActivityName
+		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:39:13-55
+	android:exported
+		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:40:13-36
+	android:name
+		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:38:13-45
+activity#com.example.redsearch.HomeActivity
+ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:45:9-47:39
+	android:exported
+		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:47:13-36
+	android:name
+		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:46:13-41
 activity#com.example.redsearch.HabitView
-ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:37:9-39:39
+ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:48:9-51:39
+	android:parentActivityName
+		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:50:13-59
 	android:exported
-		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:39:13-36
+		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:51:13-36
 	android:name
-		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:38:13-38
+		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:49:13-38
 activity#com.example.redsearch.MainActivity
-ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:40:9-48:20
+ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:52:9-60:20
 	android:exported
-		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:42:13-36
+		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:54:13-36
 	android:name
-		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:41:13-41
+		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:53:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:43:13-47:29
+ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:55:13-59:29
 action#android.intent.action.MAIN
-ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:44:17-69
+ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:56:17-69
 	android:name
-		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:44:25-66
+		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:56:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:46:17-77
+ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:58:17-77
 	android:name
-		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:46:27-74
+		ADDED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:58:27-74
 uses-sdk
 INJECTED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml

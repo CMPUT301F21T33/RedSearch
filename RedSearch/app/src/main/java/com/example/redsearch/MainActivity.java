@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         db.dataInsert("TEST", "Habit 3", "I like things");
         db.dataRemove("TEST", "Habit 2");
 
+        /*
         setContentView(R.layout.activity_add_habit);
 
         signinButton = findViewById(R.id.signIn);
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         passwordError = findViewById(R.id.passwordError);
         db.dataInsert("TEST", "Habit 3", "I like things");
         db.dataRemove("TEST", "Habit 2");
-        db.dataInsert("TEST", "Habit 3", "Don't get hit by car");
+        db.dataInsert("TEST", "Habit 3", "Don't get hit by car");*/
 
     }
 

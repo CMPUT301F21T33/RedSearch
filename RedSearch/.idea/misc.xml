@@ -3,7 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-<<<<<<< HEAD
         <entry key="app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.19010416666666666" />
         <entry key="app/src/main/res/drawable/round_button.xml" value="0.19010416666666666" />
         <entry key="app/src/main/res/layout/activity_add_habit.xml" value="0.1707676939960692" />
@@ -11,21 +10,9 @@
         <entry key="app/src/main/res/layout/activity_habit_event_list.xml" value="0.16258048767713168" />
         <entry key="app/src/main/res/layout/activity_habit_view.xml" value="0.25363788498577783" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.20497358249638378" />
-=======
-<<<<<<< HEAD
-        <entry key="..\:/Code_Files/CMPUT_301_group_project/RedSearch/RedSearch/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Code_Files/CMPUT_301_group_project/RedSearch/RedSearch/app/src/main/res/layout/activity_my_habits.xml" value="0.128" />
-        <entry key="app/src/main/res/layout/activity_add_habit.xml" value="0.17218422241149883" />
-=======
-        <entry key="app/src/main/res/layout/activity_add_habit.xml" value="0.2904389736388069" />
->>>>>>> main
-        <entry key="app/src/main/res/layout/activity_habit_view.xml" value="0.3447443455798768" />
-        <entry key="app/src/main/res/layout/activity_home.xml" value="0.22746782057715778" />
->>>>>>> main
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.28741911411007753" />
-        <entry key="app/src/main/res/layout/activity_login2.xml" value="0.35144927536231885" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2002499283919438" />
-        <entry key="app/src/main/res/layout/activity_my_habits.xml" value="0.2097787472955452" />
+        <entry key="app/src/main/res/layout/activity_my_habits.xml" value="0.23140755634149296" />
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.21855004020622432" />
         <entry key="app/src/main/res/layout/activity_view_habit.xml" value="0.22796594942727344" />
         <entry key="app/src/main/res/layout/activity_view_habit_event.xml" value="0.11629553487489531" />

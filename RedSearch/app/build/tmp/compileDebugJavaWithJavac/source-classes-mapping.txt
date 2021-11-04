@@ -1,5 +1,5 @@
-com/example/redsearch/HomeActivity.java
- com.example.redsearch.HomeActivity
+com/example/redsearch/Habit.java
+ com.example.redsearch.Habit
 com/example/redsearch/DataBaseAccess.java
  com.example.redsearch.DataBaseAccess
  com.example.redsearch.DataBaseAccess$1
@@ -9,27 +9,27 @@ com/example/redsearch/DataBaseAccess.java
  com.example.redsearch.DataBaseAccess$5
 com/example/redsearch/User.java
  com.example.redsearch.User
-com/example/redsearch/HabitEventListActivity.java
- com.example.redsearch.HabitEventListActivity
-com/example/redsearch/ViewHabitActivity.java
- com.example.redsearch.ViewHabitActivity
-com/example/redsearch/HabitView.java
- com.example.redsearch.HabitView
-com/example/redsearch/MainActivity.java
- com.example.redsearch.MainActivity
-com/example/redsearch/AddHabitActivity.java
- com.example.redsearch.AddHabitActivity
-com/example/redsearch/AddHabitEventActivity.java
- com.example.redsearch.AddHabitEventActivity
-com/example/redsearch/MyHabitsActivity.java
- com.example.redsearch.MyHabitsActivity
-com/example/redsearch/SignupActivity.java
- com.example.redsearch.SignupActivity
 com/example/redsearch/BuildConfig.java
  com.example.redsearch.BuildConfig
 com/example/redsearch/HabitList.java
  com.example.redsearch.HabitList
+com/example/redsearch/MyHabitsActivity.java
+ com.example.redsearch.MyHabitsActivity
+com/example/redsearch/HabitView.java
+ com.example.redsearch.HabitView
+com/example/redsearch/AddHabitActivity.java
+ com.example.redsearch.AddHabitActivity
 com/example/redsearch/ViewHabitEventActivity.java
  com.example.redsearch.ViewHabitEventActivity
-com/example/redsearch/Habit.java
- com.example.redsearch.Habit
+com/example/redsearch/AddHabitEventActivity.java
+ com.example.redsearch.AddHabitEventActivity
+com/example/redsearch/ViewHabitActivity.java
+ com.example.redsearch.ViewHabitActivity
+com/example/redsearch/SignupActivity.java
+ com.example.redsearch.SignupActivity
+com/example/redsearch/HabitEventListActivity.java
+ com.example.redsearch.HabitEventListActivity
+com/example/redsearch/HomeActivity.java
+ com.example.redsearch.HomeActivity
+com/example/redsearch/MainActivity.java
+ com.example.redsearch.MainActivity
