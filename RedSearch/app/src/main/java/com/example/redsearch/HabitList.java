@@ -9,7 +9,7 @@ public class HabitList extends ArrayAdapter<Habit> {
     private ArrayList<Habit> habits;
     private Context context;
 
-    public HabitList(Context context, ArrayList<Habit> habits){
+    public HabitList(MainActivity context, ArrayList<Habit> habits){
         // This is the general constructor
         super(context, 0, habits);
         this.habits = habits;
