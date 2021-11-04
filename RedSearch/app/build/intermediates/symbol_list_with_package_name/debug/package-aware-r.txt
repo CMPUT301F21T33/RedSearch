@@ -2056,15 +2056,16 @@ id easeOut
 id east
 id editButton
 id editTextDate
-<<<<<<< HEAD
-=======
 id editTextTextPersonName
 id editTextTextPersonName3
+<<<<<<< HEAD
 <<<<<<< HEAD
 id editTextTextPersonName4
 =======
 >>>>>>> main
 >>>>>>> main
+=======
+>>>>>>> 1a37feda54e2c8144a4879289c450a49ab9dc72e
 id edit_query
 id elastic
 id end
@@ -2112,8 +2113,6 @@ id ignore
 id ignoreRequest
 id image
 id imageButton
-<<<<<<< HEAD
-=======
 id imageButton2
 id imageButton3
 <<<<<<< HEAD
@@ -2123,8 +2122,11 @@ id imageButton5
 id imageButton6
 id imageButton7
 id imageButton8
+<<<<<<< HEAD
 >>>>>>> main
 >>>>>>> main
+=======
+>>>>>>> 1a37feda54e2c8144a4879289c450a49ab9dc72e
 id imageView
 id imageView2
 id imageView3
@@ -2234,7 +2236,11 @@ id parentPanel
 id parentRelative
 id parent_matrix
 id password
+<<<<<<< HEAD
 id password2
+=======
+id passwordError
+>>>>>>> 1a37feda54e2c8144a4879289c450a49ab9dc72e
 id password_toggle
 id path
 id pathRelative
@@ -2346,9 +2352,8 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-<<<<<<< HEAD
-id textView
 id textView2
+<<<<<<< HEAD
 id textView3
 =======
 <<<<<<< HEAD
@@ -2359,6 +2364,8 @@ id textView3
 id textView2
 >>>>>>> main
 >>>>>>> main
+=======
+>>>>>>> 1a37feda54e2c8144a4879289c450a49ab9dc72e
 id textView4
 id textView5
 id textView6
@@ -2403,6 +2410,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id userError
 id username
 id username2
 id vertical_only

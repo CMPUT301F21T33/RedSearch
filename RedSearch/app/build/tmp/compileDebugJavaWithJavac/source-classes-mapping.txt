@@ -1,28 +1,23 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 com/example/redsearch/Habit.java
  com.example.redsearch.Habit
 com/example/redsearch/HomeActivity.java
  com.example.redsearch.HomeActivity
+=======
+>>>>>>> 1a37feda54e2c8144a4879289c450a49ab9dc72e
 com/example/redsearch/HabitView.java
  com.example.redsearch.HabitView
-com/example/redsearch/HabitList.java
- com.example.redsearch.HabitList
-<<<<<<< HEAD
-com/example/redsearch/AddHabitActivity.java
- com.example.redsearch.AddHabitActivity
-com/example/redsearch/MyHabitsActivity.java
- com.example.redsearch.MyHabitsActivity
-com/example/redsearch/BuildConfig.java
- com.example.redsearch.BuildConfig
-com/example/redsearch/ViewHabitActivity.java
- com.example.redsearch.ViewHabitActivity
+com/example/redsearch/HomeActivity.java
+ com.example.redsearch.HomeActivity
 com/example/redsearch/DataBaseAccess.java
  com.example.redsearch.DataBaseAccess
  com.example.redsearch.DataBaseAccess$1
  com.example.redsearch.DataBaseAccess$2
  com.example.redsearch.DataBaseAccess$3
  com.example.redsearch.DataBaseAccess$4
+<<<<<<< HEAD
 =======
 >>>>>>> main
 com/example/redsearch/BuildConfig.java
@@ -36,10 +31,14 @@ com/example/redsearch/HomeActivity.java
 com/example/redsearch/HabitView.java
  com.example.redsearch.HabitView
 >>>>>>> main
+=======
+ com.example.redsearch.DataBaseAccess$5
+>>>>>>> 1a37feda54e2c8144a4879289c450a49ab9dc72e
 com/example/redsearch/MainActivity.java
  com.example.redsearch.MainActivity
 com/example/redsearch/AddHabitActivity.java
  com.example.redsearch.AddHabitActivity
+<<<<<<< HEAD
 com/example/redsearch/AddHabitEventActivity.java
  com.example.redsearch.AddHabitEventActivity
 com/example/redsearch/MyHabitsActivity.java
@@ -52,3 +51,21 @@ com/example/redsearch/ViewHabitActivity.java
  com.example.redsearch.ViewHabitActivity
 com/example/redsearch/ViewHabitEventActivity.java
  com.example.redsearch.ViewHabitEventActivity
+=======
+com/example/redsearch/User.java
+ com.example.redsearch.User
+com/example/redsearch/MyHabitsActivity.java
+ com.example.redsearch.MyHabitsActivity
+com/example/redsearch/LoginActivity.java
+ com.example.redsearch.LoginActivity
+ com.example.redsearch.LoginActivity$1
+ com.example.redsearch.LoginActivity$2
+com/example/redsearch/BuildConfig.java
+ com.example.redsearch.BuildConfig
+com/example/redsearch/ViewHabitActivity.java
+ com.example.redsearch.ViewHabitActivity
+com/example/redsearch/HabitList.java
+ com.example.redsearch.HabitList
+com/example/redsearch/Habit.java
+ com.example.redsearch.Habit
+>>>>>>> 1a37feda54e2c8144a4879289c450a49ab9dc72e
