@@ -12,7 +12,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         DataBaseAccess db = new DataBaseAccess();
-        db.data_Insert("TEST", "Habit 1", "I like things");
+        db.dataInsert("TEST", "Habit 3", "I like things");
+        db.dataRemove("TEST", "Habit 2");
     }
 
     /*
