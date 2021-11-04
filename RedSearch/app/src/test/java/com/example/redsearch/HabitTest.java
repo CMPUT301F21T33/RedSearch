@@ -4,8 +4,6 @@ import org.junit.Test;
 import org.junit.Before;
 import static org.junit.Assert.*;
 
-import android.graphics.Color;
-
 import java.util.Date;
 
 public class HabitTest {
@@ -35,10 +33,10 @@ public class HabitTest {
         assertFalse(habit.getVisible());
         habit.setStartDate(new Date(2021, 2, 2));
         assertEquals(habit.getStartDate(), new Date(2021 , 2,2));
-        habit.setDaysplanned(2.0F);
-        assertEquals(habit.getDaysplanned(), 2.0F, 0);
-        habit.setDayshappened(1.0F);
-        assertEquals(habit.getDayshappened(), 1.0F, 0);
+        habit.setDaysplanned(2);
+        assertEquals(habit.getDaysplanned(), 2);
+        habit.setDayshappened(1);
+        assertEquals(habit.getDayshappened(), 1);
 
     }
 

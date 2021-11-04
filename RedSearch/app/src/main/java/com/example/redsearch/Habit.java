@@ -12,8 +12,8 @@ public class Habit {
     private String title;
     private String reason;
     private Date startDate;
-    private float Daysplanned;
-    private float Dayshappened;
+    private int Daysplanned;
+    private int Dayshappened;
     private Color color;
     private boolean visible;
 
@@ -52,15 +52,15 @@ public class Habit {
 
     /**
      * Habit's number of days planned getter
-     * @return {@code Float} Number of days the habit is planned for
+     * @return {@code int} Number of days the habit is planned for
      */
-    float getDaysplanned(){return this.Daysplanned;}
+    int getDaysplanned(){return this.Daysplanned;}
 
     /**
      * Habit's number of days habit occurred getter
-     * @return {@code Float} Number of days the habit happened
+     * @return {@code int} Number of days the habit happened
      */
-    float getDayshappened(){return this.Dayshappened;}
+    int getDayshappened(){return this.Dayshappened;}
 
     /**
      * Habit's colour getter
@@ -110,15 +110,15 @@ public class Habit {
 
     /**
      * Habit's number of days planned setter
-     * @param daysplanned {@code Float} Number of days the habit is planned for
+     * @param daysplanned {@code int} Number of days the habit is planned for
      */
-    public void setDaysplanned(float daysplanned){this.Daysplanned = daysplanned;}
+    public void setDaysplanned(int daysplanned){this.Daysplanned = daysplanned;}
 
     /**
      * Habit's number of days happened setter
-     * @param dayshappened {@code Float} Number of days the habit happened
+     * @param dayshappened {@code int} Number of days the habit happened
      */
-    public void setDayshappened(float dayshappened){this.Dayshappened = dayshappened;}
+    public void setDayshappened(int dayshappened){this.Dayshappened = dayshappened;}
 
     /**
      * Habit's visibility setter
@@ -131,7 +131,7 @@ public class Habit {
      * Habit's colour setter
      */
     public void setColor(){
-        float percent = this.Dayshappened/this.Daysplanned;
+        float percent = (float)this.Dayshappened/(float) this.Daysplanned;
         float green = percent * 255; // This finds the value of the green part of the colour
         float red = 255 - green; // This finds the value of the blue part of the colour
         float blue = 0;  // I think we can just set this to 0, don't need "value of"

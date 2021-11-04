@@ -1,5 +1,7 @@
 package com.example.redsearch;
 
+import android.graphics.Bitmap;
+
 import androidx.annotation.NonNull;
 
 import java.util.Date;
@@ -7,16 +9,27 @@ import java.util.Date;
 public class HabitEvent{
     private String comment;
     private Date date;
-    public String image;
+    public Bitmap image;
 
     /**
-     * Habit Class constructor
+     * Habit Event Class constructor
      * @param comment {@code String} comment associated with HabitEvent
      * @param date {@code Date} date HabitEvent was created
-     * @param image {@code boolean} True if habit is public, False if not
      */
-    HabitEvent(String comment, Date date, String image){
-        // a simple habit constructor
+    HabitEvent(String comment, Date date){
+        // a simple habit event constructor
+        setComment(comment);
+        setDate(date);
+    }
+
+    /**
+     * Habit Event Class constructor with image
+     * @param comment {@code String} comment associated with HabitEvent
+     * @param date {@code Date} date HabitEvent was created
+     * @param image {@code Bitmap} image of HabitEvent
+     */
+    HabitEvent(String comment, Date date, Bitmap image) {
+        // overloaded constructor
         setComment(comment);
         setDate(date);
         setImage(image);
@@ -46,5 +59,5 @@ public class HabitEvent{
      * HabitEvent's image setter
      * @param Image {@code Bitmap} image associated with HabitEvent
      */
-    private void setImage(String Image) {this.image = Image;}
+    private void setImage(Bitmap Image) {this.image = Image;}
 }
