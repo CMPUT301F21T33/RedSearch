@@ -2038,6 +2038,11 @@ id easeInOut
 id easeOut
 id east
 id editTextDate
+<<<<<<< HEAD
+=======
+id editTextTextPersonName
+id editTextTextPersonName3
+>>>>>>> main
 id edit_query
 id elastic
 id end
@@ -2082,6 +2087,16 @@ id ignore
 id ignoreRequest
 id image
 id imageButton
+<<<<<<< HEAD
+=======
+id imageButton2
+id imageButton3
+id imageButton4
+id imageButton5
+id imageButton6
+id imageButton7
+id imageButton8
+>>>>>>> main
 id imageView
 id imageView2
 id imageView3
@@ -2301,9 +2316,13 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+<<<<<<< HEAD
 id textView
 id textView2
 id textView3
+=======
+id textView2
+>>>>>>> main
 id textView4
 id textView5
 id textView6
