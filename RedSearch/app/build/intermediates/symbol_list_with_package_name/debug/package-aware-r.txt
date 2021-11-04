@@ -1780,6 +1780,12 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_baseline_account_circle_24
+drawable ic_baseline_add_24
+drawable ic_baseline_calendar_today_24
+drawable ic_baseline_delete_24
+drawable ic_baseline_edit_24
+drawable ic_baseline_people_24
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -1821,6 +1827,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable round_button
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1874,6 +1881,7 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
+id accountButton
 id actionDown
 id actionDownUp
 id actionUp
@@ -1925,6 +1933,7 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id button
+id button2
 id buttonPanel
 id cache_measures
 id cancel_button
@@ -1968,6 +1977,7 @@ id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
+id deleteButton
 id deltaRelative
 id dependency_ordering
 id design_bottom_sheet
@@ -1996,6 +2006,7 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id editButton
 id editTextDate
 id editTextTextPersonName
 id editTextTextPersonName3
@@ -2005,6 +2016,7 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id eventButton
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -2019,6 +2031,8 @@ id flip
 id floating
 id forever
 id fragment_container_view_tag
+id friday
+id friendsButton
 id frost
 id ghost_view
 id ghost_view_holder
@@ -2042,18 +2056,6 @@ id ignore
 id ignoreRequest
 id image
 id imageButton
-id imageButton2
-id imageButton3
-id imageButton4
-id imageButton5
-id imageButton6
-id imageButton7
-id imageButton8
-id imageView
-id imageView2
-id imageView3
-id imageView4
-id imageView5
 id immediateStop
 id included
 id info
@@ -2099,6 +2101,7 @@ id medicine_list
 id message
 id middle
 id mini
+id monday
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -2158,6 +2161,7 @@ id parentPanel
 id parentRelative
 id parent_matrix
 id password
+id password2
 id password_toggle
 id path
 id pathRelative
@@ -2179,6 +2183,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id saturday
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -2241,6 +2246,7 @@ id stop
 id stretch
 id submenuarrow
 id submit_area
+id sunday
 id supportScrollUp
 id tabMode
 id tag_accessibility_actions
@@ -2280,11 +2286,17 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id thursday
 id time
 id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toolbar_add_habit
+id toolbar_home
+id toolbar_my_habits
+id toolbar_signup
+id toolbar_view_habit
 id top
 id topPanel
 id touch_outside
@@ -2296,12 +2308,14 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tuesday
 id unchecked
 id uniform
 id unlabeled
 id up
 id useLogo
 id username
+id username2
 id vertical_only
 id viewAll
 id view_offset_helper
@@ -2311,6 +2325,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id wednesday
 id west
 id withText
 id withinBounds
@@ -2394,6 +2409,7 @@ layout activity_home
 layout activity_login
 layout activity_main
 layout activity_my_habits
+layout activity_signup
 layout activity_view_habit
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -2480,6 +2496,9 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+layout toolbar
+layout toolbar_edit_delete
+layout toolbar_home
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
