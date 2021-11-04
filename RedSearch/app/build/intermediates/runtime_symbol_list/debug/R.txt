@@ -1143,6 +1143,7 @@ int color error_color_material_dark 0x7f050059
 int color error_color_material_light 0x7f05005a
 int color foreground_material_dark 0x7f05005b
 int color foreground_material_light 0x7f05005c
+int color grey 0x7f0500d5
 int color highlighted_text_material_dark 0x7f05005d
 int color highlighted_text_material_light 0x7f05005e
 int color material_blue_grey_800 0x7f05005f
@@ -1784,6 +1785,8 @@ int drawable ic_baseline_add_24 0x7f070097
 int drawable ic_baseline_calendar_today_24 0x7f070095
 int drawable ic_baseline_delete_24 0x7f070093
 int drawable ic_baseline_edit_24 0x7f070092
+int drawable ic_baseline_image_24 0x7f070098
+int drawable ic_baseline_map_24 0x7f070099
 int drawable ic_baseline_people_24 0x7f070096
 int drawable ic_clock_black_24dp 0x7f070065
 int drawable ic_keyboard_black_24dp 0x7f070066
@@ -1933,6 +1936,7 @@ int id bounceEnd 0x7f080062
 int id bounceStart 0x7f080063
 int id button 0x7f080064
 int id button2 0x7f080065
+int id button3 0x7f080205
 int id buttonPanel 0x7f080066
 int id cache_measures 0x7f080067
 int id cancel_button 0x7f080068
@@ -2009,6 +2013,7 @@ int id editButton 0x7f0801fc
 int id editTextDate 0x7f0800ad
 int id editTextTextPersonName 0x7f0800ae
 int id editTextTextPersonName3 0x7f0800af
+int id editTextTextPersonName4 0x7f080206
 int id edit_query 0x7f0800b0
 int id elastic 0x7f0800b1
 int id end 0x7f0800b2
@@ -2055,6 +2060,11 @@ int id ignore 0x7f0800d7
 int id ignoreRequest 0x7f0800d8
 int id image 0x7f0800d9
 int id imageButton 0x7f0800da
+int id imageButton2 0x7f0800db
+int id imageButton3 0x7f0800dc
+int id imageView 0x7f0800e2
+int id imageView2 0x7f0800e3
+int id imageView3 0x7f0800e4
 int id immediateStop 0x7f0800e7
 int id included 0x7f0800e8
 int id info 0x7f0800e9
@@ -2272,10 +2282,13 @@ int id textSpacerNoButtons 0x7f0801b8
 int id textSpacerNoTitle 0x7f0801b9
 int id textStart 0x7f0801ba
 int id textTop 0x7f0801bb
+int id textView 0x7f080207
 int id textView2 0x7f0801bc
+int id textView3 0x7f080208
 int id textView4 0x7f0801bd
 int id textView5 0x7f0801be
 int id textView6 0x7f0801bf
+int id textView7 0x7f080209
 int id text_input_end_icon 0x7f0801c0
 int id text_input_error_icon 0x7f0801c1
 int id text_input_start_icon 0x7f0801c2
@@ -2292,10 +2305,13 @@ int id titleDividerNoCustom 0x7f0801cb
 int id title_template 0x7f0801cc
 int id toggle 0x7f0801cd
 int id toolbar_add_habit 0x7f0801f9
+int id toolbar_add_habit_event 0x7f08020a
 int id toolbar_home 0x7f080203
 int id toolbar_my_habits 0x7f080204
 int id toolbar_signup 0x7f0801ff
 int id toolbar_view_habit 0x7f0801fa
+int id toolbar_view_habit_event 0x7f08020b
+int id toolbar_view_habit_event_list 0x7f08020c
 int id top 0x7f0801ce
 int id topPanel 0x7f0801cf
 int id touch_outside 0x7f0801d0
@@ -2403,6 +2419,8 @@ int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_add_habit 0x7f0b001c
+int layout activity_add_habit_event 0x7f0b007c
+int layout activity_habit_event_list 0x7f0b007d
 int layout activity_habit_view 0x7f0b001d
 int layout activity_home 0x7f0b001e
 int layout activity_login 0x7f0b001f
@@ -2410,6 +2428,7 @@ int layout activity_main 0x7f0b0020
 int layout activity_my_habits 0x7f0b0021
 int layout activity_signup 0x7f0b007a
 int layout activity_view_habit 0x7f0b0022
+int layout activity_view_habit_event 0x7f0b007e
 int layout custom_dialog 0x7f0b0023
 int layout design_bottom_navigation_item 0x7f0b0024
 int layout design_bottom_sheet_dialog 0x7f0b0025

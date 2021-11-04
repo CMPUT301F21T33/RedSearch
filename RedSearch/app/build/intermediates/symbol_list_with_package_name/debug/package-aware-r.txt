@@ -1144,6 +1144,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color grey
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color material_blue_grey_800
@@ -1785,6 +1786,8 @@ drawable ic_baseline_add_24
 drawable ic_baseline_calendar_today_24
 drawable ic_baseline_delete_24
 drawable ic_baseline_edit_24
+drawable ic_baseline_image_24
+drawable ic_baseline_map_24
 drawable ic_baseline_people_24
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
@@ -1934,6 +1937,7 @@ id bounceEnd
 id bounceStart
 id button
 id button2
+id button3
 id buttonPanel
 id cache_measures
 id cancel_button
@@ -2010,6 +2014,7 @@ id editButton
 id editTextDate
 id editTextTextPersonName
 id editTextTextPersonName3
+id editTextTextPersonName4
 id edit_query
 id elastic
 id end
@@ -2056,6 +2061,11 @@ id ignore
 id ignoreRequest
 id image
 id imageButton
+id imageButton2
+id imageButton3
+id imageView
+id imageView2
+id imageView3
 id immediateStop
 id included
 id info
@@ -2273,10 +2283,13 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
 id textView2
+id textView3
 id textView4
 id textView5
 id textView6
+id textView7
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2293,10 +2306,13 @@ id titleDividerNoCustom
 id title_template
 id toggle
 id toolbar_add_habit
+id toolbar_add_habit_event
 id toolbar_home
 id toolbar_my_habits
 id toolbar_signup
 id toolbar_view_habit
+id toolbar_view_habit_event
+id toolbar_view_habit_event_list
 id top
 id topPanel
 id touch_outside
@@ -2404,6 +2420,8 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add_habit
+layout activity_add_habit_event
+layout activity_habit_event_list
 layout activity_habit_view
 layout activity_home
 layout activity_login
@@ -2411,6 +2429,7 @@ layout activity_main
 layout activity_my_habits
 layout activity_signup
 layout activity_view_habit
+layout activity_view_habit_event
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
