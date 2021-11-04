@@ -17,27 +17,72 @@ public class HabitTest {
 
     @Test
     public void testHabitGetters() {
-        assertEquals(habit.getTitle(), "Drink water");
-        assertEquals(habit.getReason(), "To stay hydrated");
-        assertEquals(habit.getStartDate(), new Date(2020, 2, 3));
+        assertEquals("Drink water", habit.getTitle());
+        assertEquals("To stay hydrated", habit.getReason());
+        assertEquals(new Date(2020, 2, 3), habit.getStartDate());
         assertTrue(habit.getVisible());
     }
 
     @Test
-    public void testHabitSetters() {
+    public void testSetTitle() {
         habit.setTitle("Go to sleep");
-        assertEquals(habit.getTitle(), "Go to sleep");
+        assertEquals("Go to sleep", habit.getTitle());
+    }
+
+    @Test
+    public void testSetReason() {
         habit.setReason("To get some sleep");
-        assertEquals(habit.getReason(), "To get some sleep");
+        assertEquals("To get some sleep", habit.getReason());
+    }
+
+    @Test
+    public void testSetVisible() {
         habit.setvisible(false);
         assertFalse(habit.getVisible());
-        habit.setStartDate(new Date(2021, 2, 2));
-        assertEquals(habit.getStartDate(), new Date(2021 , 2,2));
-        habit.setDaysplanned(2);
-        assertEquals(habit.getDaysplanned(), 2);
-        habit.setDayshappened(1);
-        assertEquals(habit.getDayshappened(), 1);
+    }
 
+    @Test
+    public void testSetStartDate() {
+        habit.setStartDate(new Date(2021, 2, 2));
+        assertEquals(new Date(2021 , 2,2), habit.getStartDate());
+    }
+
+    @Test
+    public void testSetDaysplanned() {
+        habit.setDaysplanned(2);
+        assertEquals(2, habit.getDaysplanned());
+    }
+
+    @Test
+    public void testSetDayshappened() {
+        habit.setDayshappened(1);
+        assertEquals(1, habit.getDayshappened());
+    }
+
+
+    @Test
+    public void testHabitOverridden() {
+        Habit habit_overriden = new Habit("Don't get hit by a bus", "To not die",
+                new Date(2021 , 2,2), 3, true);
+        assertEquals(3, habit_overriden.getDaysplanned());
+    }
+
+    @Test
+    public void testColors() {
+        // Grey color
+        assertEquals("#808080", habit.getColor());
+        habit.setDaysplanned(3);
+
+        // Red color
+        assertEquals("#C41E3A", habit.getColor());
+        habit.setDayshappened(2);
+
+        // Yellow color
+        assertEquals("#FDDA0D", habit.getColor());
+        habit.setDayshappened(3);
+
+        // Green color
+        assertEquals("#00A36C", habit.getColor());
     }
 
 

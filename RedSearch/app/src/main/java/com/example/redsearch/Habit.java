@@ -12,9 +12,9 @@ public class Habit {
     private String title;
     private String reason;
     private Date startDate;
-    private int Daysplanned;
-    private int Dayshappened;
-    private Color color;
+    private int Daysplanned = 0;
+    private int Dayshappened = 0;
+    private String color;
     private boolean visible;
 
     /**
@@ -30,6 +30,25 @@ public class Habit {
         setReason(reason);
         setStartDate(date);
         setvisible(visible);
+        setColor();
+    }
+
+    /**
+     * Habit Class constructor
+     * @param title {@code String} Title of Habit
+     * @param reason {@code String} Reason of Habit
+     * @param date {@code Date} Date the habit began
+     * @param daysplanned {@code int} Number of days the habit is planned for
+     * @param visible {@code boolean} True if habit is public, False if not
+     */
+    Habit(String title, String reason, Date date, int daysplanned, boolean visible){
+        // a simple habit constructor overridden for days planned
+        setTitle(title);
+        setReason(reason);
+        setStartDate(date);
+        setDaysplanned(daysplanned);
+        setvisible(visible);
+        setColor();
     }
 
     /**
@@ -64,9 +83,9 @@ public class Habit {
 
     /**
      * Habit's colour getter
-     * @return {@code Color} Color of habit
+     * @return {@code String} Hex code of color of habit
      */
-    Color getColor(){return this.color;}
+    String getColor(){return this.color;}
 
     /**
      * Habit's visibility getter
@@ -112,13 +131,19 @@ public class Habit {
      * Habit's number of days planned setter
      * @param daysplanned {@code int} Number of days the habit is planned for
      */
-    public void setDaysplanned(int daysplanned){this.Daysplanned = daysplanned;}
+    public void setDaysplanned(int daysplanned){
+        this.Daysplanned = daysplanned;
+        setColor();
+    }
 
     /**
      * Habit's number of days happened setter
      * @param dayshappened {@code int} Number of days the habit happened
      */
-    public void setDayshappened(int dayshappened){this.Dayshappened = dayshappened;}
+    public void setDayshappened(int dayshappened){
+        this.Dayshappened = dayshappened;
+        setColor();
+    }
 
     /**
      * Habit's visibility setter
@@ -126,16 +151,28 @@ public class Habit {
      */
     public void setvisible(boolean visible){this.visible = visible;}
 
-    @RequiresApi(api = Build.VERSION_CODES.O) // Made me put this in to do the colour part
+    //@RequiresApi(api = Build.VERSION_CODES.O) // Made me put this in to do the colour part
+
     /**
-     * Habit's colour setter
+     * Set color of habit
+     * Grey if no days for the habit are planned.
+     * Green if habit happens at least 75% of the days planned.
+     * Yellow if habit happens at least 50% of the days planned
+     * Red if habit happens less that 50% of the days planned
      */
-    public void setColor(){
-        float percent = (float)this.Dayshappened/(float) this.Daysplanned;
-        float green = percent * 255; // This finds the value of the green part of the colour
-        float red = 255 - green; // This finds the value of the blue part of the colour
-        float blue = 0;  // I think we can just set this to 0, don't need "value of"
-        this.color = Color.valueOf(red,green,blue);
+    private void setColor(){
+        if (this.Daysplanned == 0) {
+            color = "#808080";  // grey, no days were planned
+            return;
+        }
+        double percent = (double)this.Dayshappened/(double) this.Daysplanned * 100;
+        if (percent >= 75.0) {
+            color = "#00A36C";  // green, 75% of days planned happened
+        } else if (percent >= 50.0) {
+            color = "#FDDA0D";  // yellow, 50% of days planned happened
+        } else {
+            color = "#C41E3A"; // red, less than 50% of days planned happened
+        }
     }
 
     /**
