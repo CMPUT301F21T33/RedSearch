@@ -12,6 +12,10 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        //Get the username from the previous one
+        Intent intent = getIntent();
+        String username = intent.getStringExtra(MainActivity.USERNAME); // This is the username that the user gave in the login activity
     }
 
     /*
