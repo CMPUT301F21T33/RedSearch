@@ -1821,6 +1821,7 @@ int drawable googleg_standard_color_18 0x7f070079
 int drawable ic_baseline_account_circle_24 0x7f07007a
 int drawable ic_baseline_add_24 0x7f07007b
 int drawable ic_baseline_add_48 0x7f0700af
+int drawable ic_baseline_brightness_1_24 0x7f0700b0
 int drawable ic_baseline_calendar_today_24 0x7f07007c
 int drawable ic_baseline_delete_24 0x7f07007d
 int drawable ic_baseline_edit_24 0x7f07007e
@@ -2127,7 +2128,9 @@ int id line1 0x7f0800fb
 int id line3 0x7f0800fc
 int id linear 0x7f0800fd
 int id listMode 0x7f0800fe
+int id list_ind 0x7f08020d
 int id list_item 0x7f0800ff
+int id list_txt 0x7f08020e
 int id masked 0x7f080100
 int id match_constraint 0x7f080101
 int id match_parent 0x7f080102
@@ -2477,6 +2480,7 @@ int layout activity_signup 0x7f0b0024
 int layout activity_view_habit 0x7f0b0025
 int layout activity_view_habit_event 0x7f0b0026
 int layout custom_dialog 0x7f0b0027
+int layout custom_listview 0x7f0b007f
 int layout design_bottom_navigation_item 0x7f0b0028
 int layout design_bottom_sheet_dialog 0x7f0b0029
 int layout design_layout_snackbar 0x7f0b002a

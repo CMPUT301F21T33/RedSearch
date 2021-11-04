@@ -96,6 +96,14 @@
         "source": "/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/res/mipmap-xhdpi/ic_launcher.webp"
     },
     {
+        "merged": "/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/build/intermediates/merged_res/debug/drawable_ic_baseline_brightness_1_24.xml.flat",
+        "source": "/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/res/drawable/ic_baseline_brightness_1_24.xml"
+    },
+    {
+        "merged": "/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/build/intermediates/merged_res/debug/layout_custom_listview.xml.flat",
+        "source": "/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/res/layout/custom_listview.xml"
+    },
+    {
         "merged": "/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/build/intermediates/merged_res/debug/layout_toolbar_edit_delete.xml.flat",
         "source": "/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/res/layout/toolbar_edit_delete.xml"
     },

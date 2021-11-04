@@ -1822,6 +1822,7 @@ drawable googleg_standard_color_18
 drawable ic_baseline_account_circle_24
 drawable ic_baseline_add_24
 drawable ic_baseline_add_48
+drawable ic_baseline_brightness_1_24
 drawable ic_baseline_calendar_today_24
 drawable ic_baseline_delete_24
 drawable ic_baseline_edit_24
@@ -2128,7 +2129,9 @@ id line1
 id line3
 id linear
 id listMode
+id list_ind
 id list_item
+id list_txt
 id masked
 id match_constraint
 id match_parent
@@ -2478,6 +2481,7 @@ layout activity_signup
 layout activity_view_habit
 layout activity_view_habit_event
 layout custom_dialog
+layout custom_listview
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
