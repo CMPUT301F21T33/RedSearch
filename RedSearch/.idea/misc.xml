@@ -6,6 +6,7 @@
         <entry key="app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.19010416666666666" />
         <entry key="app/src/main/res/drawable/round_button.xml" value="0.19010416666666666" />
         <entry key="app/src/main/res/layout/activity_add_habit.xml" value="0.1707676939960692" />
+        <entry key="app/src/main/res/layout/activity_add_habit_event.xml" value="0.2676546336431279" />
         <entry key="app/src/main/res/layout/activity_habit_view.xml" value="0.25363788498577783" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.20497358249638378" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.28741911411007753" />
@@ -13,6 +14,7 @@
         <entry key="app/src/main/res/layout/activity_my_habits.xml" value="0.2097787472955452" />
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.21855004020622432" />
         <entry key="app/src/main/res/layout/activity_view_habit.xml" value="0.22796594942727344" />
+        <entry key="app/src/main/res/layout/activity_view_habit_event.xml" value="0.11629553487489531" />
         <entry key="app/src/main/res/layout/habitcontent.xml" value="0.28017453730188174" />
         <entry key="app/src/main/res/layout/home.xml" value="0.1328125" />
         <entry key="app/src/main/res/layout/login.xml" value="0.2355617922382146" />
