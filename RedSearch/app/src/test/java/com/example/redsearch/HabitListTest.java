@@ -7,7 +7,7 @@ import java.util.Date;
 
 public class HabitListTest {
     private HabitList habitList = new HabitList();
-
+    
     private Habit mockHabit() {
         return new Habit("Eat food", "To be full",
                 new Date(2021, 2, 2), true);
@@ -21,8 +21,8 @@ public class HabitListTest {
     @Test
     public void testAddHabit() {
         habitList.addHabit(mockHabit());
-        assertEquals(habitList.getHabitList().size(), 1);
-        assertEquals(habitList.size(), 1);  // Also check size method
+        assertEquals(1, habitList.getHabitList().size());
+        assertEquals(1, habitList.size());  // Also check size method
     }
 
     @Test

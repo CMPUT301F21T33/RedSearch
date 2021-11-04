@@ -77,4 +77,20 @@ public class HabitEvent{
      * @return {@code Bitmap} Image associated with HabitEvent
      */
     Bitmap getImage(){return this.image;}
+
+    /**
+     * Overridden equals method to compare habit events.
+     * @param obj {@code Object} The object class used for comparison
+     * @return {@code boolean} True if objects are equal, False otherwise
+     */
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        } else if (!(obj instanceof HabitEvent)) {
+            return false;
+        }
+        HabitEvent habitEvent = (HabitEvent) obj;
+        return this.comment.equals(habitEvent.comment) && this.date.equals(habitEvent.date);
+    }
 }

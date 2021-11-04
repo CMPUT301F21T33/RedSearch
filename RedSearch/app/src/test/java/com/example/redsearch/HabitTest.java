@@ -37,7 +37,7 @@ public class HabitTest {
 
     @Test
     public void testSetVisible() {
-        habit.setvisible(false);
+        habit.setVisible(false);
         assertFalse(habit.getVisible());
     }
 
@@ -83,6 +83,23 @@ public class HabitTest {
 
         // Green color
         assertEquals("#00A36C", habit.getColor());
+    }
+
+    @Test
+    public void testSetWeekday() {
+        habit.setWeekday(1);
+        assertTrue(habit.getWeekday(1));
+    }
+
+    @Test
+    public void testHabitEventList() {
+        assertEquals(0, habit.countHabitEvents());
+        habit.getHabitEventList().addHabitEvent(new HabitEvent("Dogged a bus",
+                new Date(2025, 11, 23)));
+        assertEquals(1, habit.countHabitEvents());
+        habit.getHabitEventList().removeHabitEvent(new HabitEvent("Dogged a bus",
+                new Date(2025, 11, 23)));
+        assertEquals(0, habit.countHabitEvents());
     }
 
 

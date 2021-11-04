@@ -16,6 +16,8 @@ public class Habit {
     private int Dayshappened = 0;
     private String color;
     private boolean visible;
+    private HabitEventList habitEventList = new HabitEventList();
+    private boolean[] weekday = new boolean[7];
 
     /**
      * Habit Class constructor
@@ -29,7 +31,7 @@ public class Habit {
         setTitle(title);
         setReason(reason);
         setStartDate(date);
-        setvisible(visible);
+        setVisible(visible);
         setColor();
     }
 
@@ -47,7 +49,7 @@ public class Habit {
         setReason(reason);
         setStartDate(date);
         setDaysplanned(daysplanned);
-        setvisible(visible);
+        setVisible(visible);
         setColor();
     }
 
@@ -92,6 +94,24 @@ public class Habit {
      * @return {@code Boolean} True if habit is public, False if not
      */
     boolean getVisible(){return this.visible;}
+
+    /**
+     * Habit event list getter
+     * @return {@code HabitEventList} Habit event list for particular habit
+     */
+    public HabitEventList getHabitEventList() {
+        return habitEventList;
+    }
+
+    public boolean getWeekday(int dayNum) {
+        if (dayNum < 0) {
+            return false;
+        } else if (dayNum > 6) {
+            return false;
+        } else {
+            return weekday[dayNum];
+        }
+    }
 
     /**
      * Habit's title setter
@@ -149,9 +169,7 @@ public class Habit {
      * Habit's visibility setter
      * @param visible {@code Boolean} True if habit is public, Flase is not
      */
-    public void setvisible(boolean visible){this.visible = visible;}
-
-    //@RequiresApi(api = Build.VERSION_CODES.O) // Made me put this in to do the colour part
+    public void setVisible(boolean visible){this.visible = visible;}
 
     /**
      * Set color of habit
@@ -173,6 +191,35 @@ public class Habit {
         } else {
             color = "#C41E3A"; // red, less than 50% of days planned happened
         }
+    }
+
+    /**
+     * If weekday is set, then we plan the habit for that weekday
+     * @param dayNum {@code int} Day of the week represented as an int
+     *                          0 = Monday
+     *                          1 = Tuesday
+     *                          2 = Wednesday
+     *                          3 = Thursday
+     *                          4 = Friday
+     *                          5 = Saturday
+     *                          6 = Sunday
+     */
+    public void setWeekday(int dayNum) {
+        if (dayNum < 0) {
+            return;
+        } else if (dayNum > 6) {
+            return;
+        } else {
+            weekday[dayNum] = true;
+        }
+    }
+
+    /**
+     * Get the number of habit events for a particular habit
+     * @return {@code int} Number of habit events
+     */
+    public int countHabitEvents() {
+        return habitEventList.size();
     }
 
     /**
