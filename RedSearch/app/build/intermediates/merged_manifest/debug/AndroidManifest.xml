@@ -39,12 +39,8 @@
             android:parentActivityName="com.example.redsearch.HomeActivity" />
         <activity
             android:name="com.example.redsearch.SignupActivity"
-<<<<<<< HEAD
-            android:exported="true" />
-=======
             android:exported="true"
             android:parentActivityName="com.example.redsearch.MainActivity" />
->>>>>>> 16cc93fa19ed812e17d1a12ef63b91cddd49d395
         <activity
             android:name="com.example.redsearch.ViewHabitActivity"
             android:exported="true"
