@@ -26,14 +26,28 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         DataBaseAccess db = new DataBaseAccess();
         db.dataInsert("TEST", "Habit 3", "I like things");
+<<<<<<< HEAD
+        db.dataInsert("TEST", "Password", "123password123");
+
+        if(db.PassCheck("TEST", "123password123") == true){
+            db.dataInsert("TEST", "PASS", "PASS");
+        }
+
+        setContentView(R.layout.activity_add_habit);
+
+=======
         db.dataRemove("TEST", "Habit 2");
+>>>>>>> main
         signinButton = findViewById(R.id.signIn);
         signupButton = findViewById(R.id.signUp);
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
         userError = findViewById(R.id.userError);
         passwordError = findViewById(R.id.passwordError);
+<<<<<<< HEAD
+=======
 
+>>>>>>> main
 
     }
 

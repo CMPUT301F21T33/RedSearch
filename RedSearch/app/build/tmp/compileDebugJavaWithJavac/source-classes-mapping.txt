@@ -1,12 +1,7 @@
 com/example/redsearch/HomeActivity.java
  com.example.redsearch.HomeActivity
-com/example/redsearch/DataBaseAccess.java
- com.example.redsearch.DataBaseAccess
- com.example.redsearch.DataBaseAccess$1
- com.example.redsearch.DataBaseAccess$2
- com.example.redsearch.DataBaseAccess$3
- com.example.redsearch.DataBaseAccess$4
- com.example.redsearch.DataBaseAccess$5
+com/example/redsearch/ViewHabitEventActivity.java
+ com.example.redsearch.ViewHabitEventActivity
 com/example/redsearch/User.java
  com.example.redsearch.User
 com/example/redsearch/HabitEvent.java
@@ -19,10 +14,15 @@ com/example/redsearch/HabitEventListAdapter.java
  com.example.redsearch.HabitEventListAdapter
 com/example/redsearch/HabitView.java
  com.example.redsearch.HabitView
+<<<<<<< HEAD
+com/example/redsearch/Habit.java
+ com.example.redsearch.Habit
+=======
 com/example/redsearch/MainActivity.java
  com.example.redsearch.MainActivity
 com/example/redsearch/HabitListAdapter.java
  com.example.redsearch.HabitListAdapter
+>>>>>>> main
 com/example/redsearch/AddHabitActivity.java
  com.example.redsearch.AddHabitActivity
 com/example/redsearch/AddHabitEventActivity.java
@@ -33,11 +33,19 @@ com/example/redsearch/SignupActivity.java
  com.example.redsearch.SignupActivity
 com/example/redsearch/BuildConfig.java
  com.example.redsearch.BuildConfig
+<<<<<<< HEAD
+com/example/redsearch/MainActivity.java
+ com.example.redsearch.MainActivity
+com/example/redsearch/DataBaseAccess.java
+ com.example.redsearch.DataBaseAccess
+ com.example.redsearch.DataBaseAccess$1
+ com.example.redsearch.DataBaseAccess$2
+ com.example.redsearch.DataBaseAccess$3
+ com.example.redsearch.DataBaseAccess$4
+ com.example.redsearch.DataBaseAccess$5
+=======
 com/example/redsearch/HabitEventList.java
  com.example.redsearch.HabitEventList
+>>>>>>> main
 com/example/redsearch/HabitList.java
  com.example.redsearch.HabitList
-com/example/redsearch/ViewHabitEventActivity.java
- com.example.redsearch.ViewHabitEventActivity
-com/example/redsearch/Habit.java
- com.example.redsearch.Habit

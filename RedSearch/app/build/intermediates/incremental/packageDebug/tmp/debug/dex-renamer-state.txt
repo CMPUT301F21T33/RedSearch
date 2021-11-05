@@ -1,12 +1,23 @@
+<<<<<<< HEAD
+#Thu Nov 04 20:43:15 MDT 2021
+=======
 #Thu Nov 04 18:18:29 MDT 2021
+>>>>>>> main
 path.3=classes2.dex
 path.2=4/classes.dex
 path.1=0/classes.dex
 path.0=classes.dex
+<<<<<<< HEAD
+base.3=D\:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.2=D\:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
+base.1=D\:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.0=D\:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+=======
 base.3=/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
 base.2=/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/dex/debug/mergeProjectDexDebug/4/classes.dex
 base.1=/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
 base.0=/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+>>>>>>> main
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
