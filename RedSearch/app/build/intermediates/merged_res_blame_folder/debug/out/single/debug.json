@@ -4,28 +4,28 @@
         "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/toolbar_home.xml"
     },
     {
-        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/merged_res/debug/layout_activity_main.xml.flat",
-        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_main.xml"
-    },
-    {
         "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/merged_res/debug/layout_activity_habit_view.xml.flat",
         "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_habit_view.xml"
+    },
+    {
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/merged_res/debug/layout_activity_main.xml.flat",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_main.xml"
     },
     {
         "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/merged_res/debug/drawable_ic_baseline_account_circle_24.xml.flat",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/drawable/ic_baseline_account_circle_24.xml"
     },
     {
         "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/merged_res/debug/drawable_ic_baseline_image_24.xml.flat",
         "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/drawable/ic_baseline_image_24.xml"
     },
     {
-        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/merged_res/debug/drawable_ic_baseline_account_circle_24.xml.flat",
-        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/drawable/ic_baseline_account_circle_24.xml"
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
         "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/merged_res/debug/layout_activity_login.xml.flat",

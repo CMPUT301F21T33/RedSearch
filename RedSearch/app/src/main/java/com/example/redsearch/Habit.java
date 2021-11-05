@@ -81,43 +81,43 @@ public class Habit {
      * Habit title getter
      * @return {@code String} Title of Habit
      */
-    String getTitle(){return this.title;}
+    public String getTitle(){return this.title;}
 
     /**
      * Habit reason getter
      * @return {@code String} Reason of Habit
      */
-    String getReason(){return this.reason;}
+    public String getReason(){return this.reason;}
 
     /**
      * Habit start date getter
      * @return {@code Date} Date the habit began
      */
-    Date getStartDate(){return this.startDate;}
+    public Date getStartDate(){return this.startDate;}
 
     /**
      * Habit's number of days planned getter
      * @return {@code int} Number of days the habit is planned for
      */
-    int getDaysplanned(){return this.Daysplanned;}
+    public int getDaysplanned(){return this.Daysplanned;}
 
     /**
      * Habit's number of days habit occurred getter
      * @return {@code int} Number of days the habit happened
      */
-    int getDayshappened(){return this.Dayshappened;}
+    public int getDayshappened(){return this.Dayshappened;}
 
     /**
      * Habit's colour getter
      * @return {@code String} Hex code of color of habit
      */
-    String getColor(){return this.color;}
+    public String getColor(){return this.color;}
 
     /**
      * Habit's visibility getter
      * @return {@code Boolean} True if habit is public, False if not
      */
-    boolean getVisible(){return this.visible;}
+    public boolean getVisible(){return this.visible;}
 
     /**
      * Habit event list getter
@@ -202,7 +202,7 @@ public class Habit {
      * Yellow if habit happens at least 50% of the days planned
      * Red if habit happens less that 50% of the days planned
      */
-    private void setColor(){
+    public void setColor(){
         if (this.Daysplanned == 0) {
             color = "#808080";  // grey, no days were planned
             return;

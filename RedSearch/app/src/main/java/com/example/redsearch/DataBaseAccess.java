@@ -24,11 +24,11 @@ import java.util.HashMap;
  * the database
  */
 public class DataBaseAccess {
-    final String TAG = "Sample";
-    FirebaseFirestore db;
-    CollectionReference collectionReference;
-    DocumentSnapshot doc;
-    Boolean check;
+    private final String TAG = "Sample";
+    private FirebaseFirestore db;
+    private CollectionReference collectionReference;
+    private DocumentSnapshot doc;
+    private Boolean check;
 
     /**
      * A constructor that must be called to allow any other class to use
