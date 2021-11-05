@@ -19,6 +19,10 @@ public class AddHabitActivity extends AppCompatActivity {
         setTitle("Add Habit");
     }
 
+    /**
+     * This moves to the next activity when the habit is added
+     * @param view
+     */
     public void goToMyHabits(View view) {
         Intent intent = new Intent(this, MyHabitsActivity.class);
         startActivity(intent);
