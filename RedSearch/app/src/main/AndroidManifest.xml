@@ -11,31 +11,42 @@
         android:theme="@style/Theme.RedSearch">
         <activity
             android:name=".ViewHabitEventActivity"
-            android:exported="true" />
+            android:parentActivityName=".HabitEventListActivity"
+            android:exported="true">
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".HabitEventListActivity" />
+            </activity>
         <activity
             android:name=".AddHabitEventActivity"
+            android:parentActivityName=".HomeActivity"
             android:exported="true" />
         <activity
             android:name=".SignupActivity"
-            android:exported="true"/>
-
-        <activity
-            android:name=".LoginActivity"
+            android:parentActivityName=".MainActivity"
             android:exported="true" />
         <activity
             android:name=".ViewHabitActivity"
+            android:parentActivityName=".MyHabitsActivity"
             android:exported="true" />
         <activity
             android:name=".AddHabitActivity"
+            android:parentActivityName=".MyHabitsActivity"
             android:exported="true" />
         <activity
             android:name=".MyHabitsActivity"
-            android:exported="true" />
+            android:parentActivityName=".HomeActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
         <activity
             android:name=".HomeActivity"
             android:exported="true" />
         <activity
             android:name=".HabitView"
+            android:parentActivityName=".MyHabitsActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

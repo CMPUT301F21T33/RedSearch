@@ -14,10 +14,10 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+
         Toolbar toolbar = findViewById(R.id.toolbar_home);
         setSupportActionBar(toolbar);
         setTitle("Today's Habits");
-
         //Get the username from the previous one
         Intent intent = getIntent();
         String username = intent.getStringExtra(MainActivity.USERNAME); // This is the username that the user gave in the login activity
@@ -29,6 +29,11 @@ public class HomeActivity extends AppCompatActivity {
      */
     public void goToMyHabits(View view) {
         Intent intent = new Intent(this, MyHabitsActivity.class);
+        startActivity(intent);
+    }
+
+    public void goToHabitEventList(View view) {
+        Intent intent = new Intent(this, HabitEventListActivity.class);
         startActivity(intent);
     }
 }

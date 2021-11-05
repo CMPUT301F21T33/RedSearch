@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v21\\values-watch-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\hazar\\.gradle\\caches\\transforms-3\\ccd6c517801f56e7200472775579e27c\\transformed\\appcompat-1.3.1\\res\\values-watch-v21\\values-watch-v21.xml",
+=======
+            "outputFile": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v21/values-watch-v21.xml",
+            "map": [
+                {
+                    "source": "/home/emily84/.gradle/caches/transforms-3/ccd6c517801f56e7200472775579e27c/transformed/appcompat-1.3.1/res/values-watch-v21/values-watch-v21.xml",
+>>>>>>> main
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

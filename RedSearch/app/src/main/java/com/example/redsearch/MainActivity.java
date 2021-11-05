@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         DataBaseAccess db = new DataBaseAccess();
         db.dataInsert("TEST", "Habit 3", "I like things");
+<<<<<<< HEAD
         db.dataInsert("TEST", "Password", "123password123");
 
         if(db.PassCheck("TEST", "123password123") == true){
@@ -34,22 +35,26 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_add_habit);
 
+=======
+        db.dataRemove("TEST", "Habit 2");
+>>>>>>> main
         signinButton = findViewById(R.id.signIn);
         signupButton = findViewById(R.id.signUp);
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
         userError = findViewById(R.id.userError);
         passwordError = findViewById(R.id.passwordError);
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 
     }
 
     /*
-    * When the user clicks Sign In they will be taken to the home page
+    * When the user clicks Sign In they will be taken to the home page after ensuring that both of the fields  username and password are filled
      */
-    public void goToHome(View view) {
-        Intent intent = new Intent(this, HomeActivity.class);
-        startActivity(intent);
-    }
+
 
     public void signinclick(View view){
         Intent intent = new Intent(this, HomeActivity.class);
