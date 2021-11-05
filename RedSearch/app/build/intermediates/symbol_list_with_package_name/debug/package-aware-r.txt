@@ -2021,6 +2021,7 @@ id custom
 id customPanel
 id cut
 id dark
+id dateText
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -2235,6 +2236,7 @@ id progress_circular
 id progress_horizontal
 id radio
 id ratio
+id reasonText
 id rectangles
 id redSearch
 id reverseSawtooth
@@ -2335,10 +2337,7 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
-id textView2
 id textView3
-id textView4
-id textView5
 id textView6
 id textView7
 id text_input_end_icon
@@ -2354,6 +2353,7 @@ id thursday
 id time
 id title
 id titleDividerNoCustom
+id titleText
 id title_template
 id toggle
 id toolbar_add_habit
