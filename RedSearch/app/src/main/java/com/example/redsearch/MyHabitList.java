@@ -21,12 +21,19 @@ public class MyHabitList extends ArrayAdapter<Habit> {
     private ArrayList<Habit> habits;
     private Context context;
 
+    /**
+     * My habit list constructor
+     */
     public MyHabitList(Context context, ArrayList<Habit> habits){
         super(context, 0, habits);
         this.habits = habits;
         this.context = context;
     }
 
+    /**
+     * HabitList adapter
+     * @return {@code View} My habits view
+     */
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -41,7 +48,9 @@ public class MyHabitList extends ArrayAdapter<Habit> {
         TextView list_txt = (TextView) convertView.findViewById(R.id.list_txt);
         ImageView list_ind = (ImageView) convertView.findViewById(R.id.list_ind);
 
+        //set text of TextView
         list_txt.setText(habit.getTitle());
+        //change indicator color
         list_ind.setColorFilter(Color.parseColor(habit.getColor()), PorterDuff.Mode.MULTIPLY);
 
         return convertView;
