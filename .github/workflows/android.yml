@@ -1,5 +1,9 @@
 name: Android CI
 
+defaults:
+  run:
+    working-directory: RedSearch
+
 on:
   push:
     branches: [ master ]
