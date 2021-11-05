@@ -34,7 +34,8 @@
         android:layout_gravity="left"
         android:background="@color/purple_200"
         app:showAsAction="ifRoom"
-        app:srcCompat="@drawable/ic_baseline_calendar_today_24" />
+        app:srcCompat="@drawable/ic_baseline_calendar_today_24"
+        android:onClick="goToHabitEventList"/>
 
 
 </androidx.appcompat.widget.Toolbar>

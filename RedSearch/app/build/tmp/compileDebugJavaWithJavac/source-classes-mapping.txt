@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 com/example/redsearch/HomeActivity.java
  com.example.redsearch.HomeActivity
+=======
+com/example/redsearch/Habit.java
+ com.example.redsearch.Habit
+>>>>>>> 16cc93fa19ed812e17d1a12ef63b91cddd49d395
 com/example/redsearch/DataBaseAccess.java
  com.example.redsearch.DataBaseAccess
  com.example.redsearch.DataBaseAccess$1
@@ -9,10 +14,19 @@ com/example/redsearch/DataBaseAccess.java
  com.example.redsearch.DataBaseAccess$5
 com/example/redsearch/User.java
  com.example.redsearch.User
+<<<<<<< HEAD
 com/example/redsearch/HabitEventListActivity.java
  com.example.redsearch.HabitEventListActivity
 com/example/redsearch/ViewHabitActivity.java
  com.example.redsearch.ViewHabitActivity
+=======
+com/example/redsearch/BuildConfig.java
+ com.example.redsearch.BuildConfig
+com/example/redsearch/HabitList.java
+ com.example.redsearch.HabitList
+com/example/redsearch/HomeActivity.java
+ com.example.redsearch.HomeActivity
+>>>>>>> 16cc93fa19ed812e17d1a12ef63b91cddd49d395
 com/example/redsearch/HabitView.java
  com.example.redsearch.HabitView
 com/example/redsearch/MainActivity.java
@@ -25,6 +39,7 @@ com/example/redsearch/MyHabitsActivity.java
  com.example.redsearch.MyHabitsActivity
 com/example/redsearch/SignupActivity.java
  com.example.redsearch.SignupActivity
+<<<<<<< HEAD
 com/example/redsearch/BuildConfig.java
  com.example.redsearch.BuildConfig
 com/example/redsearch/HabitList.java
@@ -33,3 +48,11 @@ com/example/redsearch/ViewHabitEventActivity.java
  com.example.redsearch.ViewHabitEventActivity
 com/example/redsearch/Habit.java
  com.example.redsearch.Habit
+=======
+com/example/redsearch/HabitEventListActivity.java
+ com.example.redsearch.HabitEventListActivity
+com/example/redsearch/ViewHabitActivity.java
+ com.example.redsearch.ViewHabitActivity
+com/example/redsearch/ViewHabitEventActivity.java
+ com.example.redsearch.ViewHabitEventActivity
+>>>>>>> 16cc93fa19ed812e17d1a12ef63b91cddd49d395

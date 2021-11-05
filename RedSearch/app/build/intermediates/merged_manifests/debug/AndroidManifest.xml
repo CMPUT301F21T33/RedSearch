@@ -27,28 +27,47 @@
         android:theme="@style/Theme.RedSearch" >
         <activity
             android:name="com.example.redsearch.ViewHabitEventActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName="com.example.redsearch.HabitEventListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HabitEventListActivity" />
+        </activity>
         <activity
             android:name="com.example.redsearch.AddHabitEventActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName="com.example.redsearch.HomeActivity" />
         <activity
             android:name="com.example.redsearch.SignupActivity"
+<<<<<<< HEAD
             android:exported="true" />
+=======
+            android:exported="true"
+            android:parentActivityName="com.example.redsearch.MainActivity" />
+>>>>>>> 16cc93fa19ed812e17d1a12ef63b91cddd49d395
         <activity
             android:name="com.example.redsearch.ViewHabitActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName="com.example.redsearch.MyHabitsActivity" />
         <activity
             android:name="com.example.redsearch.AddHabitActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName="com.example.redsearch.MyHabitsActivity" />
         <activity
             android:name="com.example.redsearch.MyHabitsActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName="com.example.redsearch.HomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
         <activity
             android:name="com.example.redsearch.HomeActivity"
             android:exported="true" />
         <activity
             android:name="com.example.redsearch.HabitView"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName="com.example.redsearch.MyHabitsActivity" />
         <activity
             android:name="com.example.redsearch.MainActivity"
             android:exported="true" >

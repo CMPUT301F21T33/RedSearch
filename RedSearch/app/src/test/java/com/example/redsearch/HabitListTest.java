@@ -1,7 +1,66 @@
 package com.example.redsearch;
 
-import junit.framework.TestCase;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
-public class HabitListTest extends TestCase {
+import java.util.Date;
 
+public class HabitListTest {
+    private HabitList habitList = new HabitList();
+    
+    private Habit mockHabit() {
+        return new Habit("Eat food", "To be full",
+                new Date(2021, 2, 2), true);
+    }
+
+    private Habit fakeHabit() {
+        return new Habit("Dance", "Why not?",
+                new Date(2023, 2, 2), false);
+    }
+
+    @Test
+    public void testAddHabit() {
+        habitList.addHabit(mockHabit());
+        assertEquals(1, habitList.getHabitList().size());
+        assertEquals(1, habitList.size());  // Also check size method
+    }
+
+    @Test
+    public void testFailedAddHabit() {
+        habitList.addHabit(mockHabit());
+        assertEquals(habitList.size(), 1);  // Also check size method
+        assertThrows(IllegalArgumentException.class, () -> {
+            habitList.addHabit(mockHabit());
+        });
+    }
+
+    @Test
+    public void testRemoveHabit() {
+        habitList.addHabit(mockHabit());
+        assertEquals(habitList.size(), 1);
+        habitList.removeHabit(mockHabit());
+        assertEquals(habitList.size(), 0);
+    }
+
+    @Test
+    public void testFailedRemoveHabit() {
+        habitList.addHabit(mockHabit());
+        assertEquals(habitList.size(), 1);
+        assertThrows(IllegalArgumentException.class, () -> {
+            habitList.removeHabit(fakeHabit());
+        });
+    }
+
+    @Test
+    public void testHasHabit() {
+        habitList.addHabit(mockHabit());
+        assertTrue(habitList.hasHabit(mockHabit()));
+        assertFalse(habitList.hasHabit(fakeHabit()));
+    }
+
+    @Test
+    public void testgetHabit() {
+        habitList.addHabit(mockHabit());
+        assertEquals(habitList.getHabit(0), mockHabit());
+    }
 }
