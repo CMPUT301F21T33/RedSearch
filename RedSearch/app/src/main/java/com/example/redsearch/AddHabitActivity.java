@@ -10,6 +10,10 @@ import android.widget.EditText;
 
 import java.util.Date;
 
+/**
+ * This is an activity that is where the user can add a habit
+ */
+
 public class AddHabitActivity extends AppCompatActivity {
 
     DataBaseAccess db = new DataBaseAccess();
@@ -26,7 +30,7 @@ public class AddHabitActivity extends AppCompatActivity {
 
     /**
      * This moves to the next activity when the habit is added
-     * @param view
+     * @param view (@code view} This is the view variable it takes in
      */
     public void goToMyHabits(View view) {
         EditText title = (EditText) findViewById(R.id.editTextTitle);
