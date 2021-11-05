@@ -32,7 +32,7 @@ import android.graphics.Bitmap;
 public class HabitEvent{
     private String comment;
     private Date date;
-    public Bitmap image;
+    private Bitmap image;
 
     /**
      * Habit Event Class constructor
@@ -82,7 +82,7 @@ public class HabitEvent{
      * HabitEvent's image setter
      * @param Image {@code Bitmap} image associated with HabitEvent
      */
-    private void setImage(Bitmap Image) {this.image = Image;}
+    public void setImage(Bitmap Image) {this.image = Image;}
 
     /**
      * HabitEvent date getter
