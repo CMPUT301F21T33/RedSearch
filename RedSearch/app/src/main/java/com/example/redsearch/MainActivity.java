@@ -62,12 +62,12 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (goodinput) {
-            //Query the database for the username
-            // Call the query command that Justin is making !!!!
-            //If returns false
+            //Query the database for the username  TODO
+            // Call the query command that Justin is making !!!! TODO
+            //If returns false TODO
             userError.setText("Error username does not exist");
-            // if(not false from above){
-            // query the database with the username and the password
+            // if(not false from above){ TODO
+            // query the database with the username and the password TODO
             // if false
             passwordError.setText("Error password does not match username");
         }
@@ -98,6 +98,7 @@ public class MainActivity extends AppCompatActivity {
             goodinput = false;
         }
         if (goodinput) {
+            // Verify that the username is not already in use through a databse query TODO
             db.dataInsert(usernameinput, "password", passwordinput);
             User newuser = new User(usernameinput, passwordinput);
             intent.putExtra(USERNAME, usernameinput);

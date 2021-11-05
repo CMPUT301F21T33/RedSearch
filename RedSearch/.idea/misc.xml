@@ -5,7 +5,7 @@
       <map>
         <entry key="app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.19010416666666666" />
         <entry key="app/src/main/res/drawable/round_button.xml" value="0.19010416666666666" />
-        <entry key="app/src/main/res/layout/activity_add_habit.xml" value="0.1707676939960692" />
+        <entry key="app/src/main/res/layout/activity_add_habit.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_add_habit_event.xml" value="0.2676546336431279" />
         <entry key="app/src/main/res/layout/activity_habit_event_list.xml" value="0.16258048767713168" />
         <entry key="app/src/main/res/layout/activity_habit_view.xml" value="0.25363788498577783" />
