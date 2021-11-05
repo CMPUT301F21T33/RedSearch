@@ -1,9 +1,5 @@
 name: Android CI
 
-defaults:
-  run:
-    working-directory: RedSearch/RedSearch
-
 on:
   push:
     branches: [ main ]
@@ -14,6 +10,9 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: RedSearch/RedSearch
 
     steps:
     - uses: actions/checkout@v2
