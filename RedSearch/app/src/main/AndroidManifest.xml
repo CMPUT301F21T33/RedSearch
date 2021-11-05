@@ -10,8 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RedSearch">
         <activity
-<<<<<<< HEAD
-<<<<<<< HEAD
             android:name=".ViewHabitEventActivity"
             android:exported="true" />
         <activity
@@ -19,13 +17,8 @@
             android:exported="true" />
         <activity
             android:name=".SignupActivity"
-=======
-            android:name=".LoginActivity"
->>>>>>> main
             android:exported="true" />
         <activity
-=======
->>>>>>> 1a37feda54e2c8144a4879289c450a49ab9dc72e
             android:name=".ViewHabitActivity"
             android:exported="true" />
         <activity

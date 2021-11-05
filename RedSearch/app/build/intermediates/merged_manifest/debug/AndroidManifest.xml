@@ -26,7 +26,6 @@
         android:testOnly="true"
         android:theme="@style/Theme.RedSearch" >
         <activity
-<<<<<<< HEAD
             android:name="com.example.redsearch.ViewHabitEventActivity"
             android:exported="true" />
         <activity
@@ -34,9 +33,6 @@
             android:exported="true" />
         <activity
             android:name="com.example.redsearch.SignupActivity"
-=======
-            android:name="com.example.redsearch.LoginActivity"
->>>>>>> 1a37feda54e2c8144a4879289c450a49ab9dc72e
             android:exported="true" />
         <activity
             android:name="com.example.redsearch.ViewHabitActivity"

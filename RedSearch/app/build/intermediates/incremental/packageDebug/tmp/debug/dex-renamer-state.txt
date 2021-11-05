@@ -1,19 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-#Thu Nov 04 14:01:54 MDT 2021
-=======
-<<<<<<< HEAD
-#Wed Nov 03 18:37:29 MDT 2021
+#Thu Nov 04 15:57:57 MDT 2021
 path.3=classes2.dex
-=======
-#Fri Oct 29 13:53:48 MDT 2021
->>>>>>> main
-base.2=/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/build/intermediates/dex/debug/mergeProjectDexDebug/4/classes.dex
->>>>>>> main
-=======
-#Thu Nov 04 15:20:50 MDT 2021
-path.3=classes2.dex
->>>>>>> 1a37feda54e2c8144a4879289c450a49ab9dc72e
 path.2=4/classes.dex
 path.1=0/classes.dex
 path.0=classes.dex

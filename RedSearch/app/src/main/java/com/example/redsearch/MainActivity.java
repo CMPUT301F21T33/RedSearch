@@ -23,20 +23,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
         setContentView(R.layout.activity_login);
         DataBaseAccess db = new DataBaseAccess();
         db.dataInsert("TEST", "Habit 3", "I like things");
         db.dataRemove("TEST", "Habit 2");
-=======
-        setContentView(R.layout.activity_add_habit);
->>>>>>> main
->>>>>>> main
-=======
         signinButton = findViewById(R.id.signIn);
         signupButton = findViewById(R.id.signUp);
         username = findViewById(R.id.username);
@@ -46,8 +37,6 @@ public class MainActivity extends AppCompatActivity {
         db.dataInsert("TEST", "Habit 3", "I like things");
         db.dataRemove("TEST", "Habit 2");
         db.dataInsert("TEST", "Habit 3", "Don't get hit by car");
-
->>>>>>> 1a37feda54e2c8144a4879289c450a49ab9dc72e
     }
 
     /*
