@@ -1,13 +1,14 @@
 {
   "project_info": {
     "project_number": "856967101746",
+    "firebase_url": "https://redsearch-16687-default-rtdb.firebaseio.com",
     "project_id": "redsearch-16687",
     "storage_bucket": "redsearch-16687.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:856967101746:android:cad085a1d5dd1a09756b2b",
+        "mobilesdk_app_id": "1:856967101746:android:27c60d9cd874a6f7756b2b",
         "android_client_info": {
           "package_name": "com.example.redsearch"
         }

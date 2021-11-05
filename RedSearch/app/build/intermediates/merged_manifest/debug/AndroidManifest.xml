@@ -8,8 +8,10 @@
         android:minSdkVersion="21"
         android:targetSdkVersion="31" />
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+    <!-- <uses-sdk android:minSdkVersion="14" /> -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
 
@@ -24,20 +26,44 @@
         android:testOnly="true"
         android:theme="@style/Theme.RedSearch" >
         <activity
+            android:name="com.example.redsearch.ViewHabitEventActivity"
+            android:exported="true"
+            android:parentActivityName="com.example.redsearch.HabitEventListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HabitEventListActivity" />
+        </activity>
+        <activity
+            android:name="com.example.redsearch.AddHabitEventActivity"
+            android:exported="true"
+            android:parentActivityName="com.example.redsearch.HomeActivity" />
+        <activity
+            android:name="com.example.redsearch.SignupActivity"
+            android:exported="true"
+            android:parentActivityName="com.example.redsearch.MainActivity" />
+        <activity
             android:name="com.example.redsearch.ViewHabitActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName="com.example.redsearch.MyHabitsActivity" />
         <activity
             android:name="com.example.redsearch.AddHabitActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName="com.example.redsearch.MyHabitsActivity" />
         <activity
             android:name="com.example.redsearch.MyHabitsActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName="com.example.redsearch.HomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
         <activity
             android:name="com.example.redsearch.HomeActivity"
             android:exported="true" />
         <activity
             android:name="com.example.redsearch.HabitView"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName="com.example.redsearch.MyHabitsActivity" />
         <activity
             android:name="com.example.redsearch.MainActivity"
             android:exported="true" >
@@ -53,6 +79,9 @@
             android:directBootAware="true"
             android:exported="false" >
             <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
@@ -66,6 +95,11 @@
             android:directBootAware="true"
             android:exported="false"
             android:initOrder="100" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
