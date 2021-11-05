@@ -5,6 +5,10 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 
+/**
+ * This is the AddHabitEventActivity that is used to add a habit event
+ */
+
 public class AddHabitEventActivity extends AppCompatActivity {
 
     @Override

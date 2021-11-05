@@ -5,6 +5,11 @@ import android.widget.ArrayAdapter;
 
 import java.util.ArrayList;
 
+/**
+ * This is the HabitEventListAdapter Class
+ * This class exists to create an Adapter for the HabitEventList class
+ */
+
 public class HabitEventListAdapter extends ArrayAdapter<HabitEvent> {
     private ArrayList<HabitEvent> habitEvents;
     private Context context;

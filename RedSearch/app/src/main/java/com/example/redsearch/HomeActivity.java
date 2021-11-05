@@ -24,8 +24,9 @@ public class HomeActivity extends AppCompatActivity {
 
     }
 
-    /*
-     * When the user clicks View All they will be taken to the my habits page
+    /**
+     * This moves to the MyHabitsActivity when the ViewAll button is pressed
+     * @param view {@code View} takes in the view
      */
     public void goToMyHabits(View view) {
         Intent intent = new Intent(this, MyHabitsActivity.class);

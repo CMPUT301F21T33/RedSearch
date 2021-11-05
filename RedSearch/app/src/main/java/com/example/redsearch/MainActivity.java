@@ -34,10 +34,12 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    /*
-    * When the user clicks Sign In they will be taken to the home page after ensuring that both of the fields  username and password are filled
-     */
 
+    /**
+     * This is the function that runs when the signin button is pressed
+     * This function verifies the user data and if it is correct then it lets them into the app TODO right now it does not verify anything
+     * @param view {@code View} Takes in the view from the activity
+     */
 
     public void signinclick(View view){
         Intent intent = new Intent(this, HomeActivity.class);
@@ -77,6 +79,13 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
     }
+
+    /**
+     * This function runs when the signupclick button is pressed
+     * This functions verifies that a username is not already taken TODO This does not happen right now
+     * Then it creates a new user and lets them enter the app
+     * @param view {@code View} This function takes in the view of the activity
+     */
 
     public void signupclick(View view){
         Intent intent = new Intent(this, HomeActivity.class);

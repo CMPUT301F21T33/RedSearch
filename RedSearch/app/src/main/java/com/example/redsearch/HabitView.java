@@ -4,6 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+/**
+ * This is the HabitView activity this activity is to view all of your habits
+ */
+
 public class HabitView extends AppCompatActivity {
 
     @Override
