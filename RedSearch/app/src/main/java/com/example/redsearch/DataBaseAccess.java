@@ -5,7 +5,6 @@ import android.util.Log;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -29,6 +28,7 @@ public class DataBaseAccess {
     FirebaseFirestore db;
     CollectionReference collectionReference;
     DocumentSnapshot doc;
+    Boolean check;
 
     /**
      * A constructor that must be called to allow any other class to use
@@ -49,6 +49,33 @@ public class DataBaseAccess {
      */
     public void dataInsert(String Username, String habitName, String habitData){
         HashMap<String, String> inputData = new HashMap<>();
+        inputData.put(habitName,habitData);
+        collectionReference.document(Username).set(inputData,SetOptions.merge()).addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                // These are a method which gets executed when the task is succeeded
+                Log.d(TAG, "Data has been added successfully!");
+
+            }
+        })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        // These are a method which gets executed if there’s any problem
+                        Log.d(TAG, "Data could not be added!" + e.toString());
+                    }
+                });
+
+    }
+
+    /**
+     * A modified version of the above insert that allows a habit object to be inserted
+     * @param Username the users username
+     * @param habitName a name for the habit object to be inserted
+     * @param habitData The habit object to be added
+     */
+    public void dataInsert(String Username, String habitName, Habit habitData){
+        HashMap<String, Habit> inputData = new HashMap<>();
         inputData.put(habitName,habitData);
         collectionReference.document(Username).set(inputData,SetOptions.merge()).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
@@ -118,30 +145,35 @@ public class DataBaseAccess {
 
     }
 
-
+    /**
+     * TODO: This function is suppose to verify that a entered passsword exists in the database
+     * Currently it does not work
+     * @param Username
+     * @param Password
+     * @return
+     */
     public Boolean PassCheck (String Username, String Password){
-        Boolean passCheck = false;
+        check = false;
         DocumentReference docRef = collectionReference.document(Username);
-        docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
-            @Override
-            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-                if (task.isSuccessful()) {
-                    DocumentSnapshot document = task.getResult();
-                    doc = document;
-                    if (document.exists()) {
-                        Log.d(TAG, "DocumentSnapshot data: " + document.getData());
-                        return;
-                    } else {
-                        Log.d(TAG, "No such document");
+        Task data = docRef.get().addOnCompleteListener(task -> {
+            if (task.isSuccessful()) {
+                DocumentSnapshot document = task.getResult();
+                if (document.exists()) {
+                    Log.d(TAG, "DocumentSnapshot data: " + document.getData());
+                    String passData = (String) document.get("Password");
+                    passData = passData.trim();
+                    if(passData.equals(Password) == true){
+                        check = true;
                     }
                 } else {
-                    Log.d(TAG, "get failed with ", task.getException());
+                    Log.d(TAG, "No such document");
                 }
+            } else {
+                Log.d(TAG, "get failed with ", task.getException());
             }
-
-
         });
-        return passCheck;
+        System.out.println("Test");
+        return check;
     }
 
 
