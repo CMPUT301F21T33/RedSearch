@@ -7,6 +7,7 @@ com/example/redsearch/DataBaseAccess.java
  com.example.redsearch.DataBaseAccess$3
  com.example.redsearch.DataBaseAccess$4
  com.example.redsearch.DataBaseAccess$5
+ com.example.redsearch.DataBaseAccess$6
 com/example/redsearch/User.java
  com.example.redsearch.User
 com/example/redsearch/HabitEventListActivity.java

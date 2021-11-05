@@ -6,200 +6,200 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml
+8-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="31" />
-9-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml
+9-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml
 10
 11    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
 12    <!-- <uses-sdk android:minSdkVersion="14" /> -->
 13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-13-->[com.google.firebase:firebase-firestore:23.0.4] /Users/LaurenHerman/.gradle/caches/transforms-3/a3465276429eb412448da871fa323abc/transformed/jetified-firebase-firestore-23.0.4/AndroidManifest.xml:13:5-79
-13-->[com.google.firebase:firebase-firestore:23.0.4] /Users/LaurenHerman/.gradle/caches/transforms-3/a3465276429eb412448da871fa323abc/transformed/jetified-firebase-firestore-23.0.4/AndroidManifest.xml:13:22-76
+13-->[com.google.firebase:firebase-firestore:23.0.4] C:\Users\hazar\.gradle\caches\transforms-3\a3465276429eb412448da871fa323abc\transformed\jetified-firebase-firestore-23.0.4\AndroidManifest.xml:13:5-79
+13-->[com.google.firebase:firebase-firestore:23.0.4] C:\Users\hazar\.gradle\caches\transforms-3\a3465276429eb412448da871fa323abc\transformed\jetified-firebase-firestore-23.0.4\AndroidManifest.xml:13:22-76
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->[com.google.firebase:firebase-firestore:23.0.4] /Users/LaurenHerman/.gradle/caches/transforms-3/a3465276429eb412448da871fa323abc/transformed/jetified-firebase-firestore-23.0.4/AndroidManifest.xml:14:5-67
-14-->[com.google.firebase:firebase-firestore:23.0.4] /Users/LaurenHerman/.gradle/caches/transforms-3/a3465276429eb412448da871fa323abc/transformed/jetified-firebase-firestore-23.0.4/AndroidManifest.xml:14:22-64
+14-->[com.google.firebase:firebase-firestore:23.0.4] C:\Users\hazar\.gradle\caches\transforms-3\a3465276429eb412448da871fa323abc\transformed\jetified-firebase-firestore-23.0.4\AndroidManifest.xml:14:5-67
+14-->[com.google.firebase:firebase-firestore:23.0.4] C:\Users\hazar\.gradle\caches\transforms-3\a3465276429eb412448da871fa323abc\transformed\jetified-firebase-firestore-23.0.4\AndroidManifest.xml:14:22-64
 15    <uses-permission android:name="android.permission.WAKE_LOCK" />
-15-->[com.google.android.gms:play-services-measurement-api:19.0.2] /Users/LaurenHerman/.gradle/caches/transforms-3/14292a61aa604dc39dd0e7e08a9296f1/transformed/jetified-play-services-measurement-api-19.0.2/AndroidManifest.xml:24:5-68
-15-->[com.google.android.gms:play-services-measurement-api:19.0.2] /Users/LaurenHerman/.gradle/caches/transforms-3/14292a61aa604dc39dd0e7e08a9296f1/transformed/jetified-play-services-measurement-api-19.0.2/AndroidManifest.xml:24:22-65
+15-->[com.google.android.gms:play-services-measurement-api:19.0.2] C:\Users\hazar\.gradle\caches\transforms-3\14292a61aa604dc39dd0e7e08a9296f1\transformed\jetified-play-services-measurement-api-19.0.2\AndroidManifest.xml:24:5-68
+15-->[com.google.android.gms:play-services-measurement-api:19.0.2] C:\Users\hazar\.gradle\caches\transforms-3\14292a61aa604dc39dd0e7e08a9296f1\transformed\jetified-play-services-measurement-api-19.0.2\AndroidManifest.xml:24:22-65
 16    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-16-->[com.google.android.gms:play-services-measurement:19.0.2] /Users/LaurenHerman/.gradle/caches/transforms-3/1d4b8a4caa0d0798b6a2fb3d69328b21/transformed/jetified-play-services-measurement-19.0.2/AndroidManifest.xml:26:5-110
-16-->[com.google.android.gms:play-services-measurement:19.0.2] /Users/LaurenHerman/.gradle/caches/transforms-3/1d4b8a4caa0d0798b6a2fb3d69328b21/transformed/jetified-play-services-measurement-19.0.2/AndroidManifest.xml:26:22-107
+16-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\hazar\.gradle\caches\transforms-3\1d4b8a4caa0d0798b6a2fb3d69328b21\transformed\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:26:5-110
+16-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\hazar\.gradle\caches\transforms-3\1d4b8a4caa0d0798b6a2fb3d69328b21\transformed\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:26:22-107
 17
 18    <application
-18-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:5:5-49:19
+18-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:5:5-49:19
 19        android:allowBackup="true"
-19-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:6:9-35
+19-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:6:9-35
 20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-20-->[androidx.core:core:1.5.0] /Users/LaurenHerman/.gradle/caches/transforms-3/1c82df0e58fbd0ba966b0ae0d34659c1/transformed/core-1.5.0/AndroidManifest.xml:24:18-86
+20-->[androidx.core:core:1.5.0] C:\Users\hazar\.gradle\caches\transforms-3\1c82df0e58fbd0ba966b0ae0d34659c1\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
 21        android:debuggable="true"
 22        android:icon="@mipmap/ic_launcher"
-22-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:7:9-43
+22-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:7:9-43
 23        android:label="@string/app_name"
-23-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:8:9-41
+23-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:8:9-41
 24        android:roundIcon="@mipmap/ic_launcher_round"
-24-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:9:9-54
+24-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:9:9-54
 25        android:supportsRtl="true"
-25-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:10:9-35
+25-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:10:9-35
 26        android:testOnly="true"
 27        android:theme="@style/Theme.RedSearch" >
-27-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:11:9-47
+27-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:11:9-47
 28        <activity
-28-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:12:9-14:39
+28-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:12:9-14:39
 29            android:name="com.example.redsearch.ViewHabitEventActivity"
-29-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:13:13-51
+29-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:13:13-51
 30            android:exported="true" />
-30-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:14:13-36
+30-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:14:13-36
 31        <activity
-31-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:15:9-17:39
+31-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:15:9-17:39
 32            android:name="com.example.redsearch.AddHabitEventActivity"
-32-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:16:13-50
+32-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:16:13-50
 33            android:exported="true" />
-33-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:17:13-36
+33-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:17:13-36
 34        <activity
-34-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:18:9-20:38
+34-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:18:9-20:38
 35            android:name="com.example.redsearch.SignupActivity"
-35-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:19:13-43
+35-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:19:13-43
 36            android:exported="true" />
-36-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:20:13-36
+36-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:20:13-36
 37        <activity
-37-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:22:9-24:39
+37-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:22:9-24:39
 38            android:name="com.example.redsearch.LoginActivity"
-38-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:23:13-42
+38-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:23:13-42
 39            android:exported="true" />
-39-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:24:13-36
+39-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:24:13-36
 40        <activity
-40-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:25:9-27:39
+40-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:25:9-27:39
 41            android:name="com.example.redsearch.ViewHabitActivity"
-41-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:26:13-46
+41-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:26:13-46
 42            android:exported="true" />
-42-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:27:13-36
+42-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:27:13-36
 43        <activity
-43-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:28:9-30:39
+43-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:28:9-30:39
 44            android:name="com.example.redsearch.AddHabitActivity"
-44-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:29:13-45
+44-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:29:13-45
 45            android:exported="true" />
-45-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:30:13-36
+45-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:30:13-36
 46        <activity
-46-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:31:9-33:39
+46-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:31:9-33:39
 47            android:name="com.example.redsearch.MyHabitsActivity"
-47-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:32:13-45
+47-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:32:13-45
 48            android:exported="true" />
-48-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:33:13-36
+48-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:33:13-36
 49        <activity
-49-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:34:9-36:39
+49-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:34:9-36:39
 50            android:name="com.example.redsearch.HomeActivity"
-50-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:35:13-41
+50-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:35:13-41
 51            android:exported="true" />
-51-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:36:13-36
+51-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:36:13-36
 52        <activity
-52-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:37:9-39:39
+52-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:37:9-39:39
 53            android:name="com.example.redsearch.HabitView"
-53-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:38:13-38
+53-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:38:13-38
 54            android:exported="true" />
-54-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:39:13-36
+54-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:39:13-36
 55        <activity
-55-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:40:9-48:20
+55-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:40:9-48:20
 56            android:name="com.example.redsearch.MainActivity"
-56-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:41:13-41
+56-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:41:13-41
 57            android:exported="true" >
-57-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:42:13-36
+57-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:42:13-36
 58            <intent-filter>
-58-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:43:13-47:29
+58-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:43:13-47:29
 59                <action android:name="android.intent.action.MAIN" />
-59-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:44:17-69
-59-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:44:25-66
+59-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:44:17-69
+59-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:44:25-66
 60
 61                <category android:name="android.intent.category.LAUNCHER" />
-61-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:46:17-77
-61-->/Users/LaurenHerman/Documents/GitHub/RedSearch/RedSearch/app/src/main/AndroidManifest.xml:46:27-74
+61-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:46:17-77
+61-->D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:46:27-74
 62            </intent-filter>
 63        </activity>
 64
 65        <service
-65-->[com.google.firebase:firebase-firestore:23.0.4] /Users/LaurenHerman/.gradle/caches/transforms-3/a3465276429eb412448da871fa323abc/transformed/jetified-firebase-firestore-23.0.4/AndroidManifest.xml:17:9-23:19
+65-->[com.google.firebase:firebase-firestore:23.0.4] C:\Users\hazar\.gradle\caches\transforms-3\a3465276429eb412448da871fa323abc\transformed\jetified-firebase-firestore-23.0.4\AndroidManifest.xml:17:9-23:19
 66            android:name="com.google.firebase.components.ComponentDiscoveryService"
-66-->[com.google.firebase:firebase-firestore:23.0.4] /Users/LaurenHerman/.gradle/caches/transforms-3/a3465276429eb412448da871fa323abc/transformed/jetified-firebase-firestore-23.0.4/AndroidManifest.xml:18:13-84
+66-->[com.google.firebase:firebase-firestore:23.0.4] C:\Users\hazar\.gradle\caches\transforms-3\a3465276429eb412448da871fa323abc\transformed\jetified-firebase-firestore-23.0.4\AndroidManifest.xml:18:13-84
 67            android:directBootAware="true"
-67-->[com.google.firebase:firebase-common:20.0.0] /Users/LaurenHerman/.gradle/caches/transforms-3/86e13b6ca81a6c901885b317cb2ca953/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+67-->[com.google.firebase:firebase-common:20.0.0] C:\Users\hazar\.gradle\caches\transforms-3\86e13b6ca81a6c901885b317cb2ca953\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
 68            android:exported="false" >
-68-->[com.google.firebase:firebase-firestore:23.0.4] /Users/LaurenHerman/.gradle/caches/transforms-3/a3465276429eb412448da871fa323abc/transformed/jetified-firebase-firestore-23.0.4/AndroidManifest.xml:19:13-37
+68-->[com.google.firebase:firebase-firestore:23.0.4] C:\Users\hazar\.gradle\caches\transforms-3\a3465276429eb412448da871fa323abc\transformed\jetified-firebase-firestore-23.0.4\AndroidManifest.xml:19:13-37
 69            <meta-data
-69-->[com.google.firebase:firebase-firestore:23.0.4] /Users/LaurenHerman/.gradle/caches/transforms-3/a3465276429eb412448da871fa323abc/transformed/jetified-firebase-firestore-23.0.4/AndroidManifest.xml:20:13-22:85
+69-->[com.google.firebase:firebase-firestore:23.0.4] C:\Users\hazar\.gradle\caches\transforms-3\a3465276429eb412448da871fa323abc\transformed\jetified-firebase-firestore-23.0.4\AndroidManifest.xml:20:13-22:85
 70                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-70-->[com.google.firebase:firebase-firestore:23.0.4] /Users/LaurenHerman/.gradle/caches/transforms-3/a3465276429eb412448da871fa323abc/transformed/jetified-firebase-firestore-23.0.4/AndroidManifest.xml:21:17-111
+70-->[com.google.firebase:firebase-firestore:23.0.4] C:\Users\hazar\.gradle\caches\transforms-3\a3465276429eb412448da871fa323abc\transformed\jetified-firebase-firestore-23.0.4\AndroidManifest.xml:21:17-111
 71                android:value="com.google.firebase.components.ComponentRegistrar" />
-71-->[com.google.firebase:firebase-firestore:23.0.4] /Users/LaurenHerman/.gradle/caches/transforms-3/a3465276429eb412448da871fa323abc/transformed/jetified-firebase-firestore-23.0.4/AndroidManifest.xml:22:17-82
+71-->[com.google.firebase:firebase-firestore:23.0.4] C:\Users\hazar\.gradle\caches\transforms-3\a3465276429eb412448da871fa323abc\transformed\jetified-firebase-firestore-23.0.4\AndroidManifest.xml:22:17-82
 72            <meta-data
-72-->[com.google.android.gms:play-services-measurement-api:19.0.2] /Users/LaurenHerman/.gradle/caches/transforms-3/14292a61aa604dc39dd0e7e08a9296f1/transformed/jetified-play-services-measurement-api-19.0.2/AndroidManifest.xml:30:13-32:85
+72-->[com.google.android.gms:play-services-measurement-api:19.0.2] C:\Users\hazar\.gradle\caches\transforms-3\14292a61aa604dc39dd0e7e08a9296f1\transformed\jetified-play-services-measurement-api-19.0.2\AndroidManifest.xml:30:13-32:85
 73                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-73-->[com.google.android.gms:play-services-measurement-api:19.0.2] /Users/LaurenHerman/.gradle/caches/transforms-3/14292a61aa604dc39dd0e7e08a9296f1/transformed/jetified-play-services-measurement-api-19.0.2/AndroidManifest.xml:31:17-139
+73-->[com.google.android.gms:play-services-measurement-api:19.0.2] C:\Users\hazar\.gradle\caches\transforms-3\14292a61aa604dc39dd0e7e08a9296f1\transformed\jetified-play-services-measurement-api-19.0.2\AndroidManifest.xml:31:17-139
 74                android:value="com.google.firebase.components.ComponentRegistrar" />
-74-->[com.google.android.gms:play-services-measurement-api:19.0.2] /Users/LaurenHerman/.gradle/caches/transforms-3/14292a61aa604dc39dd0e7e08a9296f1/transformed/jetified-play-services-measurement-api-19.0.2/AndroidManifest.xml:32:17-82
+74-->[com.google.android.gms:play-services-measurement-api:19.0.2] C:\Users\hazar\.gradle\caches\transforms-3\14292a61aa604dc39dd0e7e08a9296f1\transformed\jetified-play-services-measurement-api-19.0.2\AndroidManifest.xml:32:17-82
 75            <meta-data
-75-->[com.google.firebase:firebase-installations:17.0.0] /Users/LaurenHerman/.gradle/caches/transforms-3/045ee3e52baef22a6f354e1b63ce65b6/transformed/jetified-firebase-installations-17.0.0/AndroidManifest.xml:18:13-20:85
+75-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\hazar\.gradle\caches\transforms-3\045ee3e52baef22a6f354e1b63ce65b6\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
 76                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-76-->[com.google.firebase:firebase-installations:17.0.0] /Users/LaurenHerman/.gradle/caches/transforms-3/045ee3e52baef22a6f354e1b63ce65b6/transformed/jetified-firebase-installations-17.0.0/AndroidManifest.xml:19:17-127
+76-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\hazar\.gradle\caches\transforms-3\045ee3e52baef22a6f354e1b63ce65b6\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
 77                android:value="com.google.firebase.components.ComponentRegistrar" />
-77-->[com.google.firebase:firebase-installations:17.0.0] /Users/LaurenHerman/.gradle/caches/transforms-3/045ee3e52baef22a6f354e1b63ce65b6/transformed/jetified-firebase-installations-17.0.0/AndroidManifest.xml:20:17-82
+77-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\hazar\.gradle\caches\transforms-3\045ee3e52baef22a6f354e1b63ce65b6\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
 78        </service>
 79
 80        <provider
-80-->[com.google.firebase:firebase-common:20.0.0] /Users/LaurenHerman/.gradle/caches/transforms-3/86e13b6ca81a6c901885b317cb2ca953/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+80-->[com.google.firebase:firebase-common:20.0.0] C:\Users\hazar\.gradle\caches\transforms-3\86e13b6ca81a6c901885b317cb2ca953\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
 81            android:name="com.google.firebase.provider.FirebaseInitProvider"
-81-->[com.google.firebase:firebase-common:20.0.0] /Users/LaurenHerman/.gradle/caches/transforms-3/86e13b6ca81a6c901885b317cb2ca953/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+81-->[com.google.firebase:firebase-common:20.0.0] C:\Users\hazar\.gradle\caches\transforms-3\86e13b6ca81a6c901885b317cb2ca953\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
 82            android:authorities="com.example.redsearch.firebaseinitprovider"
-82-->[com.google.firebase:firebase-common:20.0.0] /Users/LaurenHerman/.gradle/caches/transforms-3/86e13b6ca81a6c901885b317cb2ca953/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+82-->[com.google.firebase:firebase-common:20.0.0] C:\Users\hazar\.gradle\caches\transforms-3\86e13b6ca81a6c901885b317cb2ca953\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
 83            android:directBootAware="true"
-83-->[com.google.firebase:firebase-common:20.0.0] /Users/LaurenHerman/.gradle/caches/transforms-3/86e13b6ca81a6c901885b317cb2ca953/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+83-->[com.google.firebase:firebase-common:20.0.0] C:\Users\hazar\.gradle\caches\transforms-3\86e13b6ca81a6c901885b317cb2ca953\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
 84            android:exported="false"
-84-->[com.google.firebase:firebase-common:20.0.0] /Users/LaurenHerman/.gradle/caches/transforms-3/86e13b6ca81a6c901885b317cb2ca953/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+84-->[com.google.firebase:firebase-common:20.0.0] C:\Users\hazar\.gradle\caches\transforms-3\86e13b6ca81a6c901885b317cb2ca953\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
 85            android:initOrder="100" />
-85-->[com.google.firebase:firebase-common:20.0.0] /Users/LaurenHerman/.gradle/caches/transforms-3/86e13b6ca81a6c901885b317cb2ca953/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+85-->[com.google.firebase:firebase-common:20.0.0] C:\Users\hazar\.gradle\caches\transforms-3\86e13b6ca81a6c901885b317cb2ca953\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
 86
 87        <activity
-87-->[com.google.android.gms:play-services-base:17.0.0] /Users/LaurenHerman/.gradle/caches/transforms-3/4506df1bc41cf0a2e5bf32da3bb37c2c/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+87-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\hazar\.gradle\caches\transforms-3\4506df1bc41cf0a2e5bf32da3bb37c2c\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
 88            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-88-->[com.google.android.gms:play-services-base:17.0.0] /Users/LaurenHerman/.gradle/caches/transforms-3/4506df1bc41cf0a2e5bf32da3bb37c2c/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+88-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\hazar\.gradle\caches\transforms-3\4506df1bc41cf0a2e5bf32da3bb37c2c\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
 89            android:exported="false"
-89-->[com.google.android.gms:play-services-base:17.0.0] /Users/LaurenHerman/.gradle/caches/transforms-3/4506df1bc41cf0a2e5bf32da3bb37c2c/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+89-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\hazar\.gradle\caches\transforms-3\4506df1bc41cf0a2e5bf32da3bb37c2c\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
 90            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-90-->[com.google.android.gms:play-services-base:17.0.0] /Users/LaurenHerman/.gradle/caches/transforms-3/4506df1bc41cf0a2e5bf32da3bb37c2c/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+90-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\hazar\.gradle\caches\transforms-3\4506df1bc41cf0a2e5bf32da3bb37c2c\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
 91
 92        <receiver
-92-->[com.google.android.gms:play-services-measurement:19.0.2] /Users/LaurenHerman/.gradle/caches/transforms-3/1d4b8a4caa0d0798b6a2fb3d69328b21/transformed/jetified-play-services-measurement-19.0.2/AndroidManifest.xml:29:9-33:20
+92-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\hazar\.gradle\caches\transforms-3\1d4b8a4caa0d0798b6a2fb3d69328b21\transformed\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:29:9-33:20
 93            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-93-->[com.google.android.gms:play-services-measurement:19.0.2] /Users/LaurenHerman/.gradle/caches/transforms-3/1d4b8a4caa0d0798b6a2fb3d69328b21/transformed/jetified-play-services-measurement-19.0.2/AndroidManifest.xml:30:13-85
+93-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\hazar\.gradle\caches\transforms-3\1d4b8a4caa0d0798b6a2fb3d69328b21\transformed\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:30:13-85
 94            android:enabled="true"
-94-->[com.google.android.gms:play-services-measurement:19.0.2] /Users/LaurenHerman/.gradle/caches/transforms-3/1d4b8a4caa0d0798b6a2fb3d69328b21/transformed/jetified-play-services-measurement-19.0.2/AndroidManifest.xml:31:13-35
+94-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\hazar\.gradle\caches\transforms-3\1d4b8a4caa0d0798b6a2fb3d69328b21\transformed\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:31:13-35
 95            android:exported="false" >
-95-->[com.google.android.gms:play-services-measurement:19.0.2] /Users/LaurenHerman/.gradle/caches/transforms-3/1d4b8a4caa0d0798b6a2fb3d69328b21/transformed/jetified-play-services-measurement-19.0.2/AndroidManifest.xml:32:13-37
+95-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\hazar\.gradle\caches\transforms-3\1d4b8a4caa0d0798b6a2fb3d69328b21\transformed\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:32:13-37
 96        </receiver>
 97
 98        <service
-98-->[com.google.android.gms:play-services-measurement:19.0.2] /Users/LaurenHerman/.gradle/caches/transforms-3/1d4b8a4caa0d0798b6a2fb3d69328b21/transformed/jetified-play-services-measurement-19.0.2/AndroidManifest.xml:35:9-38:40
+98-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\hazar\.gradle\caches\transforms-3\1d4b8a4caa0d0798b6a2fb3d69328b21\transformed\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:35:9-38:40
 99            android:name="com.google.android.gms.measurement.AppMeasurementService"
-99-->[com.google.android.gms:play-services-measurement:19.0.2] /Users/LaurenHerman/.gradle/caches/transforms-3/1d4b8a4caa0d0798b6a2fb3d69328b21/transformed/jetified-play-services-measurement-19.0.2/AndroidManifest.xml:36:13-84
+99-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\hazar\.gradle\caches\transforms-3\1d4b8a4caa0d0798b6a2fb3d69328b21\transformed\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:36:13-84
 100            android:enabled="true"
-100-->[com.google.android.gms:play-services-measurement:19.0.2] /Users/LaurenHerman/.gradle/caches/transforms-3/1d4b8a4caa0d0798b6a2fb3d69328b21/transformed/jetified-play-services-measurement-19.0.2/AndroidManifest.xml:37:13-35
+100-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\hazar\.gradle\caches\transforms-3\1d4b8a4caa0d0798b6a2fb3d69328b21\transformed\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:37:13-35
 101            android:exported="false" />
-101-->[com.google.android.gms:play-services-measurement:19.0.2] /Users/LaurenHerman/.gradle/caches/transforms-3/1d4b8a4caa0d0798b6a2fb3d69328b21/transformed/jetified-play-services-measurement-19.0.2/AndroidManifest.xml:38:13-37
+101-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\hazar\.gradle\caches\transforms-3\1d4b8a4caa0d0798b6a2fb3d69328b21\transformed\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:38:13-37
 102        <service
-102-->[com.google.android.gms:play-services-measurement:19.0.2] /Users/LaurenHerman/.gradle/caches/transforms-3/1d4b8a4caa0d0798b6a2fb3d69328b21/transformed/jetified-play-services-measurement-19.0.2/AndroidManifest.xml:39:9-43:72
+102-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\hazar\.gradle\caches\transforms-3\1d4b8a4caa0d0798b6a2fb3d69328b21\transformed\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:39:9-43:72
 103            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-103-->[com.google.android.gms:play-services-measurement:19.0.2] /Users/LaurenHerman/.gradle/caches/transforms-3/1d4b8a4caa0d0798b6a2fb3d69328b21/transformed/jetified-play-services-measurement-19.0.2/AndroidManifest.xml:40:13-87
+103-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\hazar\.gradle\caches\transforms-3\1d4b8a4caa0d0798b6a2fb3d69328b21\transformed\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:40:13-87
 104            android:enabled="true"
-104-->[com.google.android.gms:play-services-measurement:19.0.2] /Users/LaurenHerman/.gradle/caches/transforms-3/1d4b8a4caa0d0798b6a2fb3d69328b21/transformed/jetified-play-services-measurement-19.0.2/AndroidManifest.xml:41:13-35
+104-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\hazar\.gradle\caches\transforms-3\1d4b8a4caa0d0798b6a2fb3d69328b21\transformed\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:41:13-35
 105            android:exported="false"
-105-->[com.google.android.gms:play-services-measurement:19.0.2] /Users/LaurenHerman/.gradle/caches/transforms-3/1d4b8a4caa0d0798b6a2fb3d69328b21/transformed/jetified-play-services-measurement-19.0.2/AndroidManifest.xml:42:13-37
+105-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\hazar\.gradle\caches\transforms-3\1d4b8a4caa0d0798b6a2fb3d69328b21\transformed\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:42:13-37
 106            android:permission="android.permission.BIND_JOB_SERVICE" />
-106-->[com.google.android.gms:play-services-measurement:19.0.2] /Users/LaurenHerman/.gradle/caches/transforms-3/1d4b8a4caa0d0798b6a2fb3d69328b21/transformed/jetified-play-services-measurement-19.0.2/AndroidManifest.xml:43:13-69
+106-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\hazar\.gradle\caches\transforms-3\1d4b8a4caa0d0798b6a2fb3d69328b21\transformed\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:43:13-69
 107
 108        <meta-data
-108-->[com.google.android.gms:play-services-basement:17.0.0] /Users/LaurenHerman/.gradle/caches/transforms-3/736795ced1125049463359fb87a935ed/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+108-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\hazar\.gradle\caches\transforms-3\736795ced1125049463359fb87a935ed\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
 109            android:name="com.google.android.gms.version"
-109-->[com.google.android.gms:play-services-basement:17.0.0] /Users/LaurenHerman/.gradle/caches/transforms-3/736795ced1125049463359fb87a935ed/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+109-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\hazar\.gradle\caches\transforms-3\736795ced1125049463359fb87a935ed\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
 110            android:value="@integer/google_play_services_version" />
-110-->[com.google.android.gms:play-services-basement:17.0.0] /Users/LaurenHerman/.gradle/caches/transforms-3/736795ced1125049463359fb87a935ed/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+110-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\hazar\.gradle\caches\transforms-3\736795ced1125049463359fb87a935ed\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
 111    </application>
 112
 113</manifest>

@@ -5,8 +5,10 @@ import android.util.Log;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -26,13 +28,14 @@ public class DataBaseAccess {
     final String TAG = "Sample";
     FirebaseFirestore db;
     CollectionReference collectionReference;
+    DocumentSnapshot doc;
 
     /**
      * A constructor that must be called to allow any other class to use
      * the required database
      */
     public DataBaseAccess(){
-        FirebaseFirestore db = FirebaseFirestore.getInstance();
+        db = FirebaseFirestore.getInstance();
         collectionReference = db.collection("Users");
     }
 
@@ -40,7 +43,8 @@ public class DataBaseAccess {
      * THis function takes in three string inputs and adds the last string into a field
      * named based upon the second string under the document named by the first string
      * @param Username Name of the User we are inputting data for
-     * @param habitName Name of the Habit to be added into the data
+     * @param habitName Name of the Habit to be added into the data may also be the string "Password"
+     *                  to indicate a password insertion
      * @param habitData All other relevant data for the insertion
      */
     public void dataInsert(String Username, String habitName, String habitData){
@@ -112,6 +116,32 @@ public class DataBaseAccess {
             }
         });
 
+    }
+
+
+    public Boolean PassCheck (String Username, String Password){
+        Boolean passCheck = false;
+        DocumentReference docRef = collectionReference.document(Username);
+        docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                if (task.isSuccessful()) {
+                    DocumentSnapshot document = task.getResult();
+                    doc = document;
+                    if (document.exists()) {
+                        Log.d(TAG, "DocumentSnapshot data: " + document.getData());
+                        return;
+                    } else {
+                        Log.d(TAG, "No such document");
+                    }
+                } else {
+                    Log.d(TAG, "get failed with ", task.getException());
+                }
+            }
+
+
+        });
+        return passCheck;
     }
 
 

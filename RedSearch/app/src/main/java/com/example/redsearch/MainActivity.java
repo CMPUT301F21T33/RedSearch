@@ -27,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
         DataBaseAccess db = new DataBaseAccess();
         db.dataInsert("TEST", "Habit 3", "I like things");
         db.dataRemove("TEST", "Habit 2");
+        db.dataInsert("TEST", "Password", "123password123");
+
+        db.PassCheck("TEST", "123password123");
 
         setContentView(R.layout.activity_add_habit);
 
@@ -36,9 +39,6 @@ public class MainActivity extends AppCompatActivity {
         password = findViewById(R.id.password);
         userError = findViewById(R.id.userError);
         passwordError = findViewById(R.id.passwordError);
-        db.dataInsert("TEST", "Habit 3", "I like things");
-        db.dataRemove("TEST", "Habit 2");
-        db.dataInsert("TEST", "Habit 3", "Don't get hit by car");
 
     }
 
