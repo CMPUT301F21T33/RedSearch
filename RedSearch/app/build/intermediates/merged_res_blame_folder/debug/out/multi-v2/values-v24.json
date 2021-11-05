@@ -1,17 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
-            "outputFile": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\hazar\\.gradle\\caches\\transforms-3\\ccd6c517801f56e7200472775579e27c\\transformed\\appcompat-1.3.1\\res\\values-v24\\values-v24.xml",
-=======
             "outputFile": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
                     "source": "/home/emily84/.gradle/caches/transforms-3/ccd6c517801f56e7200472775579e27c/transformed/appcompat-1.3.1/res/values-v24/values-v24.xml",
->>>>>>> main
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
