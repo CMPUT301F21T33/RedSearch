@@ -7,6 +7,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+/**
+ * This is an activity that is where the user can add a habit
+ */
+
 public class AddHabitActivity extends AppCompatActivity {
 
     @Override
@@ -21,7 +25,7 @@ public class AddHabitActivity extends AppCompatActivity {
 
     /**
      * This moves to the next activity when the habit is added
-     * @param view
+     * @param view (@code view} This is the view variable it takes in
      */
     public void goToMyHabits(View view) {
         Intent intent = new Intent(this, MyHabitsActivity.class);
