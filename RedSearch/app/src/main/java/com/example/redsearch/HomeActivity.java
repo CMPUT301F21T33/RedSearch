@@ -32,7 +32,7 @@ public class HomeActivity extends AppCompatActivity {
         ArrayList<Habit> todayHabits = new ArrayList<Habit>();
         todayHabits.add(new Habit("Drink water","I am thirsty",new Date(),true));
 
-        MyHabitList adapter = new MyHabitList(this,todayHabits);
+        HabitListAdapter adapter = new HabitListAdapter(this,todayHabits);
         list.setAdapter(adapter);
 
 

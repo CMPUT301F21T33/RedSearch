@@ -1824,6 +1824,7 @@ drawable ic_baseline_add_24
 drawable ic_baseline_add_48
 drawable ic_baseline_brightness_1_24
 drawable ic_baseline_calendar_today_24
+drawable ic_baseline_check_24
 drawable ic_baseline_delete_24
 drawable ic_baseline_edit_24
 drawable ic_baseline_image_24
@@ -2483,6 +2484,7 @@ layout activity_signup
 layout activity_view_habit
 layout activity_view_habit_event
 layout custom_dialog
+layout custom_homelist
 layout custom_listview
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

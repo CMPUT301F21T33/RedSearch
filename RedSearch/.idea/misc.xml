@@ -16,6 +16,7 @@
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.21855004020622432" />
         <entry key="app/src/main/res/layout/activity_view_habit.xml" value="0.22796594942727344" />
         <entry key="app/src/main/res/layout/activity_view_habit_event.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/custom_homelist.xml" value="0.12919088064371928" />
         <entry key="app/src/main/res/layout/custom_listview.xml" value="0.2905512633165933" />
         <entry key="app/src/main/res/layout/habitcontent.xml" value="0.28017453730188174" />
         <entry key="app/src/main/res/layout/home.xml" value="0.1328125" />
