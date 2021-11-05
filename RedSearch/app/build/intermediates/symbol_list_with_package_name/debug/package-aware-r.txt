@@ -1878,6 +1878,7 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id Donebutton
 id FUNCTION
 id HabitTitle
 id META
@@ -1977,7 +1978,6 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id button
 id button2
 id button3
 id buttonPanel
@@ -1989,6 +1989,7 @@ id center_horizontal
 id center_vertical
 id chain
 id chains
+id checkBox
 id checkbox
 id checked
 id chip
@@ -2055,9 +2056,9 @@ id easeOut
 id east
 id editButton
 id editTextDate
-id editTextTextPersonName
-id editTextTextPersonName3
+id editTextReason
 id editTextTextPersonName4
+id editTextTitle
 id edit_query
 id elastic
 id end

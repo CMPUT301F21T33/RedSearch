@@ -6,6 +6,11 @@ import androidx.appcompat.widget.Toolbar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -19,8 +24,17 @@ public class HomeActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         setTitle("Today's Habits");
         //Get the username from the previous one
-        Intent intent = getIntent();
-        String username = intent.getStringExtra(MainActivity.USERNAME); // This is the username that the user gave in the login activity
+
+        //Intent intent = getIntent();
+        //String username = intent.getStringExtra(MainActivity.USERNAME); // This is the username that the user gave in the login activity
+
+        ListView list = (ListView) findViewById(R.id.listView);
+        ArrayList<Habit> todayHabits = new ArrayList<Habit>();
+        todayHabits.add(new Habit("Drink water","I am thirsty",new Date(),true));
+
+        MyHabitList adapter = new MyHabitList(this,todayHabits);
+        list.setAdapter(adapter);
+
 
     }
 
