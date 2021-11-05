@@ -24,6 +24,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ListView
+        android:id="@+id/listView"
         android:layout_width="wrap_content"
         android:layout_height="595dp"
         app:layout_constraintBottom_toTopOf="@+id/imageButton"

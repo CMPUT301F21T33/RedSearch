@@ -27,8 +27,9 @@ public class HomeActivity extends AppCompatActivity {
     /*
      * When the user clicks View All they will be taken to the my habits page
      */
-    public void goToMyHabits(View view) {
+    public void goToMyHabits(View view, String username) {
         Intent intent = new Intent(this, MyHabitsActivity.class);
+        intent.putExtra(MainActivity.USERNAME, username);
         startActivity(intent);
     }
 
