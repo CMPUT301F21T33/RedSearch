@@ -6,6 +6,11 @@ import androidx.appcompat.widget.Toolbar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -19,13 +24,23 @@ public class HomeActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         setTitle("Today's Habits");
         //Get the username from the previous one
-        Intent intent = getIntent();
-        String username = intent.getStringExtra(MainActivity.USERNAME); // This is the username that the user gave in the login activity
+
+        //Intent intent = getIntent();
+        //String username = intent.getStringExtra(MainActivity.USERNAME); // This is the username that the user gave in the login activity
+
+        ListView list = (ListView) findViewById(R.id.listView);
+        ArrayList<Habit> todayHabits = new ArrayList<Habit>();
+        todayHabits.add(new Habit("Drink water","I am thirsty",new Date(),true));
+
+        HabitListAdapter adapter = new HabitListAdapter(this,todayHabits);
+        list.setAdapter(adapter);
+
 
     }
 
-    /*
-     * When the user clicks View All they will be taken to the my habits page
+    /**
+     * This moves to the MyHabitsActivity when the ViewAll button is pressed
+     * @param view {@code View} takes in the view
      */
     public void goToMyHabits(View view) {
         Intent intent = new Intent(this, MyHabitsActivity.class);

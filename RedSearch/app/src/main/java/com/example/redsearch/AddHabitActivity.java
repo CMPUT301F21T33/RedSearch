@@ -6,8 +6,17 @@ import androidx.appcompat.widget.Toolbar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
+
+import java.util.Date;
+
+/**
+ * This is an activity that is where the user can add a habit
+ */
 
 public class AddHabitActivity extends AppCompatActivity {
+
+    DataBaseAccess db = new DataBaseAccess();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,9 +30,19 @@ public class AddHabitActivity extends AppCompatActivity {
 
     /**
      * This moves to the next activity when the habit is added
-     * @param view
+     * @param view (@code view} This is the view variable it takes in
      */
     public void goToMyHabits(View view) {
+        EditText title = (EditText) findViewById(R.id.editTextTitle);
+        EditText reason = (EditText) findViewById(R.id.editTextReason);
+        EditText date = (EditText) findViewById(R.id.editTextDate);
+        Habit addedHabit = new Habit(title.getText().toString(), reason.getText().toString(),new Date(date.getText().toString()), true);
+
+        /*
+        Intent intent = getIntent();
+        String username = intent.getStringExtra(MainActivity.USERNAME);
+        db.dataInsert(username,title.getText().toString(),addedHabit);*/
+
         Intent intent = new Intent(this, MyHabitsActivity.class);
         startActivity(intent);
     }

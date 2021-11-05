@@ -32,8 +32,8 @@ public class MyHabitsActivity extends AppCompatActivity {
         //pull data from db and put in myHabits
 
         //Habit testHab = new Habit("TestHabit","Reason", new Date(), true);
-        myHabits.add(new Habit("TestHabit","Reason", new Date(), true));
-        myHabits.add(new Habit("TestHabit2","Reason", new Date(), true));
+        myHabits.add(new Habit("Drink water","Reason", new Date(), true));
+        myHabits.add(new Habit("Do laundry","Reason", new Date(), true));
 
         MyHabitList adapter = new MyHabitList(this,myHabits);
 
