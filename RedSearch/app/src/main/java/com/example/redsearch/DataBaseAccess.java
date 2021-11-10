@@ -127,24 +127,11 @@ public class DataBaseAccess {
                 });
     }
 
-    /**
-     * Creates a listener that will realtime update with changes to the database
-     * @param Username The user to monitor
-     */
-    private Boolean retrievePass(String Username){
-        DocumentReference docRef = db.collection("Users").document(Username);
-        try {
-            Task<DocumentSnapshot> dataPass = docRef.get();
-            data = (String) dataPass.getResult().getData().get("Password");
-            return true;
-        }catch(Exception e){
-            return false;
-            }
-    }
 
     /**
      * After having a Username and password inputted it will check with the remote database to see if the
-     * password data is accurate and return true or false based upon that
+     * password data is accurate and return true or false based upon if the inputted password matches that which is stored in
+     * the remote database
      * @param Username The users username
      * @param Password The users password
      * @return
