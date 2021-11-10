@@ -5,6 +5,7 @@ import android.util.Log;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -15,8 +16,13 @@ import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.Query;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 import com.google.firebase.firestore.SetOptions;
+import com.google.firebase.firestore.Source;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
@@ -27,8 +33,9 @@ public class DataBaseAccess {
     final String TAG = "Sample";
     FirebaseFirestore db;
     CollectionReference collectionReference;
-    DocumentSnapshot doc;
-    Boolean check;
+    String data;
+
+
 
     /**
      * A constructor that must be called to allow any other class to use
@@ -122,59 +129,46 @@ public class DataBaseAccess {
 
     /**
      * Creates a listener that will realtime update with changes to the database
-     * @param Username
+     * @param Username The user to monitor
      */
-    public void createListener(String Username){
-        final DocumentReference docRef = db.collection("Users").document(Username);
-        docRef.addSnapshotListener(new EventListener<DocumentSnapshot>() {
-            @Override
-            public void onEvent(@Nullable DocumentSnapshot snapshot,
-                                @Nullable FirebaseFirestoreException e) {
-                if (e != null) {
-                    Log.w(TAG, "Listen failed.", e);
-                    return;
-                }
-
-                if (snapshot != null && snapshot.exists()) {
-                    Log.d(TAG, "Current data: " + snapshot.getData());
-                } else {
-                    Log.d(TAG, "Current data: null");
-                }
+    private Boolean retrievePass(String Username){
+        DocumentReference docRef = db.collection("Users").document(Username);
+        try {
+            Task<DocumentSnapshot> dataPass = docRef.get();
+            data = (String) dataPass.getResult().getData().get("Password");
+            return true;
+        }catch(Exception e){
+            return false;
             }
-        });
-
     }
 
     /**
-     * TODO: This function is suppose to verify that a entered passsword exists in the database
-     * Currently it does not work
-     * @param Username
-     * @param Password
+     * After having a Username and password inputted it will check with the remote database to see if the
+     * password data is accurate and return true or false based upon that
+     * @param Username The users username
+     * @param Password The users password
      * @return
      */
     public Boolean PassCheck (String Username, String Password){
-        check = false;
-        DocumentReference docRef = collectionReference.document(Username);
-        Task data = docRef.get().addOnCompleteListener(task -> {
-            if (task.isSuccessful()) {
-                DocumentSnapshot document = task.getResult();
-                if (document.exists()) {
-                    Log.d(TAG, "DocumentSnapshot data: " + document.getData());
-                    String passData = (String) document.get("Password");
-                    passData = passData.trim();
-                    if(passData.equals(Password) == true){
-                        check = true;
-                    }
-                } else {
-                    Log.d(TAG, "No such document");
-                }
-            } else {
-                Log.d(TAG, "get failed with ", task.getException());
+        Boolean check = true;
+        String dataPass = null;
+        while(check){
+            DocumentReference docRef = db.collection("Users").document(Username);
+            try {
+                Task<DocumentSnapshot> data = docRef.get();
+                dataPass = (String) data.getResult().getData().get("Password");
+                check =  false;
+            }catch(Exception e){
+                check = true;
             }
-        });
-        System.out.println("Test");
-        return check;
+        }
+        if(dataPass.equals(Password)){
+            return true;
+        }
+        return false;
     }
+
+
 
 
 
