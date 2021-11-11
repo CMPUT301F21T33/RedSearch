@@ -139,6 +139,7 @@ public class DataBaseAccess {
     public Boolean PassCheck (String Username, String Password){
         Boolean check = true;
         String dataPass = null;
+        int count = 0;
         while(check){
             DocumentReference docRef = db.collection("Users").document(Username);
             try {
@@ -146,6 +147,11 @@ public class DataBaseAccess {
                 dataPass = (String) data.getResult().getData().get("Password");
                 check =  false;
             }catch(Exception e){
+                count++;
+                if(count > 200){
+                    check = false;
+                    return false;
+                }
                 check = true;
             }
         }
