@@ -127,6 +127,18 @@ public class Habit {
         return habitEventList;
     }
 
+    /**
+     * Get if day of week is planned or not
+     * @param dayNum {@code int} Day of the week represented as an int
+     *                          0 = Monday
+     *                          1 = Tuesday
+     *                          2 = Wednesday
+     *                          3 = Thursday
+     *                          4 = Friday
+     *                          5 = Saturday
+     *                          6 = Sunday
+     * @return {@code boolean} True if habit is planned for that day
+     */
     public boolean getWeekday(int dayNum) {
         if (dayNum < 0) {
             return false;
@@ -235,6 +247,27 @@ public class Habit {
             return;
         } else {
             weekday[dayNum] = true;
+        }
+    }
+
+    /**
+     * If weekday is set, then we un-plan the habit for that weekday
+     * @param dayNum {@code int} Day of the week represented as an int
+     *                          0 = Monday
+     *                          1 = Tuesday
+     *                          2 = Wednesday
+     *                          3 = Thursday
+     *                          4 = Friday
+     *                          5 = Saturday
+     *                          6 = Sunday
+     */
+    public void delWeekdayPlan(int dayNum) {
+        if (dayNum < 0) {
+            return;
+        } else if (dayNum > 6) {
+            return;
+        } else {
+            weekday[dayNum] = false;
         }
     }
 
