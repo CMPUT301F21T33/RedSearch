@@ -15,6 +15,25 @@ public class Habit {
     private Float Dayshappened;
     private Color color;
 
+    public Habit(){ }
+
+    Habit(String title, String reason, Date date,Float Daysplanned, Float Dayshappened, Color color){
+        // a simple habit constructor
+        this.title = title;
+        this.reason = reason;
+        this.startDate = date;
+        this.Daysplanned = Daysplanned;
+        this.Dayshappened = Dayshappened;
+        this.color = color;
+    }
+
+    /**
+     * This version of the constuctor is only used within the database data retrieval,
+     * it needs all data we are storing else it will not be able to retrieve data properly
+     * @param title
+     * @param reason
+     * @param date
+     */
     Habit(String title, String reason, Date date){
         // a simple habit constructor
         this.title = title;
@@ -23,9 +42,9 @@ public class Habit {
     }
 
     //getters for each of the states of the object
-    String getTitle(){return this.title;}
-    String getReason(){return this.reason;}
-    Date getStartDate(){return this.startDate;}
+    public String getTitle(){return this.title;}
+    public String getReason(){return this.reason;}
+    public Date getStartDate(){return this.startDate;}
     Float getDaysplanned(){return this.Daysplanned;}
     Float getDayshappened(){return  this.Dayshappened;}
     Color getColor(){return this.color;}

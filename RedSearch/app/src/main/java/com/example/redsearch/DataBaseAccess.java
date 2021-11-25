@@ -3,27 +3,22 @@ package com.example.redsearch;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 
-import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.Timestamp;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
-import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.FirebaseFirestoreException;
-import com.google.firebase.firestore.Query;
-import com.google.firebase.firestore.QueryDocumentSnapshot;
-import com.google.firebase.firestore.QuerySnapshot;
 import com.google.firebase.firestore.SetOptions;
-import com.google.firebase.firestore.Source;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * A class that can be instantiated that creates simplified methods of adding and removing data from
@@ -33,7 +28,6 @@ public class DataBaseAccess {
     final String TAG = "Sample";
     FirebaseFirestore db;
     CollectionReference collectionReference;
-    String data;
 
 
 
@@ -161,10 +155,42 @@ public class DataBaseAccess {
         return false;
     }
 
+    /**
+     * This method retrieves an ArrayList<Habit> from the remote database, this retrieval does not include
+     * the users password.
+     * @param Username The user we are retrieving data from
+     * @param returnData an inputted array that gets CLEARED before any new data is pushed into it from
+     *                   the remote database
+     * @return true if data was succesfully retrieved
+     */
+    public Boolean returnHabits(String Username, ArrayList<Habit> returnData){
+        returnData.clear();
+        DocumentReference docRef = db.collection("Users").document(Username);
+        Task<DocumentSnapshot> data;
 
+        Boolean check = true;
+        while(check){
+            try {
+                data = docRef.get();
+            }catch(Exception IllegalStateException){
+                Log.d(TAG, "Error has occurred in accessing Database: " + IllegalStateException);
+                return false;
+            }
+            Map<String, Object> retrievedData = data.getResult().getData();
+            for(String key: retrievedData.keySet()){
+                if(key.equals("Password")){
+                    continue;
+                }
+                Object habitData = retrievedData.get(key);
+                HashMap<String, ?> stuff = (HashMap) habitData;
+                Habit habit = new Habit(key, (String) stuff.get("reason"), ((Timestamp) stuff.get("startDate")).toDate());
+                returnData.add(habit);
 
-
-
-
+            }
+            Log.d(TAG, "Data retrieved");
+            check = false;
+        }
+        return true;
+    }
 
 }

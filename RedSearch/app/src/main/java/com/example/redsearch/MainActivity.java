@@ -10,6 +10,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.Date;
+
 public class MainActivity extends AppCompatActivity {
 
     Button signinButton;
@@ -25,12 +28,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         DataBaseAccess db = new DataBaseAccess();
-        db.dataInsert("TEST", "Habit 3", "I like things");
-        db.dataInsert("TEST", "Password", "123password123");
 
-        if(db.PassCheck("TEST", "123password123") == true){
-            db.dataInsert("TEST", "PASS", "PASS");
-        }
+        db.dataInsert("TEST", "Password", "pass");
+
+        Habit test = new Habit("TEST", "I like cheetos", new Date());
+        Habit test2 = new Habit("TEST2", "I like cheetos", new Date());
+        Habit test3 = new Habit("TEST3", "I like cheetos", new Date());
+        db.dataInsert("TEST", test.getTitle(), test);
+        db.dataInsert("TEST", test2.getTitle(), test2);
+        db.dataInsert("TEST", test3.getTitle(), test3);
+        ArrayList<Habit> stuff = new ArrayList<Habit>();
+        db.returnHabits("TEST", stuff);
+        System.out.println(stuff.size());
 
         setContentView(R.layout.activity_add_habit);
 
