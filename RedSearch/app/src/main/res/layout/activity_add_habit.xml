@@ -10,27 +10,13 @@
         android:id="@+id/toolbar_add_habit"
         layout="@layout/toolbar" />
 
-    <EditText
-        android:id="@+id/editTextDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:ems="10"
-        android:hint="Start Date YYYY/MM/DD"
-        android:inputType="date"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextReason"
-        tools:ignore="SpeakableTextPresentCheck" />
-
     <Button
         android:id="@+id/Donebutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
-        android:text="Done"
         android:onClick="goToMyHabits"
+        android:text="Done"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -42,8 +28,8 @@
         android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="Title"
-        android:maxLength="20"
         android:inputType="textPersonName"
+        android:maxLength="20"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_add_habit" />
@@ -53,20 +39,24 @@
         android:layout_width="353dp"
         android:layout_height="48dp"
         android:layout_marginTop="32dp"
-        android:maxLength="30"
         android:ems="10"
         android:hint="Reason"
         android:inputType="textPersonName"
+        android:maxLength="30"
+        app:layout_constraintBottom_toTopOf="@+id/datePicker"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTitle" />
 
-    <Button
+    <CheckBox
+        style="@style/Widget.AppCompat.Button"
         android:id="@+id/monday"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginBottom="80dp"
-        android:background="@drawable/round_button"
+        android:background="@drawable/weekday_button"
+        android:button="@null"
         android:text="M"
         android:textColor="@color/white"
         android:textColorHighlight="@color/white"
@@ -79,12 +69,14 @@
         app:rippleColor="@color/white"
         app:strokeColor="@color/white" />
 
-    <Button
+    <CheckBox
+        style="@style/Widget.AppCompat.Button"
         android:id="@+id/sunday"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginBottom="80dp"
-        android:background="@drawable/round_button"
+        android:background="@drawable/weekday_button"
+        android:button="@null"
         android:text="S"
         android:textColor="@color/white"
         android:textColorHighlight="@color/white"
@@ -97,12 +89,14 @@
         app:rippleColor="@color/white"
         app:strokeColor="@color/white" />
 
-    <Button
+    <CheckBox
+        style="@style/Widget.AppCompat.Button"
         android:id="@+id/wednesday"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginBottom="80dp"
-        android:background="@drawable/round_button"
+        android:background="@drawable/weekday_button"
+        android:button="@null"
         android:text="W"
         android:textColor="@color/white"
         android:textColorHighlight="@color/white"
@@ -115,12 +109,14 @@
         app:rippleColor="@color/white"
         app:strokeColor="@color/white" />
 
-    <Button
+    <CheckBox
+        style="@style/Widget.AppCompat.Button"
         android:id="@+id/thursday"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginBottom="80dp"
-        android:background="@drawable/round_button"
+        android:background="@drawable/weekday_button"
+        android:button="@null"
         android:text="T"
         android:textColor="@color/white"
         android:textColorHighlight="@color/white"
@@ -133,12 +129,14 @@
         app:rippleColor="@color/white"
         app:strokeColor="@color/white" />
 
-    <Button
+    <CheckBox
+        style="@style/Widget.AppCompat.Button"
         android:id="@+id/friday"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginBottom="80dp"
-        android:background="@drawable/round_button"
+        android:background="@drawable/weekday_button"
+        android:button="@null"
         android:text="F"
         android:textColor="@color/white"
         android:textColorHighlight="@color/white"
@@ -151,12 +149,14 @@
         app:rippleColor="@color/white"
         app:strokeColor="@color/white" />
 
-    <Button
+    <CheckBox
+        style="@style/Widget.AppCompat.Button"
         android:id="@+id/saturday"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginBottom="80dp"
-        android:background="@drawable/round_button"
+        android:background="@drawable/weekday_button"
+        android:button="@null"
         android:text="S"
         android:textColor="@color/white"
         android:textColorHighlight="@color/white"
@@ -169,12 +169,14 @@
         app:rippleColor="@color/white"
         app:strokeColor="@color/white" />
 
-    <Button
+    <CheckBox
+        style="@style/Widget.AppCompat.Button"
         android:id="@+id/tuesday"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginBottom="80dp"
-        android:background="@drawable/round_button"
+        android:background="@drawable/weekday_button"
+        android:button="@null"
         android:text="T"
         android:textColor="@color/white"
         android:textColorHighlight="@color/white"
@@ -196,5 +198,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/wednesday" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="256dp"
+        android:layout_height="175dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:touchscreenBlocksFocus="false"
+        app:layout_constraintBottom_toTopOf="@+id/monday"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextReason" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

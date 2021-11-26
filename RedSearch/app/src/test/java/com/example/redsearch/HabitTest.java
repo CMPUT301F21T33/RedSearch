@@ -92,6 +92,14 @@ public class HabitTest {
     }
 
     @Test
+    public void testdelWeekday() {
+        habit.setWeekday(1);
+        assertTrue(habit.getWeekday(1));
+        habit.delWeekdayPlan(1);
+        assertFalse(habit.getWeekday(1));
+    }
+
+    @Test
     public void testHabitEventList() {
         assertEquals(0, habit.countHabitEvents());
         habit.getHabitEventList().addHabitEvent(new HabitEvent("Dogged a bus",
