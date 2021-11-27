@@ -23,19 +23,22 @@ public final class ActivityAddHabitEventBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final EditText Comment;
+
+  @NonNull
   public final Button button3;
 
   @NonNull
-  public final EditText editTextTextPersonName4;
+  public final ImageButton cameraButton;
 
   @NonNull
-  public final ImageButton imageButton2;
+  public final ImageView habitImage;
 
   @NonNull
   public final ImageButton imageButton3;
 
   @NonNull
-  public final ImageView imageView;
+  public final ImageButton imageButton4;
 
   @NonNull
   public final ImageView imageView2;
@@ -43,16 +46,18 @@ public final class ActivityAddHabitEventBinding implements ViewBinding {
   @NonNull
   public final ToolbarBinding toolbarAddHabitEvent;
 
-  private ActivityAddHabitEventBinding(@NonNull ConstraintLayout rootView, @NonNull Button button3,
-      @NonNull EditText editTextTextPersonName4, @NonNull ImageButton imageButton2,
-      @NonNull ImageButton imageButton3, @NonNull ImageView imageView,
-      @NonNull ImageView imageView2, @NonNull ToolbarBinding toolbarAddHabitEvent) {
+  private ActivityAddHabitEventBinding(@NonNull ConstraintLayout rootView,
+      @NonNull EditText Comment, @NonNull Button button3, @NonNull ImageButton cameraButton,
+      @NonNull ImageView habitImage, @NonNull ImageButton imageButton3,
+      @NonNull ImageButton imageButton4, @NonNull ImageView imageView2,
+      @NonNull ToolbarBinding toolbarAddHabitEvent) {
     this.rootView = rootView;
+    this.Comment = Comment;
     this.button3 = button3;
-    this.editTextTextPersonName4 = editTextTextPersonName4;
-    this.imageButton2 = imageButton2;
+    this.cameraButton = cameraButton;
+    this.habitImage = habitImage;
     this.imageButton3 = imageButton3;
-    this.imageView = imageView;
+    this.imageButton4 = imageButton4;
     this.imageView2 = imageView2;
     this.toolbarAddHabitEvent = toolbarAddHabitEvent;
   }
@@ -84,21 +89,27 @@ public final class ActivityAddHabitEventBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.Comment;
+      EditText Comment = ViewBindings.findChildViewById(rootView, id);
+      if (Comment == null) {
+        break missingId;
+      }
+
       id = R.id.button3;
       Button button3 = ViewBindings.findChildViewById(rootView, id);
       if (button3 == null) {
         break missingId;
       }
 
-      id = R.id.editTextTextPersonName4;
-      EditText editTextTextPersonName4 = ViewBindings.findChildViewById(rootView, id);
-      if (editTextTextPersonName4 == null) {
+      id = R.id.cameraButton;
+      ImageButton cameraButton = ViewBindings.findChildViewById(rootView, id);
+      if (cameraButton == null) {
         break missingId;
       }
 
-      id = R.id.imageButton2;
-      ImageButton imageButton2 = ViewBindings.findChildViewById(rootView, id);
-      if (imageButton2 == null) {
+      id = R.id.habitImage;
+      ImageView habitImage = ViewBindings.findChildViewById(rootView, id);
+      if (habitImage == null) {
         break missingId;
       }
 
@@ -108,9 +119,9 @@ public final class ActivityAddHabitEventBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageView;
-      ImageView imageView = ViewBindings.findChildViewById(rootView, id);
-      if (imageView == null) {
+      id = R.id.imageButton4;
+      ImageButton imageButton4 = ViewBindings.findChildViewById(rootView, id);
+      if (imageButton4 == null) {
         break missingId;
       }
 
@@ -127,8 +138,8 @@ public final class ActivityAddHabitEventBinding implements ViewBinding {
       }
       ToolbarBinding binding_toolbarAddHabitEvent = ToolbarBinding.bind(toolbarAddHabitEvent);
 
-      return new ActivityAddHabitEventBinding((ConstraintLayout) rootView, button3,
-          editTextTextPersonName4, imageButton2, imageButton3, imageView, imageView2,
+      return new ActivityAddHabitEventBinding((ConstraintLayout) rootView, Comment, button3,
+          cameraButton, habitImage, imageButton3, imageButton4, imageView2,
           binding_toolbarAddHabitEvent);
     }
     String missingId = rootView.getResources().getResourceName(id);

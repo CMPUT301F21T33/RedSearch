@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -28,7 +29,7 @@ public final class ActivityAddHabitBinding implements ViewBinding {
   public final CheckBox checkBox;
 
   @NonNull
-  public final EditText editTextDate;
+  public final DatePicker datePicker;
 
   @NonNull
   public final EditText editTextReason;
@@ -37,38 +38,39 @@ public final class ActivityAddHabitBinding implements ViewBinding {
   public final EditText editTextTitle;
 
   @NonNull
-  public final Button friday;
+  public final CheckBox friday;
 
   @NonNull
-  public final Button monday;
+  public final CheckBox monday;
 
   @NonNull
-  public final Button saturday;
+  public final CheckBox saturday;
 
   @NonNull
-  public final Button sunday;
+  public final CheckBox sunday;
 
   @NonNull
-  public final Button thursday;
+  public final CheckBox thursday;
 
   @NonNull
   public final ToolbarBinding toolbarAddHabit;
 
   @NonNull
-  public final Button tuesday;
+  public final CheckBox tuesday;
 
   @NonNull
-  public final Button wednesday;
+  public final CheckBox wednesday;
 
   private ActivityAddHabitBinding(@NonNull ConstraintLayout rootView, @NonNull Button Donebutton,
-      @NonNull CheckBox checkBox, @NonNull EditText editTextDate, @NonNull EditText editTextReason,
-      @NonNull EditText editTextTitle, @NonNull Button friday, @NonNull Button monday,
-      @NonNull Button saturday, @NonNull Button sunday, @NonNull Button thursday,
-      @NonNull ToolbarBinding toolbarAddHabit, @NonNull Button tuesday, @NonNull Button wednesday) {
+      @NonNull CheckBox checkBox, @NonNull DatePicker datePicker, @NonNull EditText editTextReason,
+      @NonNull EditText editTextTitle, @NonNull CheckBox friday, @NonNull CheckBox monday,
+      @NonNull CheckBox saturday, @NonNull CheckBox sunday, @NonNull CheckBox thursday,
+      @NonNull ToolbarBinding toolbarAddHabit, @NonNull CheckBox tuesday,
+      @NonNull CheckBox wednesday) {
     this.rootView = rootView;
     this.Donebutton = Donebutton;
     this.checkBox = checkBox;
-    this.editTextDate = editTextDate;
+    this.datePicker = datePicker;
     this.editTextReason = editTextReason;
     this.editTextTitle = editTextTitle;
     this.friday = friday;
@@ -120,9 +122,9 @@ public final class ActivityAddHabitBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.editTextDate;
-      EditText editTextDate = ViewBindings.findChildViewById(rootView, id);
-      if (editTextDate == null) {
+      id = R.id.datePicker;
+      DatePicker datePicker = ViewBindings.findChildViewById(rootView, id);
+      if (datePicker == null) {
         break missingId;
       }
 
@@ -139,31 +141,31 @@ public final class ActivityAddHabitBinding implements ViewBinding {
       }
 
       id = R.id.friday;
-      Button friday = ViewBindings.findChildViewById(rootView, id);
+      CheckBox friday = ViewBindings.findChildViewById(rootView, id);
       if (friday == null) {
         break missingId;
       }
 
       id = R.id.monday;
-      Button monday = ViewBindings.findChildViewById(rootView, id);
+      CheckBox monday = ViewBindings.findChildViewById(rootView, id);
       if (monday == null) {
         break missingId;
       }
 
       id = R.id.saturday;
-      Button saturday = ViewBindings.findChildViewById(rootView, id);
+      CheckBox saturday = ViewBindings.findChildViewById(rootView, id);
       if (saturday == null) {
         break missingId;
       }
 
       id = R.id.sunday;
-      Button sunday = ViewBindings.findChildViewById(rootView, id);
+      CheckBox sunday = ViewBindings.findChildViewById(rootView, id);
       if (sunday == null) {
         break missingId;
       }
 
       id = R.id.thursday;
-      Button thursday = ViewBindings.findChildViewById(rootView, id);
+      CheckBox thursday = ViewBindings.findChildViewById(rootView, id);
       if (thursday == null) {
         break missingId;
       }
@@ -176,19 +178,19 @@ public final class ActivityAddHabitBinding implements ViewBinding {
       ToolbarBinding binding_toolbarAddHabit = ToolbarBinding.bind(toolbarAddHabit);
 
       id = R.id.tuesday;
-      Button tuesday = ViewBindings.findChildViewById(rootView, id);
+      CheckBox tuesday = ViewBindings.findChildViewById(rootView, id);
       if (tuesday == null) {
         break missingId;
       }
 
       id = R.id.wednesday;
-      Button wednesday = ViewBindings.findChildViewById(rootView, id);
+      CheckBox wednesday = ViewBindings.findChildViewById(rootView, id);
       if (wednesday == null) {
         break missingId;
       }
 
       return new ActivityAddHabitBinding((ConstraintLayout) rootView, Donebutton, checkBox,
-          editTextDate, editTextReason, editTextTitle, friday, monday, saturday, sunday, thursday,
+          datePicker, editTextReason, editTextTitle, friday, monday, saturday, sunday, thursday,
           binding_toolbarAddHabit, tuesday, wednesday);
     }
     String missingId = rootView.getResources().getResourceName(id);

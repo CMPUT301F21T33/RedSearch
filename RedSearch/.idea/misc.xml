@@ -8,6 +8,8 @@
         <entry key="app/src/main/res/drawable/round_button.xml" value="0.19010416666666666" />
         <entry key="app/src/main/res/layout/activity_add_habit.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_add_habit_event.xml" value="0.2676546336431279" />
+        <entry key="app/src/main/res/layout/activity_follow_request.xml" value="0.18888888888888888" />
+        <entry key="app/src/main/res/layout/activity_friends.xml" value="0.15052083333333333" />
         <entry key="app/src/main/res/layout/activity_habit_event_list.xml" value="0.16258048767713168" />
         <entry key="app/src/main/res/layout/activity_habit_view.xml" value="0.25363788498577783" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.17280369580157912" />
@@ -15,10 +17,13 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2002499283919438" />
         <entry key="app/src/main/res/layout/activity_maps.xml" value="0.3278985507246377" />
         <entry key="app/src/main/res/layout/activity_my_habits.xml" value="0.23140755634149296" />
+        <entry key="app/src/main/res/layout/activity_search_users.xml" value="0.18888888888888888" />
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.21855004020622432" />
         <entry key="app/src/main/res/layout/activity_view_habit.xml" value="0.22796594942727344" />
-        <entry key="app/src/main/res/layout/activity_view_habit_event.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/custom_homelist.xml" value="0.12919088064371928" />
+        <entry key="app/src/main/res/layout/activity_view_habit_event.xml" value="0.2191661903598474" />
+        <entry key="app/src/main/res/layout/custom_follow_list.xml" value="0.221012167482227" />
+        <entry key="app/src/main/res/layout/custom_friend_list.xml" value="0.15126376946328596" />
+        <entry key="app/src/main/res/layout/custom_homelist.xml" value="0.20761971685503375" />
         <entry key="app/src/main/res/layout/custom_listview.xml" value="0.2905512633165933" />
         <entry key="app/src/main/res/layout/habitcontent.xml" value="0.28017453730188174" />
         <entry key="app/src/main/res/layout/home.xml" value="0.1328125" />
@@ -27,6 +32,7 @@
         <entry key="app/src/main/res/layout/menu.xml" value="0.17395833333333333" />
         <entry key="app/src/main/res/layout/toolbar.xml" value="0.2689126778341047" />
         <entry key="app/src/main/res/layout/toolbar_edit_delete.xml" value="0.17395833333333333" />
+        <entry key="app/src/main/res/layout/toolbar_friends.xml" value="0.26526167052037025" />
         <entry key="app/src/main/res/layout/toolbar_home.xml" value="0.17395833333333333" />
       </map>
     </option>

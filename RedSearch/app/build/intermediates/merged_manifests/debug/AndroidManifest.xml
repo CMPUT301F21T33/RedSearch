@@ -44,7 +44,15 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.RedSearch" >
-
+        <activity
+            android:name="com.example.redsearch.FriendsActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.redsearch.SearchUsersActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.redsearch.FollowRequestActivity"
+            android:exported="true" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -53,7 +61,6 @@
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/.
         -->
-
         <activity
             android:name="com.example.redsearch.ViewHabitEventActivity"
             android:exported="true"
