@@ -114,6 +114,10 @@ public class HabitEvent{
      */
     public void setImage(Bitmap Image) {this.image = Image;}
 
+    /**
+     * Geolocation setter
+     * @param location {@code GeoPoint} Geolocation associated with HabitEvent
+     */
     public void setLocation(GeoPoint location) {this.location = location;}
 
     /**
@@ -133,6 +137,14 @@ public class HabitEvent{
      * @return {@code Bitmap} Image associated with HabitEvent
      */
     Bitmap getImage(){return this.image;}
+
+    /**
+     * HabitEvent location getter
+     * @return {@code GeoPoint} Geolocation associated with HabitEvent
+     */
+    GeoPoint getLocation() {
+        return this.location;
+    }
 
     /**
      * Overridden equals method to compare habit events.
