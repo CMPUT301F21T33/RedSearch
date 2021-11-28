@@ -305,7 +305,7 @@ public class DataBaseAccess {
         returnData.clear();
         DocumentReference docRef = db.collection("Users").document(Username);
         Task<DocumentSnapshot> data;
-
+        Map<String, Object> retrievedData;
         Boolean check = true;
         while(check){
             try {
@@ -314,7 +314,19 @@ public class DataBaseAccess {
                 Log.d(TAG, "Error has occurred in accessing Database: " + IllegalStateException);
                 return false;
             }
-            Map<String, Object> retrievedData = data.getResult().getData();
+            int count = 0;
+            while(true) {
+                try {
+                    retrievedData = data.getResult().getData();
+                    break;
+                } catch (Exception IllegalStateException) {
+                    count++;
+                    if (count > 200) {
+                        Log.d(TAG, "Error has occurred in accessing Database: " + IllegalStateException);
+                        return false;
+                    }
+                }
+            }
             returnData = (ArrayList<String>) retrievedData.get("Followers");
             Log.d(TAG, "Data retrieved");
             check = false;
@@ -380,7 +392,7 @@ public class DataBaseAccess {
         returnData.clear();
         DocumentReference docRef = db.collection("Users").document(Username);
         Task<DocumentSnapshot> data;
-
+        Map<String, Object> retrievedData;
         Boolean check = true;
         while(check){
             try {
@@ -389,7 +401,19 @@ public class DataBaseAccess {
                 Log.d(TAG, "Error has occurred in accessing Database: " + IllegalStateException);
                 return false;
             }
-            Map<String, Object> retrievedData = data.getResult().getData();
+            int count = 0;
+            while(true) {
+                try {
+                    retrievedData = data.getResult().getData();
+                    break;
+                } catch (Exception IllegalStateException) {
+                    count++;
+                    if (count > 200) {
+                        Log.d(TAG, "Error has occurred in accessing Database: " + IllegalStateException);
+                        return false;
+                    }
+                }
+            }
             returnData = (ArrayList<String>) retrievedData.get("Follower_requests");
             Log.d(TAG, "Data retrieved");
             check = false;
@@ -449,7 +473,7 @@ public class DataBaseAccess {
         returnData.clear();
         DocumentReference docRef = db.collection("Users").document(Username);
         Task<DocumentSnapshot> data;
-
+        Map<String, Object> retrievedData;
         Boolean check = true;
         while(check){
             try {
@@ -458,7 +482,19 @@ public class DataBaseAccess {
                 Log.d(TAG, "Error has occurred in accessing Database: " + IllegalStateException);
                 return false;
             }
-            Map<String, Object> retrievedData = data.getResult().getData();
+            int count = 0;
+            while(true) {
+                try {
+                    retrievedData = data.getResult().getData();
+                    break;
+                } catch (Exception IllegalStateException) {
+                    count++;
+                    if (count > 200) {
+                        Log.d(TAG, "Error has occurred in accessing Database: " + IllegalStateException);
+                        return false;
+                    }
+                }
+            }
             returnData = (ArrayList<String>) retrievedData.get("Following");
             Log.d(TAG, "Data retrieved");
             check = false;
