@@ -12,8 +12,8 @@ com/example/redsearch/databinding/ActivityFriendsBinding.java
  com.example.redsearch.databinding.ActivityFriendsBinding
 com/example/redsearch/databinding/ActivityMyHabitsBinding.java
  com.example.redsearch.databinding.ActivityMyHabitsBinding
-com/example/redsearch/databinding/ActivitySignupBinding.java
- com.example.redsearch.databinding.ActivitySignupBinding
+com/example/redsearch/AddHabitActivity.java
+ com.example.redsearch.AddHabitActivity
 com/example/redsearch/HabitEventList.java
  com.example.redsearch.HabitEventList
 com/example/redsearch/ViewHabitEventActivity.java
@@ -42,8 +42,26 @@ com/example/redsearch/databinding/ActivityHabitViewBinding.java
  com.example.redsearch.databinding.ActivityHabitViewBinding
 com/example/redsearch/databinding/ActivityMainBinding.java
  com.example.redsearch.databinding.ActivityMainBinding
-com/example/redsearch/databinding/ActivityFollowRequestBinding.java
- com.example.redsearch.databinding.ActivityFollowRequestBinding
+com/example/redsearch/DataBaseAccess.java
+ com.example.redsearch.DataBaseAccess
+ com.example.redsearch.DataBaseAccess$1
+ com.example.redsearch.DataBaseAccess$10
+ com.example.redsearch.DataBaseAccess$11
+ com.example.redsearch.DataBaseAccess$12
+ com.example.redsearch.DataBaseAccess$13
+ com.example.redsearch.DataBaseAccess$14
+ com.example.redsearch.DataBaseAccess$15
+ com.example.redsearch.DataBaseAccess$16
+ com.example.redsearch.DataBaseAccess$17
+ com.example.redsearch.DataBaseAccess$18
+ com.example.redsearch.DataBaseAccess$2
+ com.example.redsearch.DataBaseAccess$3
+ com.example.redsearch.DataBaseAccess$4
+ com.example.redsearch.DataBaseAccess$5
+ com.example.redsearch.DataBaseAccess$6
+ com.example.redsearch.DataBaseAccess$7
+ com.example.redsearch.DataBaseAccess$8
+ com.example.redsearch.DataBaseAccess$9
 com/example/redsearch/databinding/ActivityAddHabitBinding.java
  com.example.redsearch.databinding.ActivityAddHabitBinding
 com/example/redsearch/databinding/ActivityViewHabitEventBinding.java
@@ -58,8 +76,8 @@ com/example/redsearch/databinding/ActivityHabitEventListBinding.java
  com.example.redsearch.databinding.ActivityHabitEventListBinding
 com/example/redsearch/HabitEventListAdapter.java
  com.example.redsearch.HabitEventListAdapter
-com/example/redsearch/Habit.java
- com.example.redsearch.Habit
+com/example/redsearch/MainActivity.java
+ com.example.redsearch.MainActivity
 com/example/redsearch/HabitView.java
  com.example.redsearch.HabitView
 com/example/redsearch/AddHabitEventActivity.java
@@ -97,27 +115,9 @@ com/example/redsearch/databinding/CustomFollowListBinding.java
  com.example.redsearch.databinding.CustomFollowListBinding
 com/example/redsearch/databinding/CustomFriendListBinding.java
  com.example.redsearch.databinding.CustomFriendListBinding
-com/example/redsearch/MainActivity.java
- com.example.redsearch.MainActivity
-com/example/redsearch/DataBaseAccess.java
- com.example.redsearch.DataBaseAccess
- com.example.redsearch.DataBaseAccess$1
- com.example.redsearch.DataBaseAccess$10
- com.example.redsearch.DataBaseAccess$11
- com.example.redsearch.DataBaseAccess$12
- com.example.redsearch.DataBaseAccess$13
- com.example.redsearch.DataBaseAccess$14
- com.example.redsearch.DataBaseAccess$15
- com.example.redsearch.DataBaseAccess$16
- com.example.redsearch.DataBaseAccess$17
- com.example.redsearch.DataBaseAccess$18
- com.example.redsearch.DataBaseAccess$2
- com.example.redsearch.DataBaseAccess$3
- com.example.redsearch.DataBaseAccess$4
- com.example.redsearch.DataBaseAccess$5
- com.example.redsearch.DataBaseAccess$6
- com.example.redsearch.DataBaseAccess$7
- com.example.redsearch.DataBaseAccess$8
- com.example.redsearch.DataBaseAccess$9
-com/example/redsearch/AddHabitActivity.java
- com.example.redsearch.AddHabitActivity
+com/example/redsearch/databinding/ActivitySignupBinding.java
+ com.example.redsearch.databinding.ActivitySignupBinding
+com/example/redsearch/databinding/ActivityFollowRequestBinding.java
+ com.example.redsearch.databinding.ActivityFollowRequestBinding
+com/example/redsearch/Habit.java
+ com.example.redsearch.Habit
