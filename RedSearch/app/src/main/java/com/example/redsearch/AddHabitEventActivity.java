@@ -40,8 +40,8 @@ public class AddHabitEventActivity extends AppCompatActivity implements SelectLo
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_habit_event);
-        Intent intent = getIntent();
-        user = intent.getStringExtra("USER");
+        //Intent intent = getIntent();
+        //user = intent.getStringExtra("USER");
 
         Toolbar toolbar = findViewById(R.id.toolbar_add_habit_event);
         setSupportActionBar(toolbar);
