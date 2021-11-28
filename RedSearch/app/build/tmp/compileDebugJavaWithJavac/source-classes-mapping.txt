@@ -1,7 +1,7 @@
 com/example/redsearch/databinding/ActivityAddHabitEventBinding.java
  com.example.redsearch.databinding.ActivityAddHabitEventBinding
-com/example/redsearch/HabitEvent.java
- com.example.redsearch.HabitEvent
+com/example/redsearch/databinding/CustomFriendListBinding.java
+ com.example.redsearch.databinding.CustomFriendListBinding
 com/example/redsearch/MapViewInScroll.java
  com.example.redsearch.MapViewInScroll
 com/example/redsearch/databinding/ActivitySearchUsersBinding.java
@@ -12,10 +12,12 @@ com/example/redsearch/databinding/ActivityFriendsBinding.java
  com.example.redsearch.databinding.ActivityFriendsBinding
 com/example/redsearch/databinding/ActivityMyHabitsBinding.java
  com.example.redsearch.databinding.ActivityMyHabitsBinding
-com/example/redsearch/AddHabitActivity.java
- com.example.redsearch.AddHabitActivity
-com/example/redsearch/HabitEventList.java
- com.example.redsearch.HabitEventList
+com/example/redsearch/databinding/ActivitySignupBinding.java
+ com.example.redsearch.databinding.ActivitySignupBinding
+com/example/redsearch/SelectLocation.java
+ com.example.redsearch.SelectLocation
+ com.example.redsearch.SelectLocation$1
+ com.example.redsearch.SelectLocation$OnFragmentInteractionListener
 com/example/redsearch/ViewHabitEventActivity.java
  com.example.redsearch.ViewHabitEventActivity
 com/example/redsearch/databinding/MapViewInScrollBinding.java
@@ -36,32 +38,14 @@ com/example/redsearch/BuildConfig.java
  com.example.redsearch.BuildConfig
 com/example/redsearch/FollowRequestActivity.java
  com.example.redsearch.FollowRequestActivity
-com/example/redsearch/HabitList.java
- com.example.redsearch.HabitList
+com/example/redsearch/HabitListAdapter.java
+ com.example.redsearch.HabitListAdapter
 com/example/redsearch/databinding/ActivityHabitViewBinding.java
  com.example.redsearch.databinding.ActivityHabitViewBinding
 com/example/redsearch/databinding/ActivityMainBinding.java
  com.example.redsearch.databinding.ActivityMainBinding
-com/example/redsearch/DataBaseAccess.java
- com.example.redsearch.DataBaseAccess
- com.example.redsearch.DataBaseAccess$1
- com.example.redsearch.DataBaseAccess$10
- com.example.redsearch.DataBaseAccess$11
- com.example.redsearch.DataBaseAccess$12
- com.example.redsearch.DataBaseAccess$13
- com.example.redsearch.DataBaseAccess$14
- com.example.redsearch.DataBaseAccess$15
- com.example.redsearch.DataBaseAccess$16
- com.example.redsearch.DataBaseAccess$17
- com.example.redsearch.DataBaseAccess$18
- com.example.redsearch.DataBaseAccess$2
- com.example.redsearch.DataBaseAccess$3
- com.example.redsearch.DataBaseAccess$4
- com.example.redsearch.DataBaseAccess$5
- com.example.redsearch.DataBaseAccess$6
- com.example.redsearch.DataBaseAccess$7
- com.example.redsearch.DataBaseAccess$8
- com.example.redsearch.DataBaseAccess$9
+com/example/redsearch/databinding/ActivityFollowRequestBinding.java
+ com.example.redsearch.databinding.ActivityFollowRequestBinding
 com/example/redsearch/databinding/ActivityAddHabitBinding.java
  com.example.redsearch.databinding.ActivityAddHabitBinding
 com/example/redsearch/databinding/ActivityViewHabitEventBinding.java
@@ -76,12 +60,12 @@ com/example/redsearch/databinding/ActivityHabitEventListBinding.java
  com.example.redsearch.databinding.ActivityHabitEventListBinding
 com/example/redsearch/HabitEventListAdapter.java
  com.example.redsearch.HabitEventListAdapter
-com/example/redsearch/MainActivity.java
- com.example.redsearch.MainActivity
+com/example/redsearch/databinding/ToolbarFriendsBinding.java
+ com.example.redsearch.databinding.ToolbarFriendsBinding
 com/example/redsearch/HabitView.java
  com.example.redsearch.HabitView
-com/example/redsearch/AddHabitEventActivity.java
- com.example.redsearch.AddHabitEventActivity
+com/example/redsearch/databinding/CustomFollowListBinding.java
+ com.example.redsearch.databinding.CustomFollowListBinding
 com/example/redsearch/MyHabitsActivity.java
  com.example.redsearch.MyHabitsActivity
  com.example.redsearch.MyHabitsActivity$1
@@ -103,21 +87,37 @@ com/example/redsearch/databinding/CustomHomelistBinding.java
  com.example.redsearch.databinding.CustomHomelistBinding
 com/example/redsearch/ViewHabitActivity.java
  com.example.redsearch.ViewHabitActivity
-com/example/redsearch/databinding/ToolbarFriendsBinding.java
- com.example.redsearch.databinding.ToolbarFriendsBinding
-com/example/redsearch/SelectLocation.java
- com.example.redsearch.SelectLocation
- com.example.redsearch.SelectLocation$1
- com.example.redsearch.SelectLocation$OnFragmentInteractionListener
-com/example/redsearch/HabitListAdapter.java
- com.example.redsearch.HabitListAdapter
-com/example/redsearch/databinding/CustomFollowListBinding.java
- com.example.redsearch.databinding.CustomFollowListBinding
-com/example/redsearch/databinding/CustomFriendListBinding.java
- com.example.redsearch.databinding.CustomFriendListBinding
-com/example/redsearch/databinding/ActivitySignupBinding.java
- com.example.redsearch.databinding.ActivitySignupBinding
-com/example/redsearch/databinding/ActivityFollowRequestBinding.java
- com.example.redsearch.databinding.ActivityFollowRequestBinding
+com/example/redsearch/MainActivity.java
+ com.example.redsearch.MainActivity
+com/example/redsearch/DataBaseAccess.java
+ com.example.redsearch.DataBaseAccess
+ com.example.redsearch.DataBaseAccess$1
+ com.example.redsearch.DataBaseAccess$10
+ com.example.redsearch.DataBaseAccess$11
+ com.example.redsearch.DataBaseAccess$12
+ com.example.redsearch.DataBaseAccess$13
+ com.example.redsearch.DataBaseAccess$14
+ com.example.redsearch.DataBaseAccess$15
+ com.example.redsearch.DataBaseAccess$16
+ com.example.redsearch.DataBaseAccess$17
+ com.example.redsearch.DataBaseAccess$18
+ com.example.redsearch.DataBaseAccess$2
+ com.example.redsearch.DataBaseAccess$3
+ com.example.redsearch.DataBaseAccess$4
+ com.example.redsearch.DataBaseAccess$5
+ com.example.redsearch.DataBaseAccess$6
+ com.example.redsearch.DataBaseAccess$7
+ com.example.redsearch.DataBaseAccess$8
+ com.example.redsearch.DataBaseAccess$9
+com/example/redsearch/AddHabitActivity.java
+ com.example.redsearch.AddHabitActivity
+com/example/redsearch/HabitEvent.java
+ com.example.redsearch.HabitEvent
+com/example/redsearch/AddHabitEventActivity.java
+ com.example.redsearch.AddHabitEventActivity
+com/example/redsearch/HabitList.java
+ com.example.redsearch.HabitList
+com/example/redsearch/HabitEventList.java
+ com.example.redsearch.HabitEventList
 com/example/redsearch/Habit.java
  com.example.redsearch.Habit

@@ -33,6 +33,9 @@ public final class ActivityAddHabitEventBinding implements ViewBinding {
   public final ImageButton cameraButton;
 
   @NonNull
+  public final Button cancel;
+
+  @NonNull
   public final TextView coordinates;
 
   @NonNull
@@ -49,13 +52,14 @@ public final class ActivityAddHabitEventBinding implements ViewBinding {
 
   private ActivityAddHabitEventBinding(@NonNull ConstraintLayout rootView,
       @NonNull EditText Comment, @NonNull Button button3, @NonNull ImageButton cameraButton,
-      @NonNull TextView coordinates, @NonNull ImageView habitImage,
+      @NonNull Button cancel, @NonNull TextView coordinates, @NonNull ImageView habitImage,
       @NonNull ImageButton imageButton4, @NonNull ImageButton mapbutton,
       @NonNull ToolbarBinding toolbarAddHabitEvent) {
     this.rootView = rootView;
     this.Comment = Comment;
     this.button3 = button3;
     this.cameraButton = cameraButton;
+    this.cancel = cancel;
     this.coordinates = coordinates;
     this.habitImage = habitImage;
     this.imageButton4 = imageButton4;
@@ -108,6 +112,12 @@ public final class ActivityAddHabitEventBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.cancel;
+      Button cancel = ViewBindings.findChildViewById(rootView, id);
+      if (cancel == null) {
+        break missingId;
+      }
+
       id = R.id.coordinates;
       TextView coordinates = ViewBindings.findChildViewById(rootView, id);
       if (coordinates == null) {
@@ -140,7 +150,7 @@ public final class ActivityAddHabitEventBinding implements ViewBinding {
       ToolbarBinding binding_toolbarAddHabitEvent = ToolbarBinding.bind(toolbarAddHabitEvent);
 
       return new ActivityAddHabitEventBinding((ConstraintLayout) rootView, Comment, button3,
-          cameraButton, coordinates, habitImage, imageButton4, mapbutton,
+          cameraButton, cancel, coordinates, habitImage, imageButton4, mapbutton,
           binding_toolbarAddHabitEvent);
     }
     String missingId = rootView.getResources().getResourceName(id);

@@ -124,25 +124,25 @@ public class HabitEvent{
      * HabitEvent date getter
      * @return {@code Date} Date the habitEvent was created
      */
-    Date getDate(){return this.date;}
+    public Date getDate(){return this.date;}
 
     /**
      * HabitEvent comment getter
      * @return {@code String} Comment associated with HabitEvent
      */
-    String getComment(){return this.comment;}
+    public String getComment(){return this.comment;}
 
     /**
      * HabitEvent image getter
      * @return {@code Bitmap} Image associated with HabitEvent
      */
-    Bitmap getImage(){return this.image;}
+    public Bitmap getImage(){return this.image;}
 
     /**
      * HabitEvent location getter
      * @return {@code GeoPoint} Geolocation associated with HabitEvent
      */
-    GeoPoint getLocation() {
+    public GeoPoint getLocation() {
         return this.location;
     }
 
