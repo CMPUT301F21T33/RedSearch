@@ -167,6 +167,7 @@ public class DataBaseAccess {
         returnData.clear();
         DocumentReference docRef = db.collection("Users").document(Username);
         Task<DocumentSnapshot> data;
+        Map<String, Object> retrievedData;
 
         Boolean check = true;
         while(check){
@@ -176,14 +177,34 @@ public class DataBaseAccess {
                 Log.d(TAG, "Error has occurred in accessing Database: " + IllegalStateException);
                 return false;
             }
-            Map<String, Object> retrievedData = data.getResult().getData();
+            int count = 0;
+            while(true) {
+                try {
+                    retrievedData = data.getResult().getData();
+                    break;
+                } catch (Exception IllegalStateException) {
+                    count++;
+                    if (count > 200) {
+                        Log.d(TAG, "Error has occurred in accessing Database: " + IllegalStateException);
+                        return false;
+                    }
+                }
+            }
             for(String key: retrievedData.keySet()){
                 if(key.equals("Password") || key.equals("Followers") || key.equals("Follower_requests") || key.equals("Following")){
                     continue;
                 }
                 Object habitData = retrievedData.get(key);
                 HashMap<String, ?> stuff = (HashMap) habitData;
-                Habit habit = new Habit(key, (String) stuff.get("reason"), ((Timestamp) stuff.get("startDate")).toDate());
+                Object hh = (HashMap<String, HabitEventList>) stuff.get("habitEventList");
+                Habit habit = new Habit(key,
+                        (String) stuff.get("reason"),
+                        ((Timestamp) stuff.get("startDate")).toDate(),
+                        (int) ((long) stuff.get("daysplanned")),
+                        (int) ((long)stuff.get("dayshappened")),
+                        (Boolean) stuff.get("visible"),
+                        (HabitEventList) stuff.get("habitEventList"),
+                        (boolean[]) stuff.get("weekday"));
                 returnData.add(habit);
 
             }

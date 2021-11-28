@@ -2097,6 +2097,7 @@ id easeInOut
 id easeOut
 id east
 id editButton
+id editText
 id editTextReason
 id editTextTitle
 id edit_query
@@ -2300,7 +2301,6 @@ id scrollIndicatorUp
 id scrollView
 id scrollable
 id searchButton
-id searchView2
 id search_badge
 id search_bar
 id search_button

@@ -10,6 +10,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.Date;
+
 public class MainActivity extends AppCompatActivity {
 
     Button signinButton;
@@ -30,6 +33,13 @@ public class MainActivity extends AppCompatActivity {
         password = findViewById(R.id.password);
         userError = findViewById(R.id.userError);
         passwordError = findViewById(R.id.passwordError);
+
+        DataBaseAccess db = new DataBaseAccess();
+        Habit thing = new Habit("Title", "For cars", new Date(), 1);
+        db.dataInsert("TEST", thing.getTitle(), thing);
+        ArrayList<Habit> stuff = new ArrayList<Habit>();
+        while(!db.returnHabits("TEST",stuff));
+        int x =0;
 
 
     }
