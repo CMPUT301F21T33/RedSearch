@@ -2051,6 +2051,7 @@ id content
 id contentPanel
 id contiguous
 id continuousVelocity
+id coordinates
 id coordinator
 id cos
 id counterclockwise
@@ -2149,7 +2150,6 @@ id image
 id imageButton
 id imageButton3
 id imageButton4
-id imageView2
 id imageView3
 id immediateStop
 id included
@@ -2176,6 +2176,7 @@ id list_close
 id list_ind
 id list_item
 id list_txt
+id mapbutton
 id mapscroll
 id masked
 id match_constraint

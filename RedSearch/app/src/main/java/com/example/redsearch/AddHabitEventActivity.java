@@ -3,9 +3,6 @@
 
 package com.example.redsearch;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -14,6 +11,13 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.DialogFragment;
+
+import org.osmdroid.util.GeoPoint;
 
 import java.io.IOException;
 import java.util.Date;
@@ -22,18 +26,22 @@ import java.util.Date;
  * This is the AddHabitEventActivity that is used to add a habit event
  */
 
-public class AddHabitEventActivity extends AppCompatActivity {
+public class AddHabitEventActivity extends AppCompatActivity implements SelectLocation.OnFragmentInteractionListener {
 
     private final int PICK_IMAGE_REQUEST = 141;
     private final int CAMERA_IMAGE_REQUEST = 232;
     private Uri filePath;
     private ImageView habitImage;
     private Bitmap bitmap = null;
+    private GeoPoint point = null;
+    private String user;
+    private String habit;
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_habit_event);
+        Intent intent = getIntent();
+        user = intent.getStringExtra("USER");
 
         Toolbar toolbar = findViewById(R.id.toolbar_add_habit_event);
         setSupportActionBar(toolbar);
@@ -50,8 +58,7 @@ public class AddHabitEventActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode,
                                     int resultCode,
-                                    Intent data)
-    {
+                                    Intent data) {
 
         super.onActivityResult(requestCode,
                 resultCode,
@@ -113,18 +120,34 @@ public class AddHabitEventActivity extends AppCompatActivity {
         startActivityForResult(camera_intent, CAMERA_IMAGE_REQUEST);
     }
 
+    public void openMap(View view) {
+        Bundle bundle = new Bundle();
+        DialogFragment fragment = new SelectLocation();
+        if (point != null){
+            bundle.putDouble("LATITUDE", point.getLatitude());
+            bundle.putDouble("LONGTITUDE", point.getLongitude());
+        }
+        fragment.setArguments(bundle);
+        fragment.show(getSupportFragmentManager(), "Select Location");
+    }
+
     public void goToHome(View view) {
         EditText comment = findViewById(R.id.Comment);
         Date date = new Date();
         HabitEvent newHabitEvent;
-        if (bitmap != null) {
-            newHabitEvent = new HabitEvent(comment.getText().toString(), date, bitmap);
-        } else {
-            newHabitEvent = new HabitEvent(comment.getText().toString(), date);
+        if (bitmap != null && point != null) {
+            newHabitEvent = new HabitEvent(comment.getText().toString(), date, point, bitmap);
         }
 
         Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
 
     }
+    @Override
+    public void onOkPressed(GeoPoint newPoint){
+        point = newPoint;
+        TextView coordinates  = findViewById(R.id.coordinates);
+        coordinates.setText(point.toDoubleString());
+    }
 }
+

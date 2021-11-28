@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -32,33 +33,33 @@ public final class ActivityAddHabitEventBinding implements ViewBinding {
   public final ImageButton cameraButton;
 
   @NonNull
-  public final ImageView habitImage;
+  public final TextView coordinates;
 
   @NonNull
-  public final ImageButton imageButton3;
+  public final ImageView habitImage;
 
   @NonNull
   public final ImageButton imageButton4;
 
   @NonNull
-  public final ImageView imageView2;
+  public final ImageButton mapbutton;
 
   @NonNull
   public final ToolbarBinding toolbarAddHabitEvent;
 
   private ActivityAddHabitEventBinding(@NonNull ConstraintLayout rootView,
       @NonNull EditText Comment, @NonNull Button button3, @NonNull ImageButton cameraButton,
-      @NonNull ImageView habitImage, @NonNull ImageButton imageButton3,
-      @NonNull ImageButton imageButton4, @NonNull ImageView imageView2,
+      @NonNull TextView coordinates, @NonNull ImageView habitImage,
+      @NonNull ImageButton imageButton4, @NonNull ImageButton mapbutton,
       @NonNull ToolbarBinding toolbarAddHabitEvent) {
     this.rootView = rootView;
     this.Comment = Comment;
     this.button3 = button3;
     this.cameraButton = cameraButton;
+    this.coordinates = coordinates;
     this.habitImage = habitImage;
-    this.imageButton3 = imageButton3;
     this.imageButton4 = imageButton4;
-    this.imageView2 = imageView2;
+    this.mapbutton = mapbutton;
     this.toolbarAddHabitEvent = toolbarAddHabitEvent;
   }
 
@@ -107,15 +108,15 @@ public final class ActivityAddHabitEventBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.habitImage;
-      ImageView habitImage = ViewBindings.findChildViewById(rootView, id);
-      if (habitImage == null) {
+      id = R.id.coordinates;
+      TextView coordinates = ViewBindings.findChildViewById(rootView, id);
+      if (coordinates == null) {
         break missingId;
       }
 
-      id = R.id.imageButton3;
-      ImageButton imageButton3 = ViewBindings.findChildViewById(rootView, id);
-      if (imageButton3 == null) {
+      id = R.id.habitImage;
+      ImageView habitImage = ViewBindings.findChildViewById(rootView, id);
+      if (habitImage == null) {
         break missingId;
       }
 
@@ -125,9 +126,9 @@ public final class ActivityAddHabitEventBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageView2;
-      ImageView imageView2 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView2 == null) {
+      id = R.id.mapbutton;
+      ImageButton mapbutton = ViewBindings.findChildViewById(rootView, id);
+      if (mapbutton == null) {
         break missingId;
       }
 
@@ -139,7 +140,7 @@ public final class ActivityAddHabitEventBinding implements ViewBinding {
       ToolbarBinding binding_toolbarAddHabitEvent = ToolbarBinding.bind(toolbarAddHabitEvent);
 
       return new ActivityAddHabitEventBinding((ConstraintLayout) rootView, Comment, button3,
-          cameraButton, habitImage, imageButton3, imageButton4, imageView2,
+          cameraButton, coordinates, habitImage, imageButton4, mapbutton,
           binding_toolbarAddHabitEvent);
     }
     String missingId = rootView.getResources().getResourceName(id);

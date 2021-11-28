@@ -24,15 +24,19 @@
 
 package com.example.redsearch;
 
+import android.graphics.Bitmap;
+
 import androidx.annotation.NonNull;
 
+import org.osmdroid.util.GeoPoint;
+
 import java.util.Date;
-import android.graphics.Bitmap;
 
 public class HabitEvent{
     private String comment;
     private Date date;
     private Bitmap image;
+    private GeoPoint location;
 
     /**
      * Habit Event Class constructor
@@ -55,6 +59,32 @@ public class HabitEvent{
         // overloaded constructor
         setComment(comment);
         setDate(date);
+        setImage(image);
+    }
+
+    /**
+     * Habit event class constructor with geopoint
+     * @param comment {@code String} comment associated with HabitEvent
+     * @param date {@code Date} date HabitEvent was created
+     * @param point {@code GeoPoint} point where the habit event happened
+     */
+    HabitEvent(String comment, Date date, GeoPoint point){
+        setComment(comment);
+        setDate(date);
+        setLocation(point);
+    }
+
+    /**
+     * Habit event class constructor with Geopoint and Bitmap
+     * @param comment {@code String} comment associated with HabitEvent
+     * @param date {@code Date} date HabitEvent was created
+     * @param point {@code GeoPoint} point where the habit event happened
+     * @param image {@code Bitmap} image of HabitEvent
+     */
+    HabitEvent(String comment, Date date, GeoPoint point, Bitmap image){
+        setComment(comment);
+        setDate(date);
+        setLocation(point);
         setImage(image);
     }
 
@@ -83,6 +113,8 @@ public class HabitEvent{
      * @param Image {@code Bitmap} image associated with HabitEvent
      */
     public void setImage(Bitmap Image) {this.image = Image;}
+
+    public void setLocation(GeoPoint location) {this.location = location;}
 
     /**
      * HabitEvent date getter
