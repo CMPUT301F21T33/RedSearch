@@ -13,7 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="right"
         android:background="@color/purple_200"
-        android:paddingRight="5dp"
+        android:minHeight="48dp"
+        android:paddingRight="20dp"
         app:showAsAction="ifRoom"
         app:srcCompat="@drawable/ic_baseline_delete_24" />
 
@@ -23,6 +24,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="right"
         android:background="@color/purple_200"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
         android:paddingRight="10dp"
         app:showAsAction="ifRoom"
         app:srcCompat="@drawable/ic_baseline_edit_24" />

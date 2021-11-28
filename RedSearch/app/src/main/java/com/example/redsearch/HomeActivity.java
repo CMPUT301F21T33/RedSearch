@@ -56,6 +56,11 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void goToFriends(View view) {
+        Intent intent = new Intent(this, FriendsActivity.class);
+        startActivity(intent);
+    }
+
     public void goToHabitEventList(View view) {
         Intent intent = new Intent(this, HabitEventListActivity.class);
         startActivity(intent);
