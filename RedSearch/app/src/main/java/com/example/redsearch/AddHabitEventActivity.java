@@ -57,10 +57,13 @@ public class AddHabitEventActivity extends AppCompatActivity implements SelectLo
         habitImage = findViewById(R.id.habitImage);  // Initialize the habit event image
     }
 
-    @Override
     /**
-     * Overridden OnActivityResult method for habit event images
+     * Action for if an image is requested for habit event
+     * @param requestCode {@code int} The request code number for desired outcome
+     * @param resultCode {@code int} Result code
+     * @param data {@code data} The intent data
      */
+    @Override
     protected void onActivityResult(int requestCode,
                                     int resultCode,
                                     Intent data) {
@@ -174,9 +177,24 @@ public class AddHabitEventActivity extends AppCompatActivity implements SelectLo
         }
 
         Intent intent = new Intent(this, HomeActivity.class);
+        intent.putExtra("HabitDone", "Done");
         startActivity(intent);
 
     }
+
+    /**
+     * Go to the home page without logging a habit event
+     * @param view {@code View}
+     */
+    public void goHomeCancelEvent(View view) {
+        Intent intent = new Intent(this, HomeActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * Returns the selected location via GeoPoint
+     * @param newPoint {@code GeoPoint} returns the selected location via a GeoPoint
+     */
     @Override
     public void onOkPressed(GeoPoint newPoint){
         point = newPoint;
