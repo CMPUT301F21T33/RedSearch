@@ -37,25 +37,30 @@ public class AddHabitEventActivity extends AppCompatActivity implements SelectLo
     private String user;
     private String habit;
 
+    /**
+     * To run at the start of the activity
+     * @param savedInstanceState {@code Bundle}
+     */
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_habit_event);
+
+        // Get the Username and Habit name from the previous activity
         //Intent intent = getIntent();
         //user = intent.getStringExtra("USER");
+        //habit = intent.getStringExtra("HABIT");
 
         Toolbar toolbar = findViewById(R.id.toolbar_add_habit_event);
         setSupportActionBar(toolbar);
         setTitle("Log Habit");
 
-        habitImage = findViewById(R.id.habitImage);
-
-        EditText comment = findViewById(R.id.Comment);
-        Date date = new Date();
-        date.getDate();
+        habitImage = findViewById(R.id.habitImage);  // Initialize the habit event image
     }
 
-    // Override onActivityResult method
     @Override
+    /**
+     * Overridden OnActivityResult method for habit event images
+     */
     protected void onActivityResult(int requestCode,
                                     int resultCode,
                                     Intent data) {
@@ -64,10 +69,10 @@ public class AddHabitEventActivity extends AppCompatActivity implements SelectLo
                 resultCode,
                 data);
 
-        // checking request code and result code
-        // if request code is PICK_IMAGE_REQUEST and
-        // resultCode is RESULT_OK
-        // then set image in the image view
+        /* Checking request code and result code
+            if request code is PICK_IMAGE_REQUEST and resultCode is RESULT_OK then set
+            image in the image view
+         */
         if (requestCode == PICK_IMAGE_REQUEST
                 && resultCode == RESULT_OK
                 && data != null
@@ -92,18 +97,27 @@ public class AddHabitEventActivity extends AppCompatActivity implements SelectLo
             }
         }
 
+        // Check the request code for using the camera to take an image
         if (requestCode == CAMERA_IMAGE_REQUEST
                 && resultCode == RESULT_OK) {
+
+            // Get the image and display it
             bitmap = (Bitmap) data.getExtras().get("data");
             habitImage.setImageBitmap(bitmap);
         }
     }
 
+    /**
+     * Access an uploaded image for habit event
+     * @param view {@code View}
+     */
     public void uploadImage(View view) {
-        // Defining Implicit Intent to mobile gallery
+        // Defining Intent to mobile gallery
         Intent intent = new Intent();
         intent.setType("image/*");
         intent.setAction(Intent.ACTION_GET_CONTENT);
+
+        // Get image from the mobile gallery
         startActivityForResult(
                 Intent.createChooser(
                         intent,
@@ -120,9 +134,15 @@ public class AddHabitEventActivity extends AppCompatActivity implements SelectLo
         startActivityForResult(camera_intent, CAMERA_IMAGE_REQUEST);
     }
 
+    /**
+     * Open the map for geolocation
+     * @param view {@code View}
+     */
     public void openMap(View view) {
         Bundle bundle = new Bundle();
         DialogFragment fragment = new SelectLocation();
+
+        // Get latitude and longtitude
         if (point != null){
             bundle.putDouble("LATITUDE", point.getLatitude());
             bundle.putDouble("LONGTITUDE", point.getLongitude());
@@ -131,12 +151,26 @@ public class AddHabitEventActivity extends AppCompatActivity implements SelectLo
         fragment.show(getSupportFragmentManager(), "Select Location");
     }
 
+    /**
+     * Save habit event and return to the previous page
+     * @param view {@code View}
+     */
     public void goToHome(View view) {
+
+        // Get the comment for the habit event
         EditText comment = findViewById(R.id.Comment);
-        Date date = new Date();
-        HabitEvent newHabitEvent;
+        Date date = new Date();  // Get a date object
+        HabitEvent newHabitEvent;  // Initialize a habit event object to be filled
+
+        // If we have a picture and a geolocation use, that constructor
         if (bitmap != null && point != null) {
             newHabitEvent = new HabitEvent(comment.getText().toString(), date, point, bitmap);
+        } else if (bitmap != null) {  // We only have an image for the habit event
+            newHabitEvent = new HabitEvent(comment.getText().toString(), date, bitmap);
+        } else if (point != null) {  // We only have a geolocation for the habit event
+            newHabitEvent = new HabitEvent(comment.getText().toString(), date, point);
+        } else {  // No geolocation or image for habit event
+            newHabitEvent = new HabitEvent(comment.getText().toString(), date);
         }
 
         Intent intent = new Intent(this, HomeActivity.class);
