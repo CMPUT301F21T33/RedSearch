@@ -2,6 +2,9 @@ package com.example.redsearch;
 
 import java.util.ArrayList;
 
+/**
+ * Data class to store a User's following
+ */
 public class FollowerList {
     private ArrayList<User> followerList = new ArrayList<>();
 
@@ -39,6 +42,4 @@ public class FollowerList {
         }
         followerList.remove(user);
     }
-
-
 }
