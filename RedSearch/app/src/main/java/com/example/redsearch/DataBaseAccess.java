@@ -3,32 +3,33 @@ package com.example.redsearch;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.Timestamp;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
-import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.SetOptions;
 
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * A class that can be instantiated that creates simplified methods of adding and removing data from
  * the database
  */
 public class DataBaseAccess {
-    private final String TAG = "Sample";
-    private FirebaseFirestore db;
-    private CollectionReference collectionReference;
-    private DocumentSnapshot doc;
-    private Boolean check;
+    final String TAG = "Sample";
+    FirebaseFirestore db;
+    CollectionReference collectionReference;
+
+
 
     /**
      * A constructor that must be called to allow any other class to use
@@ -120,64 +121,76 @@ public class DataBaseAccess {
                 });
     }
 
-    /**
-     * Creates a listener that will realtime update with changes to the database
-     * @param Username
-     */
-    public void createListener(String Username){
-        final DocumentReference docRef = db.collection("Users").document(Username);
-        docRef.addSnapshotListener(new EventListener<DocumentSnapshot>() {
-            @Override
-            public void onEvent(@Nullable DocumentSnapshot snapshot,
-                                @Nullable FirebaseFirestoreException e) {
-                if (e != null) {
-                    Log.w(TAG, "Listen failed.", e);
-                    return;
-                }
-
-                if (snapshot != null && snapshot.exists()) {
-                    Log.d(TAG, "Current data: " + snapshot.getData());
-                } else {
-                    Log.d(TAG, "Current data: null");
-                }
-            }
-        });
-
-    }
 
     /**
-     * TODO: This function is suppose to verify that a entered passsword exists in the database
-     * Currently it does not work
-     * @param Username
-     * @param Password
+     * After having a Username and password inputted it will check with the remote database to see if the
+     * password data is accurate and return true or false based upon if the inputted password matches that which is stored in
+     * the remote database
+     * @param Username The users username
+     * @param Password The users password
      * @return
      */
     public Boolean PassCheck (String Username, String Password){
-        check = false;
-        DocumentReference docRef = collectionReference.document(Username);
-        Task data = docRef.get().addOnCompleteListener(task -> {
-            if (task.isSuccessful()) {
-                DocumentSnapshot document = task.getResult();
-                if (document.exists()) {
-                    Log.d(TAG, "DocumentSnapshot data: " + document.getData());
-                    String passData = (String) document.get("Password");
-                    passData = passData.trim();
-                    if(passData.equals(Password) == true){
-                        check = true;
-                    }
-                } else {
-                    Log.d(TAG, "No such document");
+        Boolean check = true;
+        String dataPass = null;
+        int count = 0;
+        while(check){
+            DocumentReference docRef = db.collection("Users").document(Username);
+            try {
+                Task<DocumentSnapshot> data = docRef.get();
+                dataPass = (String) data.getResult().getData().get("Password");
+                check =  false;
+            }catch(Exception e){
+                count++;
+                if(count > 200){
+                    check = false;
+                    return false;
                 }
-            } else {
-                Log.d(TAG, "get failed with ", task.getException());
+                check = true;
             }
-        });
-        System.out.println("Test");
-        return check;
+        }
+        if(dataPass.equals(Password)){
+            return true;
+        }
+        return false;
     }
 
+    /**
+     * This method retrieves an ArrayList<Habit> from the remote database, this retrieval does not include
+     * the users password.
+     * @param Username The user we are retrieving data from
+     * @param returnData an inputted array that gets CLEARED before any new data is pushed into it from
+     *                   the remote database
+     * @return true if data was succesfully retrieved
+     */
+    public Boolean returnHabits(String Username, ArrayList<Habit> returnData){
+        returnData.clear();
+        DocumentReference docRef = db.collection("Users").document(Username);
+        Task<DocumentSnapshot> data;
 
+        Boolean check = true;
+        while(check){
+            try {
+                data = docRef.get();
+            }catch(Exception IllegalStateException){
+                Log.d(TAG, "Error has occurred in accessing Database: " + IllegalStateException);
+                return false;
+            }
+            Map<String, Object> retrievedData = data.getResult().getData();
+            for(String key: retrievedData.keySet()){
+                if(key.equals("Password")){
+                    continue;
+                }
+                Object habitData = retrievedData.get(key);
+                HashMap<String, ?> stuff = (HashMap) habitData;
+                Habit habit = new Habit(key, (String) stuff.get("reason"), ((Timestamp) stuff.get("startDate")).toDate());
+                returnData.add(habit);
 
-
+            }
+            Log.d(TAG, "Data retrieved");
+            check = false;
+        }
+        return true;
+    }
 
 }
