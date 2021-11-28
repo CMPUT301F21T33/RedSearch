@@ -1957,7 +1957,6 @@ int id accessibility_custom_action_6 0x7f080030
 int id accessibility_custom_action_7 0x7f080031
 int id accessibility_custom_action_8 0x7f080032
 int id accessibility_custom_action_9 0x7f080033
-int id accountButton 0x7f080034
 int id actionDown 0x7f080035
 int id actionDownUp 0x7f080036
 int id actionUp 0x7f080037

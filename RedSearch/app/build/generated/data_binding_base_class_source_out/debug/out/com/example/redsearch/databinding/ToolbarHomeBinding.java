@@ -20,18 +20,14 @@ public final class ToolbarHomeBinding implements ViewBinding {
   private final Toolbar rootView;
 
   @NonNull
-  public final ImageButton accountButton;
-
-  @NonNull
   public final ImageButton eventButton;
 
   @NonNull
   public final ImageButton friendsButton;
 
-  private ToolbarHomeBinding(@NonNull Toolbar rootView, @NonNull ImageButton accountButton,
-      @NonNull ImageButton eventButton, @NonNull ImageButton friendsButton) {
+  private ToolbarHomeBinding(@NonNull Toolbar rootView, @NonNull ImageButton eventButton,
+      @NonNull ImageButton friendsButton) {
     this.rootView = rootView;
-    this.accountButton = accountButton;
     this.eventButton = eventButton;
     this.friendsButton = friendsButton;
   }
@@ -63,12 +59,6 @@ public final class ToolbarHomeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.accountButton;
-      ImageButton accountButton = ViewBindings.findChildViewById(rootView, id);
-      if (accountButton == null) {
-        break missingId;
-      }
-
       id = R.id.eventButton;
       ImageButton eventButton = ViewBindings.findChildViewById(rootView, id);
       if (eventButton == null) {
@@ -81,7 +71,7 @@ public final class ToolbarHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ToolbarHomeBinding((Toolbar) rootView, accountButton, eventButton, friendsButton);
+      return new ToolbarHomeBinding((Toolbar) rootView, eventButton, friendsButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

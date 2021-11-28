@@ -196,14 +196,16 @@ public class DataBaseAccess {
                 }
                 Object habitData = retrievedData.get(key);
                 HashMap<String, ?> stuff = (HashMap) habitData;
-                Object hh = (HashMap<String, HabitEventList>) stuff.get("habitEventList");
+                HashMap<?, ?> hh = (HashMap<?, ?>) stuff.get("habitEventList");
+                ArrayList<?> st = (ArrayList<?>) hh.get("habitEventList");
+                HabitEventList events = new HabitEventList((ArrayList<HabitEvent>) st);
                 Habit habit = new Habit(key,
                         (String) stuff.get("reason"),
                         ((Timestamp) stuff.get("startDate")).toDate(),
                         (int) ((long) stuff.get("daysplanned")),
                         (int) ((long)stuff.get("dayshappened")),
                         (Boolean) stuff.get("visible"),
-                        (HabitEventList) stuff.get("habitEventList"),
+                        events,
                         (boolean[]) stuff.get("weekday"));
                 returnData.add(habit);
 

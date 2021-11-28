@@ -33,6 +33,10 @@ public class HabitEventList {
      */
     public HabitEventList() {}
 
+    HabitEventList(ArrayList<HabitEvent> habitEventList){
+        this.habitEventList = habitEventList;
+    }
+
     /**
      * Get ArrayList of habitEvents
      * @return {@code ArrayList<HabitEvent>} List of habitEvents
