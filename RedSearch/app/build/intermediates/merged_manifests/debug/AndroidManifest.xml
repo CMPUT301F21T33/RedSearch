@@ -8,10 +8,29 @@
         android:minSdkVersion="21"
         android:targetSdkVersion="31" />
 
-    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-    <!-- <uses-sdk android:minSdkVersion="14" /> -->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true" />
+
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
 
@@ -26,32 +45,61 @@
         android:testOnly="true"
         android:theme="@style/Theme.RedSearch" >
         <activity
-            android:name="com.example.redsearch.ViewHabitEventActivity"
+            android:name="com.example.redsearch.FriendsActivity"
             android:exported="true" />
+        <activity
+            android:name="com.example.redsearch.SearchUsersActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.redsearch.FollowRequestActivity"
+            android:exported="true" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity
+            android:name="com.example.redsearch.ViewHabitEventActivity"
+            android:exported="true"
+            android:parentActivityName="com.example.redsearch.HabitEventListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HabitEventListActivity" />
+        </activity>
         <activity
             android:name="com.example.redsearch.AddHabitEventActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName="com.example.redsearch.HomeActivity" />
         <activity
             android:name="com.example.redsearch.SignupActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.example.redsearch.LoginActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName="com.example.redsearch.MainActivity" />
         <activity
             android:name="com.example.redsearch.ViewHabitActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName="com.example.redsearch.MyHabitsActivity" />
         <activity
             android:name="com.example.redsearch.AddHabitActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName="com.example.redsearch.MyHabitsActivity" />
         <activity
             android:name="com.example.redsearch.MyHabitsActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName="com.example.redsearch.HomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
         <activity
             android:name="com.example.redsearch.HomeActivity"
             android:exported="true" />
         <activity
             android:name="com.example.redsearch.HabitView"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName="com.example.redsearch.MyHabitsActivity" />
         <activity
             android:name="com.example.redsearch.MainActivity"
             android:exported="true" >

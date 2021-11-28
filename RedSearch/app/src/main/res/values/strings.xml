@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">RedSearch</string>
     <string name="edit_username">Username</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>

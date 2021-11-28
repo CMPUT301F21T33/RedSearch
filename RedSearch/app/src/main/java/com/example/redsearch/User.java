@@ -11,6 +11,11 @@ public class User {
     private ArrayList<Habit> habits;// The list of habits that belong to this person
     //private FollowerList followerList; // This needs to be created so that the user can follow people commented out for now
 
+    /**
+     * This is the User constructor
+     * @param username
+     * @param password
+     */
     public User(String username, String password){
         this.username = username;
         this.password = password;

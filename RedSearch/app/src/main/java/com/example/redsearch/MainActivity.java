@@ -10,9 +10,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-import java.util.Date;
-
 public class MainActivity extends AppCompatActivity {
 
     Button signinButton;
@@ -27,34 +24,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
-        DataBaseAccess db = new DataBaseAccess();
-
-        db.dataInsert("TEST", "Password", "pass");
-
-        Habit test = new Habit("TEST", "I like cheetos", new Date());
-        Habit test2 = new Habit("TEST2", "I like cheetos", new Date());
-        Habit test3 = new Habit("TEST3", "I like cheetos", new Date());
-
-        db.dataInsert("TEST", test.getTitle(), test);
-        db.dataInsert("TEST", test2.getTitle(), test2);
-        db.dataInsert("TEST", test3.getTitle(), test3);
-
-        db.addFollower("TEST", "1fl");
-        db.addFollower("TEST", "2fl");
-
-        ArrayList<String> stuff = new ArrayList<String>();
-        db.returnFollowers("TEST", stuff);
-
-        db.addFollowerRequest("TEST", "fllf");
-
-        ArrayList<Habit> stuff2 = new ArrayList<Habit>();
-        db.returnUsers(stuff);
-        db.returnHabits("TEST", stuff2);
-        System.out.println(stuff.size());
-
-        setContentView(R.layout.activity_add_habit);
-
         signinButton = findViewById(R.id.signIn);
         signupButton = findViewById(R.id.signUp);
         username = findViewById(R.id.username);
@@ -62,15 +31,15 @@ public class MainActivity extends AppCompatActivity {
         userError = findViewById(R.id.userError);
         passwordError = findViewById(R.id.passwordError);
 
+
     }
 
-    /*
-    * When the user clicks Sign In they will be taken to the home page
+
+    /**
+     * This is the function that runs when the signin button is pressed
+     * This function verifies the user data and if it is correct then it lets them into the app TODO right now it does not verify anything
+     * @param view {@code View} Takes in the view from the activity
      */
-    public void goToHome(View view) {
-        Intent intent = new Intent(this, HomeActivity.class);
-        startActivity(intent);
-    }
 
     public void signinclick(View view){
         Intent intent = new Intent(this, HomeActivity.class);
@@ -95,12 +64,12 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (goodinput) {
-            //Query the database for the username
-            // Call the query command that Justin is making !!!!
-            //If returns false
+            //Query the database for the username  TODO
+            // Call the query command that Justin is making !!!! TODO
+            //If returns false TODO
             userError.setText("Error username does not exist");
-            // if(not false from above){
-            // query the database with the username and the password
+            // if(not false from above){ TODO
+            // query the database with the username and the password TODO
             // if false
             passwordError.setText("Error password does not match username");
         }
@@ -110,6 +79,13 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
     }
+
+    /**
+     * This function runs when the signupclick button is pressed
+     * This functions verifies that a username is not already taken TODO This does not happen right now
+     * Then it creates a new user and lets them enter the app
+     * @param view {@code View} This function takes in the view of the activity
+     */
 
     public void signupclick(View view){
         Intent intent = new Intent(this, HomeActivity.class);
@@ -131,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
             goodinput = false;
         }
         if (goodinput) {
+            // Verify that the username is not already in use through a databse query TODO
             db.dataInsert(usernameinput, "password", passwordinput);
             User newuser = new User(usernameinput, passwordinput);
             intent.putExtra(USERNAME, usernameinput);
