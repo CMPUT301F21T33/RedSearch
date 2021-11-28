@@ -4,7 +4,8 @@ package com.example.redsearch.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.SearchView;
+import android.widget.EditText;
+import android.widget.ListView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -20,15 +21,19 @@ public final class ActivitySearchUsersBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final SearchView searchView2;
+  public final EditText editText;
+
+  @NonNull
+  public final ListView listView;
 
   @NonNull
   public final ToolbarBinding toolbarSearchUsers;
 
-  private ActivitySearchUsersBinding(@NonNull ConstraintLayout rootView,
-      @NonNull SearchView searchView2, @NonNull ToolbarBinding toolbarSearchUsers) {
+  private ActivitySearchUsersBinding(@NonNull ConstraintLayout rootView, @NonNull EditText editText,
+      @NonNull ListView listView, @NonNull ToolbarBinding toolbarSearchUsers) {
     this.rootView = rootView;
-    this.searchView2 = searchView2;
+    this.editText = editText;
+    this.listView = listView;
     this.toolbarSearchUsers = toolbarSearchUsers;
   }
 
@@ -59,9 +64,15 @@ public final class ActivitySearchUsersBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.searchView2;
-      SearchView searchView2 = ViewBindings.findChildViewById(rootView, id);
-      if (searchView2 == null) {
+      id = R.id.editText;
+      EditText editText = ViewBindings.findChildViewById(rootView, id);
+      if (editText == null) {
+        break missingId;
+      }
+
+      id = R.id.listView;
+      ListView listView = ViewBindings.findChildViewById(rootView, id);
+      if (listView == null) {
         break missingId;
       }
 
@@ -72,7 +83,7 @@ public final class ActivitySearchUsersBinding implements ViewBinding {
       }
       ToolbarBinding binding_toolbarSearchUsers = ToolbarBinding.bind(toolbarSearchUsers);
 
-      return new ActivitySearchUsersBinding((ConstraintLayout) rootView, searchView2,
+      return new ActivitySearchUsersBinding((ConstraintLayout) rootView, editText, listView,
           binding_toolbarSearchUsers);
     }
     String missingId = rootView.getResources().getResourceName(id);

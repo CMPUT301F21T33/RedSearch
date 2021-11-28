@@ -13,6 +13,8 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 import com.google.firebase.firestore.SetOptions;
 
 import java.util.ArrayList;
@@ -28,8 +30,6 @@ public class DataBaseAccess {
     final String TAG = "Sample";
     FirebaseFirestore db;
     CollectionReference collectionReference;
-
-
 
     /**
      * A constructor that must be called to allow any other class to use
@@ -161,9 +161,145 @@ public class DataBaseAccess {
      * @param Username The user we are retrieving data from
      * @param returnData an inputted array that gets CLEARED before any new data is pushed into it from
      *                   the remote database
-     * @return true if data was succesfully retrieved
+     * @return true if data was successfully retrieved
      */
     public Boolean returnHabits(String Username, ArrayList<Habit> returnData){
+        returnData.clear();
+        DocumentReference docRef = db.collection("Users").document(Username);
+        Task<DocumentSnapshot> data;
+        Map<String, Object> retrievedData;
+
+        Boolean check = true;
+        while(check){
+            try {
+                data = docRef.get();
+            }catch(Exception IllegalStateException){
+                Log.d(TAG, "Error has occurred in accessing Database: " + IllegalStateException);
+                return false;
+            }
+            int count = 0;
+            while(true) {
+                try {
+                    retrievedData = data.getResult().getData();
+                    break;
+                } catch (Exception IllegalStateException) {
+                    count++;
+                    if (count > 200) {
+                        Log.d(TAG, "Error has occurred in accessing Database: " + IllegalStateException);
+                        return false;
+                    }
+                }
+            }
+            for(String key: retrievedData.keySet()){
+                if(key.equals("Password") || key.equals("Followers") || key.equals("Follower_requests") || key.equals("Following")){
+                    continue;
+                }
+                Object habitData = retrievedData.get(key);
+                HashMap<String, ?> stuff = (HashMap) habitData;
+                Object hh = (HashMap<String, HabitEventList>) stuff.get("habitEventList");
+                Habit habit = new Habit(key,
+                        (String) stuff.get("reason"),
+                        ((Timestamp) stuff.get("startDate")).toDate(),
+                        (int) ((long) stuff.get("daysplanned")),
+                        (int) ((long)stuff.get("dayshappened")),
+                        (Boolean) stuff.get("visible"),
+                        (HabitEventList) stuff.get("habitEventList"),
+                        (boolean[]) stuff.get("weekday"));
+                returnData.add(habit);
+
+            }
+            Log.d(TAG, "Data retrieved");
+            check = false;
+        }
+        return true;
+    }
+
+    /**
+     * Returns an boolean on if the function was successful or not, from there it will populate the returndata array with
+     * the values of all Users currently in the database
+     * @param returnData A blank array to be populated with usernames
+     * @return
+     */
+    public Boolean returnUsers(ArrayList<String> returnData){
+        returnData.clear();
+        Task<QuerySnapshot> data;
+        int count  =0;
+
+        while(true){
+            try {
+                data = collectionReference.get();
+                for(QueryDocumentSnapshot key: data.getResult()){
+                    Log.d(TAG, key.getId() + " => " + key.getString("name"));
+                    returnData.add(key.getId());
+                }
+                return true;
+            }catch(Exception IllegalStateException){
+                count++;
+                if(count > 200){
+                    Log.d(TAG, "Database reading has timed out " + IllegalStateException);
+                    return false;
+                }
+
+            }
+
+        }
+    }
+
+    /**
+     * Adds a follower to a specfic user
+     * @param Username The user we are adding a follower too
+     * @param Follower The user who is following
+     */
+    public void addFollower(String Username, String Follower){
+        HashMap<String, ArrayList<String>> inputData = new HashMap<>();
+        collectionReference.document(Username).update("Followers", FieldValue.arrayUnion(Follower)).addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                // These are a method which gets executed when the task is succeeded
+                Log.d(TAG, "Data has been added successfully!");
+
+            }
+        })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        // These are a method which gets executed if there’s any problem
+                        Log.d(TAG, "Data could not be added!" + e.toString());
+                    }
+                });
+    }
+
+    /**
+     * Removes a foloower from a user
+     * @param Username The user losing a follower
+     * @param Follower The Follower that is leaving
+     */
+    public void removeFollower(String Username, String Follower){
+        HashMap<String, ArrayList<String>> inputData = new HashMap<>();
+        collectionReference.document(Username).update("Followers", FieldValue.arrayRemove(Follower)).addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                // These are a method which gets executed when the task is succeeded
+                Log.d(TAG, "Data has been added successfully!");
+
+            }
+        })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        // These are a method which gets executed if there’s any problem
+                        Log.d(TAG, "Data could not be added!" + e.toString());
+                    }
+                });
+    }
+
+    /**
+     * Returns the whole list of followers that is following said user
+     * @param Username The user with the followers
+     * @param returnData A blank array that is filled with the return data
+     * @return A true if data was retrieved successfully
+     */
+    public Boolean returnFollowers(String Username, ArrayList<String> returnData){
         returnData.clear();
         DocumentReference docRef = db.collection("Users").document(Username);
         Task<DocumentSnapshot> data;
@@ -177,16 +313,151 @@ public class DataBaseAccess {
                 return false;
             }
             Map<String, Object> retrievedData = data.getResult().getData();
-            for(String key: retrievedData.keySet()){
-                if(key.equals("Password")){
-                    continue;
-                }
-                Object habitData = retrievedData.get(key);
-                HashMap<String, ?> stuff = (HashMap) habitData;
-                Habit habit = new Habit(key, (String) stuff.get("reason"), ((Timestamp) stuff.get("startDate")).toDate());
-                returnData.add(habit);
+            returnData = (ArrayList<String>) retrievedData.get("Followers");
+            Log.d(TAG, "Data retrieved");
+            check = false;
+        }
+        return true;
+    }
+
+    /**
+     * Adds a user that requests to follow
+     * @param Username The user that has the request
+     * @param Follower The person requesting a follow
+     */
+    public void addFollowerRequest(String Username, String Follower){
+        HashMap<String, ArrayList<String>> inputData = new HashMap<>();
+        collectionReference.document(Username).update("Follower_requests", FieldValue.arrayUnion(Follower)).addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                // These are a method which gets executed when the task is succeeded
+                Log.d(TAG, "Data has been added successfully!");
 
             }
+        })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        // These are a method which gets executed if there’s any problem
+                        Log.d(TAG, "Data could not be added!" + e.toString());
+                    }
+                });
+    }
+
+    /**
+     * Removes a follower request
+     * @param Username The user declining the request
+     * @param Follower  The user being declined the request
+     */
+    public void removeFollowerRequest(String Username, String Follower){
+        HashMap<String, ArrayList<String>> inputData = new HashMap<>();
+        collectionReference.document(Username).update("Follower_requests", FieldValue.arrayRemove(Follower)).addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                // These are a method which gets executed when the task is succeeded
+                Log.d(TAG, "Data has been added successfully!");
+
+            }
+        })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        // These are a method which gets executed if there’s any problem
+                        Log.d(TAG, "Data could not be added!" + e.toString());
+                    }
+                });
+    }
+
+    /**
+     * Returns a array of follower requests
+     * @param Username User with the requests
+     * @param returnData The lists of requests
+     * @return True if data was retrieved properly
+     */
+    public Boolean returnFollowerRequests(String Username, ArrayList<String> returnData){
+        returnData.clear();
+        DocumentReference docRef = db.collection("Users").document(Username);
+        Task<DocumentSnapshot> data;
+
+        Boolean check = true;
+        while(check){
+            try {
+                data = docRef.get();
+            }catch(Exception IllegalStateException){
+                Log.d(TAG, "Error has occurred in accessing Database: " + IllegalStateException);
+                return false;
+            }
+            Map<String, Object> retrievedData = data.getResult().getData();
+            returnData = (ArrayList<String>) retrievedData.get("Follower_requests");
+            Log.d(TAG, "Data retrieved");
+            check = false;
+        }
+        return true;
+    }
+
+    /**
+     * Adds a account to the following list
+     * @param Username The user to be following
+     * @param Following The user who is now being followed
+     */
+    public void addFollowing(String Username, String Following){
+        HashMap<String, ArrayList<String>> inputData = new HashMap<>();
+        collectionReference.document(Username).update("Following", FieldValue.arrayUnion(Following)).addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                // These are a method which gets executed when the task is succeeded
+                Log.d(TAG, "Data has been added successfully!");
+
+            }
+        })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        // These are a method which gets executed if there’s any problem
+                        Log.d(TAG, "Data could not be added!" + e.toString());
+                    }
+                });
+    }
+
+    /**
+     * Removes The user you are following
+     * @param Username The user removing the follow
+     * @param Following the user to be removed
+     */
+    public void removeFollowing(String Username, String Following){
+        HashMap<String, ArrayList<String>> inputData = new HashMap<>();
+        collectionReference.document(Username).update("Following", FieldValue.arrayRemove(Following)).addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                // These are a method which gets executed when the task is succeeded
+                Log.d(TAG, "Data has been added successfully!");
+
+            }
+        })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        // These are a method which gets executed if there’s any problem
+                        Log.d(TAG, "Data could not be added!" + e.toString());
+                    }
+                });
+    }
+
+    public Boolean returnFollowing(String Username, ArrayList<String> returnData){
+        returnData.clear();
+        DocumentReference docRef = db.collection("Users").document(Username);
+        Task<DocumentSnapshot> data;
+
+        Boolean check = true;
+        while(check){
+            try {
+                data = docRef.get();
+            }catch(Exception IllegalStateException){
+                Log.d(TAG, "Error has occurred in accessing Database: " + IllegalStateException);
+                return false;
+            }
+            Map<String, Object> retrievedData = data.getResult().getData();
+            returnData = (ArrayList<String>) retrievedData.get("Following");
             Log.d(TAG, "Data retrieved");
             check = false;
         }

@@ -43,6 +43,17 @@ public class Habit {
     private HabitEventList habitEventList = new HabitEventList();
     private boolean[] weekday = new boolean[7];
 
+    Habit(String title, String reason, Date startDate, int Daysplanned, int Dayshappened, Boolean visible, HabitEventList habitEventList, boolean[] weekday){
+        this.title = title;
+        this.reason = reason;
+        this.startDate = startDate;
+        this.Daysplanned = Daysplanned;
+        this.Dayshappened = Dayshappened;
+        this.visible = visible;
+        this.habitEventList = habitEventList;
+        this.weekday = weekday;
+    }
+
     /**
      * Habit Class constructor
      * @param title {@code String} Title of Habit
@@ -65,9 +76,8 @@ public class Habit {
      * @param reason {@code String} Reason of Habit
      * @param date {@code Date} Date the habit began
      * @param daysplanned {@code int} Number of days the habit is planned for
-     * @param visible {@code boolean} True if habit is public, False if not
      */
-    Habit(String title, String reason, Date date, int daysplanned, boolean visible){
+    Habit(String title, String reason, Date date, int daysplanned){
         // a simple habit constructor overridden for days planned
         setTitle(title);
         setReason(reason);
