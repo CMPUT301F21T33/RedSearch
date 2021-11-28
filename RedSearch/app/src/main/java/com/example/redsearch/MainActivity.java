@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
         DataBaseAccess db = new DataBaseAccess();
 
         db.dataInsert("TEST", "Password", "pass");
@@ -34,11 +35,22 @@ public class MainActivity extends AppCompatActivity {
         Habit test = new Habit("TEST", "I like cheetos", new Date());
         Habit test2 = new Habit("TEST2", "I like cheetos", new Date());
         Habit test3 = new Habit("TEST3", "I like cheetos", new Date());
+
         db.dataInsert("TEST", test.getTitle(), test);
         db.dataInsert("TEST", test2.getTitle(), test2);
         db.dataInsert("TEST", test3.getTitle(), test3);
-        ArrayList<Habit> stuff = new ArrayList<Habit>();
-        db.returnHabits("TEST", stuff);
+
+        db.addFollower("TEST", "1fl");
+        db.addFollower("TEST", "2fl");
+
+        ArrayList<String> stuff = new ArrayList<String>();
+        db.returnFollowers("TEST", stuff);
+
+        db.addFollowerRequest("TEST", "fllf");
+
+        ArrayList<Habit> stuff2 = new ArrayList<Habit>();
+        db.returnUsers(stuff);
+        db.returnHabits("TEST", stuff2);
         System.out.println(stuff.size());
 
         setContentView(R.layout.activity_add_habit);
