@@ -34,8 +34,11 @@ public class MainActivity extends AppCompatActivity {
         userError = findViewById(R.id.userError);
         passwordError = findViewById(R.id.passwordError);
 
+        Date date = new Date();
+
         DataBaseAccess db = new DataBaseAccess();
         Habit thing = new Habit("Title", "For cars", new Date(), 1);
+        thing.getHabitEventList().addHabitEvent(new HabitEvent("thing", date));
         db.dataInsert("TEST", thing.getTitle(), thing);
         ArrayList<Habit> stuff = new ArrayList<Habit>();
         while(!db.returnHabits("TEST",stuff));

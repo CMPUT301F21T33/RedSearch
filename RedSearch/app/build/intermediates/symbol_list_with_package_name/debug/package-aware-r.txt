@@ -2020,6 +2020,7 @@ id button3
 id buttonPanel
 id cache_measures
 id cameraButton
+id cancel
 id cancel_button
 id carryVelocity
 id center

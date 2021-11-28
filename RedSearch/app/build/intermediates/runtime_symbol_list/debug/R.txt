@@ -2019,6 +2019,7 @@ int id button3 0x7f08006f
 int id buttonPanel 0x7f080070
 int id cache_measures 0x7f080071
 int id cameraButton 0x7f080072
+int id cancel 0x7f080221
 int id cancel_button 0x7f080073
 int id carryVelocity 0x7f080074
 int id center 0x7f080075
