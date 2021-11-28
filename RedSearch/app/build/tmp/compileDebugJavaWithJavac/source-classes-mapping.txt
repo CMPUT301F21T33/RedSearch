@@ -69,8 +69,8 @@ com/example/redsearch/HabitView.java
  com.example.redsearch.HabitView
 com/example/redsearch/MainActivity.java
  com.example.redsearch.MainActivity
-com/example/redsearch/AddHabitEventActivity.java
- com.example.redsearch.AddHabitEventActivity
+com/example/redsearch/databinding/ActivityFollowRequestBinding.java
+ com.example.redsearch.databinding.ActivityFollowRequestBinding
 com/example/redsearch/MyHabitsActivity.java
  com.example.redsearch.MyHabitsActivity
  com.example.redsearch.MyHabitsActivity$1
@@ -78,9 +78,8 @@ com/example/redsearch/MyHabitList.java
  com.example.redsearch.MyHabitList
 com/example/redsearch/databinding/CustomListviewBinding.java
  com.example.redsearch.databinding.CustomListviewBinding
-com/example/redsearch/HomeActivity.java
- com.example.redsearch.HomeActivity
- com.example.redsearch.HomeActivity$1
+com/example/redsearch/Habit.java
+ com.example.redsearch.Habit
 com/example/redsearch/SearchUsersActivity.java
  com.example.redsearch.SearchUsersActivity
 com/example/redsearch/databinding/ActivityLoginBinding.java
@@ -93,19 +92,20 @@ com/example/redsearch/ViewHabitActivity.java
  com.example.redsearch.ViewHabitActivity
 com/example/redsearch/databinding/ToolbarFriendsBinding.java
  com.example.redsearch.databinding.ToolbarFriendsBinding
-com/example/redsearch/SelectLocation.java
- com.example.redsearch.SelectLocation
- com.example.redsearch.SelectLocation$1
- com.example.redsearch.SelectLocation$OnFragmentInteractionListener
+com/example/redsearch/databinding/ActivitySignupBinding.java
+ com.example.redsearch.databinding.ActivitySignupBinding
 com/example/redsearch/HabitListAdapter.java
  com.example.redsearch.HabitListAdapter
 com/example/redsearch/databinding/CustomFollowListBinding.java
  com.example.redsearch.databinding.CustomFollowListBinding
 com/example/redsearch/databinding/CustomFriendListBinding.java
  com.example.redsearch.databinding.CustomFriendListBinding
-com/example/redsearch/databinding/ActivitySignupBinding.java
- com.example.redsearch.databinding.ActivitySignupBinding
-com/example/redsearch/databinding/ActivityFollowRequestBinding.java
- com.example.redsearch.databinding.ActivityFollowRequestBinding
-com/example/redsearch/Habit.java
- com.example.redsearch.Habit
+com/example/redsearch/HomeActivity.java
+ com.example.redsearch.HomeActivity
+ com.example.redsearch.HomeActivity$1
+com/example/redsearch/AddHabitEventActivity.java
+ com.example.redsearch.AddHabitEventActivity
+com/example/redsearch/SelectLocation.java
+ com.example.redsearch.SelectLocation
+ com.example.redsearch.SelectLocation$1
+ com.example.redsearch.SelectLocation$OnFragmentInteractionListener

@@ -58,7 +58,8 @@ public class SelectLocation extends DialogFragment {
         super.onCreate(savedInstanceState);
         oldLocation = null;
         //if (getArguments() != null) {
-
+          //  oldLocation.setLatitude(savedInstanceState.getDouble("LATITUDE"));
+            //oldLocation.setLongitude(savedInstanceState.getDouble("LONGTITUDE"));
         //}
 
         // Taken from the open street maps view
