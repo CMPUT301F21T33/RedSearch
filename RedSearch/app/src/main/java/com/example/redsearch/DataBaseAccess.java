@@ -195,7 +195,7 @@ public class DataBaseAccess {
                     continue;
                 }
                 Object habitData = retrievedData.get(key);
-                HashMap<String, ?> stuff = (HashMap) habitData;
+                HashMap<String, ?> stuff = (HashMap<String, ?>) habitData;
                 HashMap<?, ?> hh = (HashMap<?, ?>) stuff.get("habitEventList");
                 ArrayList<?> st = (ArrayList<?>) hh.get("habitEventList");
                 HabitEventList events = new HabitEventList((ArrayList<HabitEvent>) st);

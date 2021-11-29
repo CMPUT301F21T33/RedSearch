@@ -10,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -26,25 +27,55 @@ public class HomeActivity extends AppCompatActivity {
         setTitle("Today's Habits");
         //Get the username from the previous one
 
-        //Intent intent = getIntent();
-        //String username = intent.getStringExtra(MainActivity.USERNAME); // This is the username that the user gave in the login activity
+        Intent intent = getIntent();
+        // This is the username that the user gave in the login activity
+        String username = intent.getStringExtra(MainActivity.USERNAME);
+        username = "TEST";
 
         ListView list = (ListView) findViewById(R.id.listView);
-        ArrayList<Habit> todayHabits = new ArrayList<Habit>();
-        todayHabits.add(new Habit("Drink water","I am thirsty",new Date(),true));
+
+        DataBaseAccess db = new DataBaseAccess();
+
+        // TEMP STUFF
+        Date date = new Date();
+        Habit thing = new Habit("Title", "For cars", new Date(), true);
+        thing.getHabitEventList().addHabitEvent(new HabitEvent("thing", date));
+        db.dataInsert("TEST", thing.getTitle(), thing);
+        // TEMP ENDS HERE
+        ArrayList<Habit> allHabits = new ArrayList<Habit>();
+        while(!db.returnHabits("TEST", allHabits));  // TODO time out checker
+        ArrayList<Habit> todayHabits = getTodayHabits(allHabits);
+        //todayHabits.add(new Habit("Drink water","I am thirsty",new Date(),true));
 
         HabitListAdapter adapter = new HabitListAdapter(this,todayHabits);
         list.setAdapter(adapter);
 
+        String finalUsername = username;
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(view.getContext(), AddHabitEventActivity.class);
+                intent.putExtra("USER", finalUsername);
+                //intent.putExtra("HABIT", )
                 startActivity(intent);
             }
         });
 
 
+    }
+
+    private ArrayList<Habit> getTodayHabits(ArrayList<Habit> allHabits) {
+        Date now = new Date();
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(now);
+        ArrayList<Habit> todayHabits = new ArrayList<Habit>();
+        int today = calendar.get(Calendar.DAY_OF_WEEK) - 1;
+        for (int i = 0; i < allHabits.size(); i++) {
+            if (allHabits.get(i).getWeekday(today)) {
+                todayHabits.add(allHabits.get(i));
+            }
+        }
+        return todayHabits;
     }
 
     /**
