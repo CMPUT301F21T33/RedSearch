@@ -15,16 +15,25 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+
+/**
+ * Activity for searching for friends
+ */
 public class SearchUsersActivity extends AppCompatActivity {
     private ArrayAdapter adapter;
     DataBaseAccess db = new DataBaseAccess();
     public static final String USERNAME = "com.example.redsearch.USERNAME";
 
+    /**
+     * Function called on activity creation
+     * @param savedInstanceState {@code Bundle} Saved Data
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_users);
 
+        //setup toolbar
         Toolbar toolbar = findViewById(R.id.toolbar_search_users);
         setSupportActionBar(toolbar);
         setTitle("Search Users");
@@ -44,7 +53,7 @@ public class SearchUsersActivity extends AppCompatActivity {
 
         list.setAdapter(adapter);
 
-
+        //Listener for filtering the search data
         editText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
