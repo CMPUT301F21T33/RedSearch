@@ -4,12 +4,12 @@
         "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/custom_friend_list.xml"
     },
     {
-        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/merged_res/debug/layout_activity_habit_view.xml.flat",
-        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_habit_view.xml"
-    },
-    {
         "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/merged_res/debug/layout_activity_main.xml.flat",
         "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/merged_res/debug/layout_activity_habit_view.xml.flat",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_habit_view.xml"
     },
     {
         "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",

@@ -15,7 +15,7 @@
         android:background="@color/purple_200"
         android:minWidth="32dp"
         android:minHeight="48dp"
-        android:onClick="goToHome"
+        android:onClick="returnHome"
         android:paddingRight="20dp"
         app:showAsAction="ifRoom"
         app:srcCompat="@drawable/ic_baseline_home_24" />

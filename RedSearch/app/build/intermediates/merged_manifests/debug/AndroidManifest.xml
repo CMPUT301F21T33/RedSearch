@@ -48,6 +48,9 @@
             android:name="com.example.redsearch.FriendsActivity"
             android:exported="true" />
         <activity
+            android:name="com.example.redsearch.ViewFriendActivity"
+            android:exported="true" />
+        <activity
             android:name="com.example.redsearch.SearchUsersActivity"
             android:exported="true" />
         <activity

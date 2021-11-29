@@ -12,12 +12,12 @@
         "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_home.xml"
     },
     {
-        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/habitcontent.xml",
-        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/habitcontent.xml"
-    },
-    {
         "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_login.xml",
         "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_login.xml"
+    },
+    {
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/habitcontent.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/habitcontent.xml"
     },
     {
         "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/custom_homelist.xml",
