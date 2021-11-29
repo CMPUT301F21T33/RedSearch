@@ -12,12 +12,12 @@
         "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_home.xml"
     },
     {
-        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_login.xml",
-        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_login.xml"
-    },
-    {
         "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/habitcontent.xml",
         "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/habitcontent.xml"
+    },
+    {
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_login.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_login.xml"
     },
     {
         "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/custom_homelist.xml",
@@ -40,16 +40,20 @@
         "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_search_users.xml"
     },
     {
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_view_friend.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_view_friend.xml"
+    },
+    {
         "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/toolbar_friends.xml",
         "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/toolbar_friends.xml"
     },
     {
-        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_my_habits.xml",
-        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_my_habits.xml"
-    },
-    {
         "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/custom_follow_list.xml",
         "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/custom_follow_list.xml"
+    },
+    {
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_my_habits.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_my_habits.xml"
     },
     {
         "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_view_habit_event.xml",
@@ -58,6 +62,10 @@
     {
         "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_view_habit.xml",
         "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_view_habit.xml"
+    },
+    {
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/custom_follow_list_test.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/custom_follow_list_test.xml"
     },
     {
         "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/toolbar_home.xml",
