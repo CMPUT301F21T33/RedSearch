@@ -5,6 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -14,6 +16,7 @@ import androidx.annotation.Nullable;
 import java.util.ArrayList;
 
 public class FollowRequestAdapter extends ArrayAdapter<String> {
+    DataBaseAccess db = new DataBaseAccess();
     private ArrayList<String> requests;
     private Context context;
 
@@ -26,21 +29,21 @@ public class FollowRequestAdapter extends ArrayAdapter<String> {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-//        return super.getView(position, convertView, parent);
 
         if(convertView == null){
-            convertView = LayoutInflater.from(context).inflate(R.layout.custom_follow_list, parent,false);
+            convertView = LayoutInflater.from(context).inflate(R.layout.custom_follow_list_test, parent,false);
         }
 
         String request = requests.get(position);
 
         TextView list_txt = (TextView) convertView.findViewById(R.id.list_txt);
-        //ImageView list_ind = (ImageView) convertView.findViewById(R.id.list_ind);
+        ImageButton list_check = (ImageButton) convertView.findViewById(R.id.list_check);
+        ImageButton list_close = (ImageButton) convertView.findViewById(R.id.list_close);
 
         //set text of TextView
         list_txt.setText(request);
-        //change indicator color
-        //list_ind.setColorFilter(Color.parseColor(habit.getColor()), PorterDuff.Mode.MULTIPLY);
+
+
 
         return convertView;
 

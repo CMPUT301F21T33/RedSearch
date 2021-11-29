@@ -1,8 +1,5 @@
 package com.example.redsearch;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,8 +7,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.ArrayList;
-import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -56,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
         String usernameinput = username.getText().toString();
         String passwordinput = password.getText().toString();
         Boolean goodinput = true;
-        Boolean userTrue = true;
         Boolean passwordTrue = true;
         //Verify the input is not empty
         // If user is empty print error user does not exist
@@ -71,31 +68,25 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (goodinput) {
-            //Query the database for the username  TODO
-            // Call the query command that Justin is making !!!! TODO
-            //If returns false TODO
-            userError.setText("Error username does not exist");
-            // if(not false from above){ TODO
-            // query the database with the username and the password TODO
-            // if false
-            passwordError.setText("Error password does not match username");
+            passwordTrue = db.PassCheck(usernameinput, passwordinput);
         }
-        if (userTrue && passwordTrue) {
+        if (passwordTrue) {
             //Set the User as the username and then move into the home activity
             intent.putExtra(USERNAME, usernameinput);
             startActivity(intent);
+        } else{
+            userError.setText("Either the username or password is incorrect!");
         }
     }
 
     /**
      * This function runs when the signupclick button is pressed
-     * This functions verifies that a username is not already taken TODO This does not happen right now
      * Then it creates a new user and lets them enter the app
      * @param view {@code View} This function takes in the view of the activity
      */
 
     public void signupclick(View view){
-        Intent intent = new Intent(this, HomeActivity.class);
+        Intent intent = new Intent(this, FriendsActivity.class);
         // Get the input
         userError.setText("");
         passwordError.setText("");

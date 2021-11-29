@@ -10,13 +10,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class MyHabitsActivity extends AppCompatActivity {
 
     public static final String TITLE = "com.example.redsearch.TITLE";
     public static final String REASON = "com.example.redsearch.REASON";
     public static final String DATE = "com.example.redsearch.DATE";
-    String username;
+    private String username;
+    private ArrayList<Habit> myHabits = new ArrayList<Habit>();
+    private MyHabitList adapter;
 
     /**
      * On creation of the activity
@@ -35,14 +38,13 @@ public class MyHabitsActivity extends AppCompatActivity {
         username = intent.getStringExtra("USER");
 
         ListView list = (ListView) findViewById(R.id.listView);
-        ArrayList<Habit> myHabits = new ArrayList<Habit>();
 
 
         DataBaseAccess db = new DataBaseAccess();  // Get access to the database
         while(!db.returnHabits(username, myHabits));  // Get habits from db
 
         // Look at all of our habits
-        MyHabitList adapter = new MyHabitList(this,myHabits);
+        adapter = new MyHabitList(this,myHabits);
 
         list.setAdapter(adapter);
 
@@ -96,4 +98,24 @@ public class MyHabitsActivity extends AppCompatActivity {
         intent.putExtra("USER", username);
         startActivity(intent);
     }
+
+    public void returnHome(View v){
+        Intent intent = new Intent(this, HomeActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * Button functionality to sort the list by name
+     * @param view {@code View}
+     */
+    public void sortByName (View view) {
+
+        // sort the list
+        Collections.sort(myHabits, (b1, b2) -> b1.getTitle().compareTo(b2.getTitle()));
+
+        // display the new sorted list
+        ListView list = (ListView) findViewById(R.id.listView);
+        list.setAdapter(adapter);
+    }
+
 }
