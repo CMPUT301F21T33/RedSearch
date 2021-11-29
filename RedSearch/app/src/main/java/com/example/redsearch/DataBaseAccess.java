@@ -13,18 +13,17 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.google.firebase.firestore.SetOptions;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
 /**
  * A class that can be instantiated that creates simplified methods of adding and removing data from
  * the database
+ * @Author: Justin
  */
 public class DataBaseAccess {
     final String TAG = "Sample";
@@ -407,7 +406,14 @@ public class DataBaseAccess {
                     }
                 }
             }
-            for(int i = 0; i < ((ArrayList<String>) retrievedData.get("Followers")).size(); i++){
+            int x = 0;
+            try{
+                x = ((ArrayList<String>) retrievedData.get("Followers")).size();
+            }catch(Exception e){
+                Log.d(TAG, "No data to read: " + e);
+                return true;
+            }
+            for(int i = 0; i < x; i++){
                 returnData.add(((ArrayList<String>) retrievedData.get("Followers")).get(i));
             }
             Log.d(TAG, "Data retrieved");
@@ -496,7 +502,14 @@ public class DataBaseAccess {
                     }
                 }
             }
-            for(int i = 0; i < ((ArrayList<String>) retrievedData.get("Follower_requests")).size(); i++){
+            int x = 0;
+            try{
+                x = ((ArrayList<String>) retrievedData.get("Follower_requests")).size();
+            }catch(Exception e){
+                Log.d(TAG, "No data to read: " + e);
+                return true;
+            }
+            for(int i = 0; i < x; i++){
                 returnData.add(((ArrayList<String>) retrievedData.get("Follower_requests")).get(i));
             }
             Log.d(TAG, "Data retrieved");
@@ -579,7 +592,14 @@ public class DataBaseAccess {
                     }
                 }
             }
-            for(int i = 0; i < ((ArrayList<String>) retrievedData.get("Following")).size(); i++){
+            int x = 0;
+            try{
+                x = ((ArrayList<String>) retrievedData.get("Following")).size();
+            }catch(Exception e){
+                Log.d(TAG, "No data to read: " + e);
+                return true;
+            }
+            for(int i = 0; i < x; i++){
                 returnData.add(((ArrayList<String>) retrievedData.get("Following")).get(i));
             }
             Log.d(TAG, "Data retrieved");

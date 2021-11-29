@@ -24,14 +24,14 @@
 
 package com.example.redsearch;
 
-import android.graphics.Color;
-import android.os.Build;
-
 import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
 
 import java.util.Date;
 
+/**
+ * @author: Sam, Balreet, Lauren
+ * @see HabitEventList
+ */
 public class Habit {
     private String title;
     private String reason;

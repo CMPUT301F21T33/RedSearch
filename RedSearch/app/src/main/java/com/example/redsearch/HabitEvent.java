@@ -32,6 +32,11 @@ import org.osmdroid.util.GeoPoint;
 
 import java.util.Date;
 
+/**
+ * @author  Emily, Balreet, Sam, Lauren
+ * @see GeoPoint
+ * @see Bitmap
+ */
 public class HabitEvent{
     private String comment;
     private Date date;
