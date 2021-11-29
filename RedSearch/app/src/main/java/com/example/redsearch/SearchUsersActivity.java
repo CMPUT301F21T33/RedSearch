@@ -33,12 +33,8 @@ public class SearchUsersActivity extends AppCompatActivity {
 
         ArrayList<String> usernames = new ArrayList<>();
 
-        //while(!db.returnUsers(usernames)){}
+        while(!db.returnUsers(usernames)){}
 
-        if (!db.returnUsers(usernames)){
-            usernames.add("Lauren");
-            usernames.add("Sam");
-        }
 
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, usernames);
 
@@ -67,7 +63,7 @@ public class SearchUsersActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 /*Intent intent = getIntent();
                 String username = intent.getStringExtra(MainActivity.USERNAME);*/
-                //db.addFollowerRequest(usernames.get(i),"Lauren");
+                db.addFollowerRequest("Sam","Lauren");
 
 
             }
