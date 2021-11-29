@@ -16,37 +16,29 @@ import java.util.List;
 
 public class HomeActivity extends AppCompatActivity {
 
+    String username;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
-
         Toolbar toolbar = findViewById(R.id.toolbar_home);
         setSupportActionBar(toolbar);
         setTitle("Today's Habits");
-        //Get the username from the previous one
 
         Intent intent = getIntent();
+
         // This is the username that the user gave in the login activity
-        String username = intent.getStringExtra(MainActivity.USERNAME);
+        username = intent.getStringExtra(MainActivity.USERNAME);
 
         ListView list = (ListView) findViewById(R.id.listView);
 
-        DataBaseAccess db = new DataBaseAccess();
+        DataBaseAccess db = new DataBaseAccess();  // Get access to the database
+        ArrayList<Habit> allHabits = new ArrayList<Habit>(); // List to store habits from db
+        while(!db.returnHabits(username, allHabits));  // Get habits from db
+        ArrayList<Habit> todayHabits = getTodayHabits(allHabits);  // Get today's habits
 
-        // TEMP STUFF
-        Date date = new Date();
-        Habit thing = new Habit("Title", "For cars", new Date(), true);
-        thing.getHabitEventList().addHabitEvent(new HabitEvent("thing", date));
-        thing.setWeekday(6);
-        db.dataInsert("TEST", thing.getTitle(), thing);
-        // TEMP ENDS HERE
-        ArrayList<Habit> allHabits = new ArrayList<Habit>();
-        while(!db.returnHabits("TEST", allHabits));  // TODO time out checker
-        ArrayList<Habit> todayHabits = getTodayHabits(allHabits);
-        //todayHabits.add(new Habit("Drink water","I am thirsty",new Date(),true));
-
+        // Display today's habits
         HabitListAdapter adapter = new HabitListAdapter(this,todayHabits);
         list.setAdapter(adapter);
 
@@ -64,19 +56,29 @@ public class HomeActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Create an array list that consists of today's habits
+     * @param allHabits {@code ArrayList<Habit>} All habits retrieved from the database
+     * @return {@code ArrayList<Habit>} Array list of today's habits only
+     */
     private ArrayList<Habit> getTodayHabits(ArrayList<Habit> allHabits) {
+
+        // Get today's weekday
         Date now = new Date();
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(now);
-        ArrayList<Habit> todayHabits = new ArrayList<Habit>();
         int today = Calendar.DAY_OF_WEEK - 1;
-        System.out.println(today);
+
+        // A new array list for today's habits
+        ArrayList<Habit> todayHabits = new ArrayList<Habit>();
+
+        // Add the habit to today's habit list if the habit was planned for the current weekday
         for (int i = 0; i < allHabits.size(); i++) {
             if (allHabits.get(i).getWeekday(today)) {
                 todayHabits.add(allHabits.get(i));
             }
         }
-        return todayHabits;
+        return todayHabits;  // return today's habits
     }
 
     /**
@@ -85,6 +87,7 @@ public class HomeActivity extends AppCompatActivity {
      */
     public void goToMyHabits(View view) {
         Intent intent = new Intent(this, MyHabitsActivity.class);
+        intent.putExtra("USER", username);
         startActivity(intent);
     }
 
