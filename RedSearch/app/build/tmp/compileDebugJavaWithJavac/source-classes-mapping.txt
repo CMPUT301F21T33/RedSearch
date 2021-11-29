@@ -121,5 +121,6 @@ com/example/redsearch/DataBaseAccess.java
 com/example/redsearch/SearchUsersActivity.java
  com.example.redsearch.SearchUsersActivity
  com.example.redsearch.SearchUsersActivity$1
+ com.example.redsearch.SearchUsersActivity$2
 com/example/redsearch/AddHabitActivity.java
  com.example.redsearch.AddHabitActivity
