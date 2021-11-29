@@ -152,30 +152,58 @@ public class Habit {
         return habitEventList;
     }
 
+    /**
+     * Get if Monday is planned for habit
+     * @return {@code boolean} True if planned, false if not
+     */
     public boolean getMonday() {
         return Monday;
     }
 
+    /**
+     * Get if Tuesday is planned for habit
+     * @return {@code boolean} True if planned, false if not
+     */
     public boolean getTuesday() {
         return Tuesday;
     }
 
+    /**
+     * Get if Wednesday is planned for habit
+     * @return {@code boolean} True if planned, false if not
+     */
     public boolean getWednesday() {
         return Wednesday;
     }
 
+    /**
+     * Get if Thursday is planned for habit
+     * @return {@code boolean} True if planned, false if not
+     */
     public boolean getThursday() {
         return Thursday;
     }
 
+    /**
+     * Get if Friday is planned for habit
+     * @return {@code boolean} True if planned, false if not
+     */
     public boolean getFriday() {
         return Friday;
     }
 
+    /**
+     * Get if Saturday is planned for habit
+     * @return {@code boolean} True if planned, false if not
+     */
     public boolean getSaturday() {
         return Saturday;
     }
 
+    /**
+     * Get if Sunday is planned for habit
+     * @return {@code boolean} True if planned, false if not
+     */
     public boolean getSunday() {
         return Sunday;
     }
