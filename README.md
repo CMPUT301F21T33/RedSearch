@@ -1,5 +1,7 @@
 # RedSearch
 
+NOTE: The class DataBaseAccess can sometimes have failures caused if interent connection is lost or unstable upon attempting reads/writes to the database if this sort of issue occurs please reboot the application and confirm the reliabality of the current devices internet connection. If an issue still persists check the status of the firebase staus dashboard to see if the firebase itself has crashed.
+
 CMPUT 301 Group Project
 
 Created by:
