@@ -18,6 +18,7 @@ import java.util.ArrayList;
 public class SearchUsersActivity extends AppCompatActivity {
     private ArrayAdapter adapter;
     DataBaseAccess db = new DataBaseAccess();
+    public static final String USERNAME = "com.example.redsearch.USERNAME";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,9 @@ public class SearchUsersActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar_search_users);
         setSupportActionBar(toolbar);
         setTitle("Search Users");
+
+        Intent intent = getIntent();
+        String username = intent.getStringExtra(FriendsActivity.USERNAME);
 
         EditText editText = (EditText) findViewById(R.id.editText);
         ListView list = (ListView) findViewById(R.id.listView);
@@ -61,11 +65,7 @@ public class SearchUsersActivity extends AppCompatActivity {
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                /*Intent intent = getIntent();
-                String username = intent.getStringExtra(MainActivity.USERNAME);*/
-                db.addFollowerRequest("Sam","Lauren");
-
-
+                db.addFollowerRequest(usernames.get(i),username);
             }
         });
 
