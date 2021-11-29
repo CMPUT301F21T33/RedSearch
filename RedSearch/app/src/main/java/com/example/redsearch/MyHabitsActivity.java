@@ -1,30 +1,21 @@
 package com.example.redsearch;
 
-import static java.util.Comparator.naturalOrder;
-
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Date;
 
 public class MyHabitsActivity extends AppCompatActivity {
 
     public static final String TITLE = "com.example.redsearch.TITLE";
     public static final String REASON = "com.example.redsearch.REASON";
     public static final String DATE = "com.example.redsearch.DATE";
-    ArrayList<Habit> myHabits = new ArrayList<Habit>();
-    MyHabitList adapter;
     String username;
 
     /**
@@ -44,13 +35,14 @@ public class MyHabitsActivity extends AppCompatActivity {
         username = intent.getStringExtra("USER");
 
         ListView list = (ListView) findViewById(R.id.listView);
+        ArrayList<Habit> myHabits = new ArrayList<Habit>();
 
 
         DataBaseAccess db = new DataBaseAccess();  // Get access to the database
         while(!db.returnHabits(username, myHabits));  // Get habits from db
 
         // Look at all of our habits
-        adapter = new MyHabitList(this,myHabits);
+        MyHabitList adapter = new MyHabitList(this,myHabits);
 
         list.setAdapter(adapter);
 
@@ -101,13 +93,7 @@ public class MyHabitsActivity extends AppCompatActivity {
      */
     public void goToAddHabit(View view) {
         Intent intent = new Intent(this, AddHabitActivity.class);
+        intent.putExtra("USER", username);
         startActivity(intent);
     }
-
-    public void sortByName (View view) {
-        Collections.sort(myHabits, (b1, b2) -> b1.getTitle().compareTo(b2.getTitle()));
-        ListView list = (ListView) findViewById(R.id.listView);
-        list.setAdapter(adapter);
-    }
-
 }
