@@ -41,9 +41,17 @@ public class Habit {
     private String color;
     private boolean visible;
     private HabitEventList habitEventList = new HabitEventList();
-    private boolean[] weekday = new boolean[7];
+    private boolean Monday = false;
+    private boolean Tuesday = false;
+    private boolean Wednesday = false;
+    private boolean Thursday = false;
+    private boolean Friday = false;
+    private boolean Saturday = false;
+    private boolean Sunday = false;
 
-    Habit(String title, String reason, Date startDate, int Daysplanned, int Dayshappened, Boolean visible, HabitEventList habitEventList, boolean[] weekday){
+    Habit(String title, String reason, Date startDate, int Daysplanned, int Dayshappened,
+          Boolean visible, HabitEventList habitEventList, boolean Monday, boolean Tuesday,
+          boolean Wednesday, boolean Thursday, boolean Friday, boolean Saturday, boolean Sunday){
         this.title = title;
         this.reason = reason;
         this.startDate = startDate;
@@ -51,7 +59,13 @@ public class Habit {
         this.Dayshappened = Dayshappened;
         this.visible = visible;
         this.habitEventList = habitEventList;
-        this.weekday = weekday;
+        this.Monday = Monday;
+        this.Tuesday = Tuesday;
+        this.Wednesday = Wednesday;
+        this.Thursday = Thursday;
+        this.Friday = Friday;
+        this.Saturday = Saturday;
+        this.Sunday = Sunday;
     }
 
     /**
@@ -138,6 +152,35 @@ public class Habit {
         return habitEventList;
     }
 
+    public boolean getMonday() {
+        return Monday;
+    }
+
+    public boolean getTuesday() {
+        return Tuesday;
+    }
+
+    public boolean getWednesday() {
+        return Wednesday;
+    }
+
+    public boolean getThursday() {
+        return Thursday;
+    }
+
+    public boolean getFriday() {
+        return Friday;
+    }
+
+    public boolean getSaturday() {
+        return Saturday;
+    }
+
+    public boolean getSunday() {
+        return Sunday;
+    }
+
+
     /**
      * Get if day of week is planned or not
      * @param dayNum {@code int} Day of the week represented as an int
@@ -156,7 +199,21 @@ public class Habit {
         } else if (dayNum > 6) {
             return false;
         } else {
-            return weekday[dayNum];
+            if (dayNum == 0) {
+                return getMonday();
+            } else if (dayNum == 1) {
+                return getTuesday();
+            } else if (dayNum == 2) {
+                return getWednesday();
+            } else if (dayNum == 3) {
+                return getThursday();
+            } else if (dayNum == 4) {
+                return  getFriday();
+            } else if (dayNum == 5) {
+                return getSaturday();
+            } else {
+                return getSunday();
+            }
         }
     }
 
@@ -257,7 +314,21 @@ public class Habit {
         } else if (dayNum > 6) {
             return;
         } else {
-            weekday[dayNum] = true;
+            if (dayNum == 0) {
+                Monday = true;
+            } else if (dayNum == 1) {
+                Tuesday = true;
+            } else if (dayNum == 2) {
+                Wednesday = true;
+            } else if (dayNum == 3) {
+                Thursday = true;
+            } else if (dayNum == 4) {
+                Friday = true;
+            } else if (dayNum == 5) {
+                Saturday = true;
+            } else {
+                Sunday = true;
+            }
         }
     }
 
@@ -278,7 +349,21 @@ public class Habit {
         } else if (dayNum > 6) {
             return;
         } else {
-            weekday[dayNum] = false;
+            if (dayNum == 0) {
+                Monday = false;
+            } else if (dayNum == 1) {
+                Tuesday = false;
+            } else if (dayNum == 2) {
+                Wednesday = false;
+            } else if (dayNum == 3) {
+                Thursday = false;
+            } else if (dayNum == 4) {
+                Friday = false;
+            } else if (dayNum == 5) {
+                Saturday = false;
+            } else {
+                Sunday = false;
+            }
         }
     }
 
