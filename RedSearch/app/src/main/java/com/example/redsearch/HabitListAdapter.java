@@ -14,6 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 public class HabitListAdapter extends ArrayAdapter<Habit> {
     private ArrayList<Habit> habits;
@@ -44,8 +45,19 @@ public class HabitListAdapter extends ArrayAdapter<Habit> {
 
         //set text of TextView
         list_txt.setText(habit.getTitle());
-        //change indicator color
-        //list_ind.setColorFilter(Color.parseColor(habit.getColor()), PorterDuff.Mode.MULTIPLY);
+
+        Date date = new Date();
+
+        //change indicator color by ensuring that the habit event was completed today
+        for (int i = 0; i < habits.size(); i++) {
+            Habit habit1 = habits.get(i);
+            for (int j = 0; j < habit1.getHabitEventList().size(); j++) {
+                Date habitDate = habit1.getHabitEventList().getHabitEvent(j).getDate();
+                if (date.compareTo(habitDate) == 0) {
+                    list_ind.setColorFilter(Color.parseColor("#FF0000"), PorterDuff.Mode.MULTIPLY);
+                }
+            }
+        }
 
         return convertView;
 

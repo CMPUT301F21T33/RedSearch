@@ -17,8 +17,12 @@ public class MyHabitsActivity extends AppCompatActivity {
     public static final String TITLE = "com.example.redsearch.TITLE";
     public static final String REASON = "com.example.redsearch.REASON";
     public static final String DATE = "com.example.redsearch.DATE";
-    public static final String WEEKDAYS = "com.example.redsearch.WEEKDAYS";
+    String username;
 
+    /**
+     * On creation of the activity
+     * @param savedInstanceState {@code Bundle}
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,44 +32,66 @@ public class MyHabitsActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         setTitle("My Habits");
 
+        Intent intent = getIntent();
+        username = intent.getStringExtra("USER");
+
         ListView list = (ListView) findViewById(R.id.listView);
         ArrayList<Habit> myHabits = new ArrayList<Habit>();
 
-        /*
-        db = FirebaseFirestore.getInstance();
-        final CollectionReference collectionReference = db.collection("Users");*/
 
-        //pull data from db and put in myHabits
+        DataBaseAccess db = new DataBaseAccess();  // Get access to the database
+        while(!db.returnHabits(username, myHabits));  // Get habits from db
 
-        //Habit testHab = new Habit("TestHabit","Reason", new Date(), true);
-        myHabits.add(new Habit("Drink water","thirsty", new Date(), true));
-        myHabits.add(new Habit("Do laundry","dirty", new Date(), true));
-
+        // Look at all of our habits
         MyHabitList adapter = new MyHabitList(this,myHabits);
 
         list.setAdapter(adapter);
 
+        // If a habit is clicked, open more details about it
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                String title = myHabits.get(i).getTitle();
-                String reason = myHabits.get(i).getReason();
-                String date = myHabits.get(i).getStartDate().toString();
-                //String weekdays = myHabits.get(i).get
-
-                goToViewHabit(view, title, reason, date);
+                Habit habit = myHabits.get(i);
+                goToViewHabit(view, habit);
             }
         });
     }
 
-    public void goToViewHabit(View view, String title, String reason, String date){
+    /**
+     * Creates an array for the days of the week an activity is planned for
+     * The array will display true if the habit is planned for that day of the week, or false
+     * @param habit {@code Habit} The habit to create the array for
+     * @return {@code boolean[]} An array that contains information of the days of the week
+     *                             an activity is planned for
+     */
+    private boolean[] weekdaysPlanned(Habit habit) {
+        boolean[] weekdays = new boolean[7];  // Create array
+        for (int i = 0; i < 7; i++) {  // Populate array based on the weekdays planned
+            weekdays[i] = habit.getWeekday(i);
+        }
+        return weekdays;  // return array
+    }
+
+    /**
+     * Go to the View Habit Activity
+     * @param view {@code View}
+     * @param habit {@code Habit} The habit to be displayed
+     */
+    public void goToViewHabit(View view, Habit habit){
+        boolean[] weekdays = weekdaysPlanned(habit);
         Intent intent = new Intent(this, ViewHabitActivity.class);
-        intent.putExtra(TITLE, title);
-        intent.putExtra(REASON, reason);
-        intent.putExtra(DATE, date);
+        intent.putExtra(TITLE, habit.getTitle());
+        intent.putExtra(REASON, habit.getReason());
+        intent.putExtra(DATE, habit.getStartDate());
+        intent.putExtra("Weekdays", weekdays);
+        intent.putExtra("USER", username);
         startActivity(intent);
     }
 
+    /**
+     * Go to add Habit Activity
+     * @param view {@code View}
+     */
     public void goToAddHabit(View view) {
         Intent intent = new Intent(this, AddHabitActivity.class);
         startActivity(intent);
