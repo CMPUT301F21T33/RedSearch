@@ -91,23 +91,22 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void goToFriends(View view) {
-        Intent intent = new Intent(this, FriendsActivity.class);
-        startActivity(intent);
-    }
-
-    public void goToHabitEventList(View view) {
-        Intent intent = new Intent(this, HabitEventListActivity.class);
-        startActivity(intent);
-    }
-
-
     /**
      * This moves to the FriendsActivity when the friendsButton is pressed
      * @param view {@code View} takes in the view
      */
-    public void goToMyFriends(View view) {
+    public void goToFriends(View view) {
         Intent intent = new Intent(this, FriendsActivity.class);
+        intent.putExtra("USER", username);
+        startActivity(intent);
+    }
+
+    /**
+     * This moves to the HabitEventListActivity when the habit is pressed
+     * @param view {@code View} takes in the view
+     */
+    public void goToHabitEventList(View view) {
+        Intent intent = new Intent(this, HabitEventListActivity.class);
         startActivity(intent);
     }
 }
