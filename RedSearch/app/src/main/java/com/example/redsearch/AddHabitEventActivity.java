@@ -115,7 +115,7 @@ public class AddHabitEventActivity extends AppCompatActivity implements SelectLo
         DataBaseAccess db = new DataBaseAccess();
         Date date = new Date();
         // TEMP STUFF
-        Habit thing = new Habit("Title", "For cars", new Date(), true);
+        Habit thing = new Habit("Bob", "For cars", new Date(), true);
         thing.getHabitEventList().addHabitEvent(new HabitEvent("thing", date));
         thing.setWeekday(6);
         db.dataInsert("TEST", thing.getTitle(), thing);
@@ -191,7 +191,7 @@ public class AddHabitEventActivity extends AppCompatActivity implements SelectLo
         } else {  // No geolocation or image for habit event
             newHabitEvent = new HabitEvent(comment.getText().toString(), date);
         }
-
+        addNewHabitEvent(newHabitEvent);
         Intent intent = new Intent(this, HomeActivity.class);
         intent.putExtra("HabitDone", "Done");
         startActivity(intent);
