@@ -407,7 +407,14 @@ public class DataBaseAccess {
                     }
                 }
             }
-            for(int i = 0; i < ((ArrayList<String>) retrievedData.get("Followers")).size(); i++){
+            int x = 0;
+            try{
+                x = ((ArrayList<String>) retrievedData.get("Followers")).size();
+            }catch(Exception e){
+                Log.d(TAG, "No data to read: " + e);
+                return true;
+            }
+            for(int i = 0; i < x; i++){
                 returnData.add(((ArrayList<String>) retrievedData.get("Followers")).get(i));
             }
             Log.d(TAG, "Data retrieved");
@@ -496,7 +503,14 @@ public class DataBaseAccess {
                     }
                 }
             }
-            for(int i = 0; i < ((ArrayList<String>) retrievedData.get("Follower_requests")).size(); i++){
+            int x = 0;
+            try{
+                x = ((ArrayList<String>) retrievedData.get("Follower_requests")).size();
+            }catch(Exception e){
+                Log.d(TAG, "No data to read: " + e);
+                return true;
+            }
+            for(int i = 0; i < x; i++){
                 returnData.add(((ArrayList<String>) retrievedData.get("Follower_requests")).get(i));
             }
             Log.d(TAG, "Data retrieved");
@@ -579,7 +593,14 @@ public class DataBaseAccess {
                     }
                 }
             }
-            for(int i = 0; i < ((ArrayList<String>) retrievedData.get("Following")).size(); i++){
+            int x = 0;
+            try{
+                x = ((ArrayList<String>) retrievedData.get("Following")).size();
+            }catch(Exception e){
+                Log.d(TAG, "No data to read: " + e);
+                return true;
+            }
+            for(int i = 0; i < x; i++){
                 returnData.add(((ArrayList<String>) retrievedData.get("Following")).get(i));
             }
             Log.d(TAG, "Data retrieved");

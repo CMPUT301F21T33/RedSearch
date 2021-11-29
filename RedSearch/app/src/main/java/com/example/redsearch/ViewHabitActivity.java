@@ -58,6 +58,13 @@ public class ViewHabitActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void editHabit(View view){
+        DataBaseAccess db = new DataBaseAccess();
+        Intent intent = new Intent(this, AddHabitActivity.class);
+        intent.putExtra("USER", username);
+        db.dataRemove(username, title);
+        startActivity(intent);
+    }
         /**
          * Create a string that displays the days of the week a habit is planned for
          * @param weekdays {@code boolean[]} Array that stores the days of the week a habit is
