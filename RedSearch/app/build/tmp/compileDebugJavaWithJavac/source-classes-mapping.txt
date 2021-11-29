@@ -12,8 +12,8 @@ com/example/redsearch/databinding/ActivityFriendsBinding.java
  com.example.redsearch.databinding.ActivityFriendsBinding
 com/example/redsearch/databinding/ActivityMyHabitsBinding.java
  com.example.redsearch.databinding.ActivityMyHabitsBinding
-com/example/redsearch/AddHabitActivity.java
- com.example.redsearch.AddHabitActivity
+com/example/redsearch/Habit.java
+ com.example.redsearch.Habit
 com/example/redsearch/FollowRequestAdapter.java
  com.example.redsearch.FollowRequestAdapter
 com/example/redsearch/HabitEventList.java
@@ -80,16 +80,16 @@ com/example/redsearch/databinding/ActivityHabitEventListBinding.java
  com.example.redsearch.databinding.ActivityHabitEventListBinding
 com/example/redsearch/HabitEventListAdapter.java
  com.example.redsearch.HabitEventListAdapter
-com/example/redsearch/MainActivity.java
- com.example.redsearch.MainActivity
 com/example/redsearch/HabitView.java
  com.example.redsearch.HabitView
+com/example/redsearch/MainActivity.java
+ com.example.redsearch.MainActivity
 com/example/redsearch/AddHabitEventActivity.java
  com.example.redsearch.AddHabitEventActivity
-com/example/redsearch/Habit.java
- com.example.redsearch.Habit
 com/example/redsearch/databinding/ActivityFollowRequestBinding.java
  com.example.redsearch.databinding.ActivityFollowRequestBinding
+com/example/redsearch/AddHabitActivity.java
+ com.example.redsearch.AddHabitActivity
 com/example/redsearch/databinding/CustomListviewBinding.java
  com.example.redsearch.databinding.CustomListviewBinding
 com/example/redsearch/HomeActivity.java

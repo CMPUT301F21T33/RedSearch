@@ -1,17 +1,15 @@
 package com.example.redsearch;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
 
-import java.util.Calendar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
 import java.util.Date;
 
 
@@ -134,6 +132,7 @@ public class AddHabitActivity extends AppCompatActivity {
 
         // Change the activity
         Intent intent = new Intent(this, MyHabitsActivity.class);
+        intent.putExtra("USER", username);
         startActivity(intent);
     }
 }
