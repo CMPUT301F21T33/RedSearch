@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         Date date = new Date();
 
         DataBaseAccess db = new DataBaseAccess();
-        Habit thing = new Habit("Title", "For cars", new Date(), 1);
+        Habit thing = new Habit("Title", "For cars", new Date(), true);
         thing.getHabitEventList().addHabitEvent(new HabitEvent("thing", date));
         db.dataInsert("TEST", thing.getTitle(), thing);
         ArrayList<Habit> stuff = new ArrayList<Habit>();
