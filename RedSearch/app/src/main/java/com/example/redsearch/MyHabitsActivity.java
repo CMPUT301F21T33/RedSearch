@@ -99,6 +99,11 @@ public class MyHabitsActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void returnHome(View v){
+        Intent intent = new Intent(this, HomeActivity.class);
+        startActivity(intent);
+    }
+
     /**
      * Button functionality to sort the list by name
      * @param view {@code View}
