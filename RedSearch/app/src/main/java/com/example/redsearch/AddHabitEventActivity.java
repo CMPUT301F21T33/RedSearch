@@ -20,6 +20,7 @@ import androidx.fragment.app.DialogFragment;
 import org.osmdroid.util.GeoPoint;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Date;
 
 /**
@@ -46,9 +47,9 @@ public class AddHabitEventActivity extends AppCompatActivity implements SelectLo
         setContentView(R.layout.activity_add_habit_event);
 
         // Get the Username and Habit name from the previous activity
-        //Intent intent = getIntent();
-        //user = intent.getStringExtra("USER");
-        //habit = intent.getStringExtra("HABIT");
+        Intent intent = getIntent();
+        user = intent.getStringExtra("USER");
+        habit = intent.getStringExtra("HABIT");
 
         Toolbar toolbar = findViewById(R.id.toolbar_add_habit_event);
         setSupportActionBar(toolbar);
@@ -108,6 +109,21 @@ public class AddHabitEventActivity extends AppCompatActivity implements SelectLo
             bitmap = (Bitmap) data.getExtras().get("data");
             habitImage.setImageBitmap(bitmap);
         }
+    }
+
+    private void addNewHabitEvent(HabitEvent habitEvent) {
+        DataBaseAccess db = new DataBaseAccess();
+        Date date = new Date();
+        // TEMP STUFF
+        Habit thing = new Habit("Title", "For cars", new Date(), true);
+        thing.getHabitEventList().addHabitEvent(new HabitEvent("thing", date));
+        thing.setWeekday(6);
+        db.dataInsert("TEST", thing.getTitle(), thing);
+        // TEMP ENDS HERE
+        ArrayList<Habit> allHabits = new ArrayList<Habit>();
+        while(!db.returnHabits("TEST", allHabits));  // TODO time out checker
+
+
     }
 
     /**
