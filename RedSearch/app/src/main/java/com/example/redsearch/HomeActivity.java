@@ -16,7 +16,7 @@ import java.util.List;
 
 public class HomeActivity extends AppCompatActivity {
 
-    String username;
+    private String username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
