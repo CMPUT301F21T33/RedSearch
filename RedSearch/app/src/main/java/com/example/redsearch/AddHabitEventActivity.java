@@ -120,8 +120,11 @@ public class AddHabitEventActivity extends AppCompatActivity implements SelectLo
         thing.setWeekday(6);
         db.dataInsert("TEST", thing.getTitle(), thing);
         // TEMP ENDS HERE
-        ArrayList<Habit> allHabits = new ArrayList<Habit>();
-        while(!db.returnHabits("TEST", allHabits));  // TODO time out checker
+        ArrayList<Habit> theHabit = new ArrayList<Habit>();
+        while(!db.returnSingleHabits("TEST", "Title", theHabit));  // TODO time out checker
+        Habit updatedHabit = theHabit.get(0);
+        updatedHabit.getHabitEventList().addHabitEvent(habitEvent);
+        db.dataInsert("TEST", updatedHabit.getTitle(), updatedHabit);
 
 
     }
