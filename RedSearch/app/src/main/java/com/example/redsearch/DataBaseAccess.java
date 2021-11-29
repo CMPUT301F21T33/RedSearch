@@ -298,8 +298,7 @@ public class DataBaseAccess {
         while(true){
             try {
                 data = collectionReference.get();
-                QuerySnapshot name = data.getResult();
-                stuff = (ArrayList<DocumentSnapshot>) name.getDocuments();
+                break;
             }catch(Exception IllegalStateException) {
                 count++;
                 if(count >200) {
@@ -307,11 +306,25 @@ public class DataBaseAccess {
                     return false;
                 }
             }
-                for(int i = 0; i < stuff.size(); i++){
-                    returnData.add( stuff.get(i).getId());
+        }
+        count =0;
+        while(true) {
+            try {
+                QuerySnapshot name = data.getResult();
+                stuff = (ArrayList<DocumentSnapshot>) name.getDocuments();
+                break;
+            } catch (Exception IllegalStateException) {
+                count++;
+                if (count > 200) {
+                    Log.d(TAG, "Data could not be retrieved" + IllegalStateException);
+                    return false;
                 }
-                return true;
             }
+        }
+        for(int i = 0; i < stuff.size(); i++){
+            returnData.add(stuff.get(i).getId());
+        }
+        return true;
     }
 
     /**
