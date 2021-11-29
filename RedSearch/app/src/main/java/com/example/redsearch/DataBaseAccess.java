@@ -229,7 +229,7 @@ public class DataBaseAccess {
      * @param returnData The habit being sent out
      * @return
      */
-    public Boolean returnSingleHabits(String Username, String habitName,Habit returnData){
+    public Boolean returnSingleHabits(String Username, String habitName,ArrayList<Habit> returnData){
         DocumentReference docRef = db.collection("Users").document(Username);
         Task<DocumentSnapshot> data;
         Map<String, Object> retrievedData;
@@ -275,7 +275,7 @@ public class DataBaseAccess {
                     (boolean) stuff.get("friday"),
                     (boolean) stuff.get("saturday"),
                     (boolean) stuff.get("sunday"));
-            returnData = habit;
+            returnData.add(habit);
 
             }
         Log.d(TAG, "Data retrieved");
