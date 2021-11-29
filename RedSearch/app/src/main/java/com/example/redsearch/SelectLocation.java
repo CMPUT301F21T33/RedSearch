@@ -33,6 +33,9 @@ import org.osmdroid.views.overlay.IconOverlay;
 
 import java.util.ArrayList;
 
+/**
+ * Taken from the Koutlout directory, modified for our use
+ */
 public class SelectLocation extends DialogFragment {
 
     private static final int REQUEST_PERMISSIONS_REQUEST_CODE = 1;

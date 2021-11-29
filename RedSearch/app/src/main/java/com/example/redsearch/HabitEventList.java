@@ -25,6 +25,10 @@ package com.example.redsearch;
 
 import java.util.ArrayList;
 
+/**
+ * @author: Balreet, Sam
+ * @see HabitEvent
+ */
 public class HabitEventList {
     private ArrayList<HabitEvent> habitEventList = new ArrayList<HabitEvent>();
 
