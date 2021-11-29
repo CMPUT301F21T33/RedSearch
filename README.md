@@ -35,6 +35,7 @@ Work completed by each memeber for Project Part 3:
    * Login UI
    * Updated UML Class diagram 
    * Addressing TA feedback from part 3
+   * Javadoc
 * Justin:
   * Part 3: 
    * Worked on implementing Firebase for the entire project and creating a class to allow easy access to Firebase
@@ -60,3 +61,4 @@ Work completed by each memeber for Project Part 3:
   * Part 4: 
    * UI testing
    * git updates
+   * JavaDoc
