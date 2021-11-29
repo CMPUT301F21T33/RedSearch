@@ -10,6 +10,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 
 public class FriendListAdapter extends ArrayAdapter<User> {
@@ -34,7 +36,11 @@ public class FriendListAdapter extends ArrayAdapter<User> {
             convertView = LayoutInflater.from(context).inflate(R.layout.custom_friend_list, parent, false);
         }
 
+        TextView friendText = (TextView) convertView.findViewById(R.id.friend_list_text);
+
         User user = friends.get(position);
+
+        friendText.setText(user.getUsername());
 
         return convertView;
     }
