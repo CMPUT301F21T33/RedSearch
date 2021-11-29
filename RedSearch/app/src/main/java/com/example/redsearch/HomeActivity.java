@@ -14,10 +14,17 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * Activity for home page functionality
+ */
 public class HomeActivity extends AppCompatActivity {
 
     private String username;
 
+    /**
+     * Function called on activity creation
+     * @param savedInstanceState {@code Bundle} Saved Data
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
