@@ -3,6 +3,7 @@ package com.example.redsearch;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -13,6 +14,8 @@ import java.util.ArrayList;
 public class FollowRequestActivity extends AppCompatActivity {
     DataBaseAccess db = new DataBaseAccess();
     FollowRequestAdapter adapter;
+    public static final String USERNAME = "com.example.redsearch.USERNAME";
+    public String username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,10 +26,13 @@ public class FollowRequestActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         setTitle("Follow Requests");
 
+        Intent intent = getIntent();
+        username = intent.getStringExtra(FriendsActivity.USERNAME);
+
         ListView list = (ListView) findViewById(R.id.listView);
         ArrayList<String> usernames = new ArrayList<>();
 
-        while(!db.returnFollowerRequests("Sam",usernames)){}
+        while(!db.returnFollowerRequests(username,usernames)){}
 
 
         adapter = new FollowRequestAdapter(this,usernames);
@@ -38,14 +44,14 @@ public class FollowRequestActivity extends AppCompatActivity {
 
     public void addFollow(View v){
         String follower = (String)v.getTag();
-        db.addFollower("Sam","Lauren");
+        db.addFollowing(follower,username);
         deleteRequest(v);
-        adapter.remove("Lauren");
+        adapter.remove(follower);
     }
 
     public void deleteRequest(View v){
         String follower = (String)v.getTag();
-        db.removeFollowerRequest("Sam","Lauren");
-        adapter.remove("Lauren");
+        db.removeFollowerRequest(username,follower);
+        adapter.remove(follower);
     }
 }

@@ -18,6 +18,7 @@ public class FriendsActivity extends AppCompatActivity {
 
     private String username;
     public static final String FRIENDNAME = "com.example.redsearch.FRIENDNAME";
+    public static final String USERNAME = "com.example.redsearch.USERNAME";
     private DataBaseAccess db = new DataBaseAccess();
 
     /**
@@ -30,7 +31,7 @@ public class FriendsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_friends);
 
         Intent intent = getIntent();
-        username = intent.getStringExtra("USER");
+        username = intent.getStringExtra(USERNAME);
 
         Toolbar toolbar = findViewById(R.id.toolbar_friends);
         setSupportActionBar(toolbar);
@@ -62,6 +63,7 @@ public class FriendsActivity extends AppCompatActivity {
      */
     public void goToSearchUsers(View view) {
         Intent intent = new Intent(this, SearchUsersActivity.class);
+        intent.putExtra(USERNAME, username);
         startActivity(intent);
     }
 
@@ -71,6 +73,7 @@ public class FriendsActivity extends AppCompatActivity {
      */
     public void goToFollowRequest(View view) {
         Intent intent = new Intent(this, FollowRequestActivity.class);
+        intent.putExtra(USERNAME, username);
         startActivity(intent);
     }
 }

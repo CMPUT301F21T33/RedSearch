@@ -43,6 +43,8 @@ public class FollowRequestAdapter extends ArrayAdapter<String> {
         //set text of TextView
         list_txt.setText(request);
 
+        convertView.setTag(request);
+
 
 
         return convertView;
