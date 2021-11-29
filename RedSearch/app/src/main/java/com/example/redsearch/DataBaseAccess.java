@@ -407,7 +407,9 @@ public class DataBaseAccess {
                     }
                 }
             }
-            returnData = (ArrayList<String>) retrievedData.get("Followers");
+            for(int i = 0; i < ((ArrayList<String>) retrievedData.get("Followers")).size(); i++){
+                returnData.add(((ArrayList<String>) retrievedData.get("Followers")).get(i));
+            }
             Log.d(TAG, "Data retrieved");
             check = false;
         }
@@ -494,7 +496,9 @@ public class DataBaseAccess {
                     }
                 }
             }
-            returnData = (ArrayList<String>) retrievedData.get("Follower_requests");
+            for(int i = 0; i < ((ArrayList<String>) retrievedData.get("Follower_requests")).size(); i++){
+                returnData.add(((ArrayList<String>) retrievedData.get("Follower_requests")).get(i));
+            }
             Log.d(TAG, "Data retrieved");
             check = false;
         }
@@ -575,7 +579,9 @@ public class DataBaseAccess {
                     }
                 }
             }
-            returnData = (ArrayList<String>) retrievedData.get("Following");
+            for(int i = 0; i < ((ArrayList<String>) retrievedData.get("Following")).size(); i++){
+                returnData.add(((ArrayList<String>) retrievedData.get("Following")).get(i));
+            }
             Log.d(TAG, "Data retrieved");
             check = false;
         }
