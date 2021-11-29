@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
         }
         if (goodinput) {
             // Verify that the username is not already in use through a databse query TODO
-            db.dataInsert(usernameinput, "Password", passwordinput);
+            db.dataInsert(usernameinput, "password", passwordinput);
             User newuser = new User(usernameinput, passwordinput);
             intent.putExtra(USERNAME, usernameinput);
             startActivity(intent);
