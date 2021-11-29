@@ -4,6 +4,7 @@ package com.example.redsearch.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -19,11 +20,15 @@ public final class ActivityFriendsBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final ListView friendView;
+
+  @NonNull
   public final ToolbarFriendsBinding toolbarFriends;
 
-  private ActivityFriendsBinding(@NonNull ConstraintLayout rootView,
+  private ActivityFriendsBinding(@NonNull ConstraintLayout rootView, @NonNull ListView friendView,
       @NonNull ToolbarFriendsBinding toolbarFriends) {
     this.rootView = rootView;
+    this.friendView = friendView;
     this.toolbarFriends = toolbarFriends;
   }
 
@@ -54,6 +59,12 @@ public final class ActivityFriendsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.friendView;
+      ListView friendView = ViewBindings.findChildViewById(rootView, id);
+      if (friendView == null) {
+        break missingId;
+      }
+
       id = R.id.toolbar_friends;
       View toolbarFriends = ViewBindings.findChildViewById(rootView, id);
       if (toolbarFriends == null) {
@@ -61,7 +72,8 @@ public final class ActivityFriendsBinding implements ViewBinding {
       }
       ToolbarFriendsBinding binding_toolbarFriends = ToolbarFriendsBinding.bind(toolbarFriends);
 
-      return new ActivityFriendsBinding((ConstraintLayout) rootView, binding_toolbarFriends);
+      return new ActivityFriendsBinding((ConstraintLayout) rootView, friendView,
+          binding_toolbarFriends);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

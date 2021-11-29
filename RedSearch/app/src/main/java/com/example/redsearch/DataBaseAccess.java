@@ -206,7 +206,13 @@ public class DataBaseAccess {
                         (int) ((long)stuff.get("dayshappened")),
                         (Boolean) stuff.get("visible"),
                         events,
-                        (boolean[]) stuff.get("weekday"));
+                        (boolean) stuff.get("monday"),
+                        (boolean) stuff.get("tuesday"),
+                        (boolean) stuff.get("wednesday"),
+                        (boolean) stuff.get("thursday"),
+                        (boolean) stuff.get("friday"),
+                        (boolean) stuff.get("saturday"),
+                        (boolean) stuff.get("sunday"));
                 returnData.add(habit);
 
             }
