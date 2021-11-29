@@ -14,8 +14,11 @@ import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
-public class FriendListAdapter extends ArrayAdapter<User> {
-    private ArrayList<User> friends;
+/**
+ * Adapter for FriendsList view
+ */
+public class FriendListAdapter extends ArrayAdapter<String> {
+    private ArrayList<String> friends;
     private Context context;
 
     /**
@@ -23,12 +26,19 @@ public class FriendListAdapter extends ArrayAdapter<User> {
      * @param context {@code Context} Context given
      * @param friends {@code ArrayList<User>} Friends list to be displayed
      */
-    public FriendListAdapter(Context context, ArrayList<User> friends) {
+    public FriendListAdapter(Context context, ArrayList<String> friends) {
         super(context, 0, friends);
         this.friends = friends;
         this.context = context;
     }
 
+    /**
+     * View to display per friend in list
+     * @param position friend position in the list
+     * @param convertView view to be editied
+     * @param parent parent
+     * @return View {@code View} edited view
+     */
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -38,9 +48,9 @@ public class FriendListAdapter extends ArrayAdapter<User> {
 
         TextView friendText = (TextView) convertView.findViewById(R.id.friend_list_text);
 
-        User user = friends.get(position);
+        String user = friends.get(position);
 
-        friendText.setText(user.getUsername());
+        friendText.setText(user);
 
         return convertView;
     }
