@@ -18,6 +18,9 @@
             android:name=".FriendsActivity"
             android:exported="true" />
         <activity
+            android:name=".ViewFriendActivity"
+            android:exported="true" />
+        <activity
             android:name=".SearchUsersActivity"
             android:exported="true" />
         <activity
