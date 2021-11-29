@@ -231,26 +231,26 @@ public class DataBaseAccess {
     public Boolean returnUsers(ArrayList<String> returnData){
         returnData.clear();
         Task<QuerySnapshot> data;
+        ArrayList<DocumentSnapshot> stuff = new ArrayList<>();
         int count  =0;
 
         while(true){
             try {
                 data = collectionReference.get();
-                for(QueryDocumentSnapshot key: data.getResult()){
-                    Log.d(TAG, key.getId() + " => " + key.getString("name"));
-                    returnData.add(key.getId());
-                }
-                return true;
-            }catch(Exception IllegalStateException){
+                QuerySnapshot name = data.getResult();
+                stuff = (ArrayList<DocumentSnapshot>) name.getDocuments();
+            }catch(Exception IllegalStateException) {
                 count++;
-                if(count > 200){
-                    Log.d(TAG, "Database reading has timed out " + IllegalStateException);
+                if(count >200) {
+                    Log.d(TAG, "Data could not be retrieved" + IllegalStateException);
                     return false;
                 }
-
             }
-
-        }
+                for(int i = 0; i < stuff.size(); i++){
+                    returnData.add( stuff.get(i).getId());
+                }
+                return true;
+            }
     }
 
     /**

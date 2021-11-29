@@ -34,6 +34,11 @@ public class MainActivity extends AppCompatActivity {
         userError = findViewById(R.id.userError);
         passwordError = findViewById(R.id.passwordError);
 
+        DataBaseAccess db = new DataBaseAccess();
+        ArrayList<String> stuff = new ArrayList<String>();
+        while(!db.returnUsers(stuff));
+        int x = 0;
+
     }
 
 
