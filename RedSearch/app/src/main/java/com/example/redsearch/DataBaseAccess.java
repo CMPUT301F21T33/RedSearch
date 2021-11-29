@@ -223,6 +223,67 @@ public class DataBaseAccess {
     }
 
     /**
+     * Does some stuff to return a single habit from the database when required
+     * @param Username User to pull from
+     * @param habitName The habit we want
+     * @param returnData The habit being sent out
+     * @return
+     */
+    public Boolean returnSingleHabits(String Username, String habitName,Habit returnData){
+        DocumentReference docRef = db.collection("Users").document(Username);
+        Task<DocumentSnapshot> data;
+        Map<String, Object> retrievedData;
+
+        Boolean check = true;
+        while(check){
+            try {
+                data = docRef.get();
+            }catch(Exception IllegalStateException){
+                Log.d(TAG, "Error has occurred in accessing Database: " + IllegalStateException);
+                return false;
+            }
+            int count = 0;
+            while(true) {
+                try {
+                    retrievedData = data.getResult().getData();
+                    break;
+                } catch (Exception IllegalStateException) {
+                    count++;
+                    if (count > 200) {
+                        Log.d(TAG, "Error has occurred in accessing Database: " + IllegalStateException);
+                        return false;
+                    }
+                }
+            }
+            Object habitData = retrievedData.get(habitName);
+            HashMap<String, ?> stuff = (HashMap<String, ?>) habitData;
+            HashMap<?, ?> hh = (HashMap<?, ?>) stuff.get("habitEventList");
+            ArrayList<?> st = (ArrayList<?>) hh.get("habitEventList");
+            HabitEventList events = new HabitEventList((ArrayList<HabitEvent>) st);
+
+            Habit habit = new Habit(habitName,
+                    (String) stuff.get("reason"),
+                    ((Timestamp) stuff.get("startDate")).toDate(),
+                    (int) ((long) stuff.get("daysplanned")),
+                    (int) ((long)stuff.get("dayshappened")),
+                    (Boolean) stuff.get("visible"),
+                    events,
+                    (boolean) stuff.get("monday"),
+                    (boolean) stuff.get("tuesday"),
+                    (boolean) stuff.get("wednesday"),
+                    (boolean) stuff.get("thursday"),
+                    (boolean) stuff.get("friday"),
+                    (boolean) stuff.get("saturday"),
+                    (boolean) stuff.get("sunday"));
+            returnData = habit;
+
+            }
+        Log.d(TAG, "Data retrieved");
+        check = false;
+        return true;
+    }
+
+    /**
      * Returns an boolean on if the function was successful or not, from there it will populate the returndata array with
      * the values of all Users currently in the database
      * @param returnData A blank array to be populated with usernames
