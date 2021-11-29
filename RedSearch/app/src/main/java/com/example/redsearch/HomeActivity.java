@@ -16,7 +16,7 @@ import java.util.List;
 
 public class HomeActivity extends AppCompatActivity {
 
-    String username;
+    private String username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -101,10 +101,6 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void returnHome(View v){
-        Intent intent = new Intent(this, HomeActivity.class);
-        startActivity(intent);
-    }
 
     /**
      * This moves to the FriendsActivity when the friendsButton is pressed

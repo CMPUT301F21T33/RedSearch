@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 public class FriendsActivity extends AppCompatActivity {
 
-    public static final String USERNAME = "com.example.redsearch.USERNAME";
+    public static final String FRIENDNAME = "com.example.redsearch.FRIENDNAME";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +37,7 @@ public class FriendsActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 User user = adapter.getItem(i);
-                intent.putExtra(USERNAME, user.getUsername());
+                intent.putExtra(FRIENDNAME, user.getUsername());
                 startActivity(intent);
             }
         });
