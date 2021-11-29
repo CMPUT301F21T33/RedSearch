@@ -76,8 +76,9 @@ public class Habit {
      * @param reason {@code String} Reason of Habit
      * @param date {@code Date} Date the habit began
      * @param daysplanned {@code int} Number of days the habit is planned for
+     * @param visible {@code boolean} True if habit is public, False if not
      */
-    Habit(String title, String reason, Date date, int daysplanned){
+    Habit(String title, String reason, Date date, int daysplanned, boolean visible){
         // a simple habit constructor overridden for days planned
         setTitle(title);
         setReason(reason);
