@@ -13,8 +13,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 
 public class MyHabitList extends ArrayAdapter<Habit> {
@@ -51,6 +49,7 @@ public class MyHabitList extends ArrayAdapter<Habit> {
         //set text of TextView
         list_txt.setText(habit.getTitle());
         //change indicator color
+        habit.setColor();
         list_ind.setColorFilter(Color.parseColor(habit.getColor()), PorterDuff.Mode.MULTIPLY);
 
         return convertView;
