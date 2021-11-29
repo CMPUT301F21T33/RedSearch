@@ -101,6 +101,11 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void returnHome(View v){
+        Intent intent = new Intent(this, HomeActivity.class);
+        startActivity(intent);
+    }
+
     /**
      * This moves to the FriendsActivity when the friendsButton is pressed
      * @param view {@code View} takes in the view

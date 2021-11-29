@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
      */
 
     public void signupclick(View view){
-        Intent intent = new Intent(this, HomeActivity.class);
+        Intent intent = new Intent(this, FriendsActivity.class);
         // Get the input
         userError.setText("");
         passwordError.setText("");

@@ -12,6 +12,7 @@ import java.util.ArrayList;
 
 public class FollowRequestActivity extends AppCompatActivity {
     DataBaseAccess db = new DataBaseAccess();
+    FollowRequestAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +29,7 @@ public class FollowRequestActivity extends AppCompatActivity {
         while(!db.returnFollowerRequests("Sam",usernames)){}
 
 
-        FollowRequestAdapter adapter = new FollowRequestAdapter(this,usernames);
+        adapter = new FollowRequestAdapter(this,usernames);
 
         list.setAdapter(adapter);
 
@@ -39,10 +40,12 @@ public class FollowRequestActivity extends AppCompatActivity {
         String follower = (String)v.getTag();
         db.addFollower("Sam","Lauren");
         deleteRequest(v);
+        adapter.remove("Lauren");
     }
 
     public void deleteRequest(View v){
         String follower = (String)v.getTag();
         db.removeFollowerRequest("Sam","Lauren");
+        adapter.remove("Lauren");
     }
 }
