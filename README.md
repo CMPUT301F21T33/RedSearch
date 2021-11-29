@@ -65,6 +65,7 @@ Work completed by each memeber for Project Part 3:
    * Worked on user profiles (US 03.01.01)
   * Part 4: 
    * following/follower functionality
+   * javadocs
 * Samantha:
   * Part 3:
    * Addressed TA feedback from Project Part 2
