@@ -13,7 +13,7 @@ public class ViewFriendActivity extends AppCompatActivity {
         setContentView(R.layout.activity_view_friend);
 
         Intent intent = getIntent();
-        String username = intent.getStringExtra(FriendsActivity.USERNAME);
+        String username = intent.getStringExtra(FriendsActivity.FRIENDNAME);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
