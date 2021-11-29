@@ -204,6 +204,7 @@ public class AddHabitEventActivity extends AppCompatActivity implements SelectLo
         addNewHabitEvent(newHabitEvent);
 
         Intent intent = new Intent(this, HomeActivity.class);
+        intent.putExtra("USER", user);
         startActivity(intent);
 
     }
@@ -214,6 +215,7 @@ public class AddHabitEventActivity extends AppCompatActivity implements SelectLo
      */
     public void goHomeCancelEvent(View view) {
         Intent intent = new Intent(this, HomeActivity.class);
+        intent.putExtra("USER", user);
         startActivity(intent);
     }
 
