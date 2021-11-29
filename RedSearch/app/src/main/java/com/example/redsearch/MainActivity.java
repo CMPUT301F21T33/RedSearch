@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
      */
 
     public void signupclick(View view){
-        Intent intent = new Intent(this, HomeActivity.class);
+        Intent intent = new Intent(this, FriendsActivity.class);
         // Get the input
         userError.setText("");
         passwordError.setText("");
@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
         }
         if (goodinput) {
             // Verify that the username is not already in use through a databse query TODO
-            db.dataInsert(usernameinput, "password", passwordinput);
+            db.dataInsert(usernameinput, "Password", passwordinput);
             User newuser = new User(usernameinput, passwordinput);
             intent.putExtra(USERNAME, usernameinput);
             startActivity(intent);

@@ -21,6 +21,12 @@ public class User {
         this.password = password;
     }
 
-
+    /**
+     * getter for username
+     * @return username {@code String} user's username
+     */
+    public String getUsername() {
+        return username;
+    }
 
 }

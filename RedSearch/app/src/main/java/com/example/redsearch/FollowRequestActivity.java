@@ -4,12 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
 public class FollowRequestActivity extends AppCompatActivity {
     DataBaseAccess db = new DataBaseAccess();
+    FollowRequestAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,15 +26,26 @@ public class FollowRequestActivity extends AppCompatActivity {
         ListView list = (ListView) findViewById(R.id.listView);
         ArrayList<String> usernames = new ArrayList<>();
 
-        //while(!db.returnFollowerRequests("Sam",usernames)){}
+        while(!db.returnFollowerRequests("Sam",usernames)){}
 
-        if(!db.returnFollowerRequests("Sam",usernames)){
-            usernames.add("Max");
-            usernames.add("Dave");
-        }
 
-        FollowRequestAdapter adapter = new FollowRequestAdapter(this,usernames);
+        adapter = new FollowRequestAdapter(this,usernames);
 
         list.setAdapter(adapter);
+
+
+    }
+
+    public void addFollow(View v){
+        String follower = (String)v.getTag();
+        db.addFollower("Sam","Lauren");
+        deleteRequest(v);
+        adapter.remove("Lauren");
+    }
+
+    public void deleteRequest(View v){
+        String follower = (String)v.getTag();
+        db.removeFollowerRequest("Sam","Lauren");
+        adapter.remove("Lauren");
     }
 }

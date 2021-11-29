@@ -1832,6 +1832,7 @@ drawable ic_baseline_close_24
 drawable ic_baseline_delete_24
 drawable ic_baseline_edit_24
 drawable ic_baseline_habit_location
+drawable ic_baseline_home_24
 drawable ic_baseline_image_24
 drawable ic_baseline_map_24
 drawable ic_baseline_people_24
@@ -2127,6 +2128,7 @@ id friday
 id friendView
 id friend_list_text
 id friendsButton
+id friends_habits
 id frost
 id ghost_view
 id ghost_view_holder
@@ -2403,6 +2405,7 @@ id titleDividerNoCustom
 id titleText
 id title_template
 id toggle
+id toolbar
 id toolbar_add_habit
 id toolbar_add_habit_event
 id toolbar_follow_requests
@@ -2534,11 +2537,13 @@ layout activity_main
 layout activity_my_habits
 layout activity_search_users
 layout activity_signup
+layout activity_view_friend
 layout activity_view_habit
 layout activity_view_habit_event
 layout bonuspack_bubble
 layout custom_dialog
 layout custom_follow_list
+layout custom_follow_list_test
 layout custom_friend_list
 layout custom_homelist
 layout custom_listview
