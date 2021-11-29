@@ -1,106 +1,106 @@
 [
     {
-        "merged": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_view_habit_event.xml",
-        "source": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\src\\main\\res\\layout\\activity_view_habit_event.xml"
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/toolbar.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/toolbar.xml"
     },
     {
-        "merged": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_view_friend.xml",
-        "source": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\src\\main\\res\\layout\\activity_view_friend.xml"
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_follow_request.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_follow_request.xml"
     },
     {
-        "merged": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\toolbar_home.xml",
-        "source": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\src\\main\\res\\layout\\toolbar_home.xml"
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_home.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_home.xml"
     },
     {
-        "merged": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_follow_request.xml",
-        "source": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\src\\main\\res\\layout\\activity_follow_request.xml"
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_login.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_login.xml"
     },
     {
-        "merged": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_add_habit_event.xml",
-        "source": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\src\\main\\res\\layout\\activity_add_habit_event.xml"
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/habitcontent.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/habitcontent.xml"
     },
     {
-        "merged": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",
-        "source": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\src\\main\\res\\layout\\activity_login.xml"
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/custom_homelist.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/custom_homelist.xml"
     },
     {
-        "merged": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_home.xml",
-        "source": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\src\\main\\res\\layout\\activity_home.xml"
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/custom_listview.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/custom_listview.xml"
     },
     {
-        "merged": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\toolbar_edit_delete.xml",
-        "source": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\src\\main\\res\\layout\\toolbar_edit_delete.xml"
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_add_habit.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_add_habit.xml"
     },
     {
-        "merged": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\custom_listview.xml",
-        "source": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\src\\main\\res\\layout\\custom_listview.xml"
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_signup.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_signup.xml"
     },
     {
-        "merged": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_signup.xml",
-        "source": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\src\\main\\res\\layout\\activity_signup.xml"
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_search_users.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_search_users.xml"
     },
     {
-        "merged": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\custom_homelist.xml",
-        "source": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\src\\main\\res\\layout\\custom_homelist.xml"
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_view_friend.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_view_friend.xml"
     },
     {
-        "merged": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_habit_event_list.xml",
-        "source": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\src\\main\\res\\layout\\activity_habit_event_list.xml"
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/toolbar_friends.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/toolbar_friends.xml"
     },
     {
-        "merged": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\toolbar_friends.xml",
-        "source": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\src\\main\\res\\layout\\toolbar_friends.xml"
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/custom_follow_list.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/custom_follow_list.xml"
     },
     {
-        "merged": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\custom_friend_list.xml",
-        "source": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\src\\main\\res\\layout\\custom_friend_list.xml"
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_my_habits.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_my_habits.xml"
     },
     {
-        "merged": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
-        "source": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_view_habit_event.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_view_habit_event.xml"
     },
     {
-        "merged": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_habit_view.xml",
-        "source": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\src\\main\\res\\layout\\activity_habit_view.xml"
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_view_habit.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_view_habit.xml"
     },
     {
-        "merged": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\map_view_in_scroll.xml",
-        "source": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\src\\main\\res\\layout\\map_view_in_scroll.xml"
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/custom_follow_list_test.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/custom_follow_list_test.xml"
     },
     {
-        "merged": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_my_habits.xml",
-        "source": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\src\\main\\res\\layout\\activity_my_habits.xml"
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/toolbar_home.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/toolbar_home.xml"
     },
     {
-        "merged": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_friends.xml",
-        "source": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\src\\main\\res\\layout\\activity_friends.xml"
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_add_habit_event.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_add_habit_event.xml"
     },
     {
-        "merged": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\habitcontent.xml",
-        "source": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\src\\main\\res\\layout\\habitcontent.xml"
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/toolbar_edit_delete.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/toolbar_edit_delete.xml"
     },
     {
-        "merged": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_view_habit.xml",
-        "source": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\src\\main\\res\\layout\\activity_view_habit.xml"
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_friends.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_friends.xml"
     },
     {
-        "merged": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\custom_follow_list_test.xml",
-        "source": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\src\\main\\res\\layout\\custom_follow_list_test.xml"
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/custom_friend_list.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/custom_friend_list.xml"
     },
     {
-        "merged": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_search_users.xml",
-        "source": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\src\\main\\res\\layout\\activity_search_users.xml"
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_habit_event_list.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_habit_event_list.xml"
     },
     {
-        "merged": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\toolbar.xml",
-        "source": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\src\\main\\res\\layout\\toolbar.xml"
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_add_habit.xml",
-        "source": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\src\\main\\res\\layout\\activity_add_habit.xml"
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_habit_view.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/activity_habit_view.xml"
     },
     {
-        "merged": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\custom_follow_list.xml",
-        "source": "D:\\Code_Files\\CMPUT_301_group_project\\RedSearch\\RedSearch\\app\\src\\main\\res\\layout\\custom_follow_list.xml"
+        "merged": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/map_view_in_scroll.xml",
+        "source": "/home/emily84/Documents/CMPUT301/RedSearch/RedSearch/app/src/main/res/layout/map_view_in_scroll.xml"
     }
 ]
