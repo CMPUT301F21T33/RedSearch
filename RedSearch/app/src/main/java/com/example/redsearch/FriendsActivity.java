@@ -31,7 +31,7 @@ public class FriendsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_friends);
 
         Intent intent = getIntent();
-        username = intent.getStringExtra(USERNAME);
+        username = intent.getStringExtra("USER");
 
         Toolbar toolbar = findViewById(R.id.toolbar_friends);
         setSupportActionBar(toolbar);
