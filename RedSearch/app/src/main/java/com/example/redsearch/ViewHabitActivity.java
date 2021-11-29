@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.widget.TextView;
 
 public class ViewHabitActivity extends AppCompatActivity {
@@ -45,12 +46,13 @@ public class ViewHabitActivity extends AppCompatActivity {
         weekdaysText.setText(weekdaysplanned);
     }
 
-    /**
-     * Create a string that displays the days of the week a habit is planned for
-     * @param weekdays {@code boolean[]} Array that stores the days of the week a habit is
-     *                                  planned for. True if planned for that day, False if not.
-     * @return {@code String} The days of the week the habit is planned for
-     */
+
+        /**
+         * Create a string that displays the days of the week a habit is planned for
+         * @param weekdays {@code boolean[]} Array that stores the days of the week a habit is
+         *                                  planned for. True if planned for that day, False if not.
+         * @return {@code String} The days of the week the habit is planned for
+         */
     private String getDaysString(boolean[] weekdays) {
         String daysPlanned = "";  // Create empty string to append to
         if (weekdays[0]) {  // If habit is planned for Monday, add it to the string

@@ -128,7 +128,7 @@ public class AddHabitActivity extends AppCompatActivity {
         checkDaysPlanned(addedHabit);  // Select the weekdays planned
 
         // Update the database
-        db.dataInsert(username,title.getText().toString(),addedHabit);
+        db.dataInsert(username,addedHabit.getTitle(),addedHabit);
 
         // Change the activity
         Intent intent = new Intent(this, MyHabitsActivity.class);

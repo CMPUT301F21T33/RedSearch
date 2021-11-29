@@ -85,10 +85,10 @@ com/example/redsearch/databinding/ActivityHabitEventListBinding.java
  com.example.redsearch.databinding.ActivityHabitEventListBinding
 com/example/redsearch/HabitEventListAdapter.java
  com.example.redsearch.HabitEventListAdapter
-com/example/redsearch/HabitView.java
- com.example.redsearch.HabitView
 com/example/redsearch/MainActivity.java
  com.example.redsearch.MainActivity
+com/example/redsearch/HabitView.java
+ com.example.redsearch.HabitView
 com/example/redsearch/databinding/ActivityViewFriendBinding.java
  com.example.redsearch.databinding.ActivityViewFriendBinding
 com/example/redsearch/AddHabitEventActivity.java
