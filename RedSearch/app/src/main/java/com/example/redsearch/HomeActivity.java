@@ -47,7 +47,7 @@ public class HomeActivity extends AppCompatActivity {
         ArrayList<Habit> todayHabits = getTodayHabits(allHabits);
         //todayHabits.add(new Habit("Drink water","I am thirsty",new Date(),true));
 
-        HabitListAdapter adapter = new HabitListAdapter(this,todayHabits);
+        HabitListAdapter adapter = new HabitListAdapter(this,allHabits);
         list.setAdapter(adapter);
 
         String finalUsername = username;
@@ -71,6 +71,7 @@ public class HomeActivity extends AppCompatActivity {
         ArrayList<Habit> todayHabits = new ArrayList<Habit>();
         int today = calendar.get(Calendar.DAY_OF_WEEK) - 1;
         for (int i = 0; i < allHabits.size(); i++) {
+            boolean thing = (boolean) allHabits.get(i).getWeekday(today);
             if (allHabits.get(i).getWeekday(today)) {
                 todayHabits.add(allHabits.get(i));
             }

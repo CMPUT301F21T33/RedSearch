@@ -20,11 +20,12 @@ public final class CustomFriendListBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final TextView listTxt;
+  public final TextView friendListText;
 
-  private CustomFriendListBinding(@NonNull ConstraintLayout rootView, @NonNull TextView listTxt) {
+  private CustomFriendListBinding(@NonNull ConstraintLayout rootView,
+      @NonNull TextView friendListText) {
     this.rootView = rootView;
-    this.listTxt = listTxt;
+    this.friendListText = friendListText;
   }
 
   @Override
@@ -54,13 +55,13 @@ public final class CustomFriendListBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.list_txt;
-      TextView listTxt = ViewBindings.findChildViewById(rootView, id);
-      if (listTxt == null) {
+      id = R.id.friend_list_text;
+      TextView friendListText = ViewBindings.findChildViewById(rootView, id);
+      if (friendListText == null) {
         break missingId;
       }
 
-      return new CustomFriendListBinding((ConstraintLayout) rootView, listTxt);
+      return new CustomFriendListBinding((ConstraintLayout) rootView, friendListText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

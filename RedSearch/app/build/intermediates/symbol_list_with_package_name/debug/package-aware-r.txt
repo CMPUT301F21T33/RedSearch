@@ -2123,6 +2123,8 @@ id followRequestButton
 id forever
 id fragment_container_view_tag
 id friday
+id friendView
+id friend_list_text
 id friendsButton
 id frost
 id ghost_view

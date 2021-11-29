@@ -2122,6 +2122,8 @@ int id followRequestButton 0x7f0800d5
 int id forever 0x7f0800d6
 int id fragment_container_view_tag 0x7f0800d7
 int id friday 0x7f0800d8
+int id friendView 0x7f080222
+int id friend_list_text 0x7f080223
 int id friendsButton 0x7f0800d9
 int id frost 0x7f0800da
 int id ghost_view 0x7f0800db
