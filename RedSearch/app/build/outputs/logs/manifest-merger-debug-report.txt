@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:2:1-84:12
-INJECTED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:2:1-84:12
-INJECTED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:2:1-84:12
-INJECTED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:2:1-84:12
+ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:2:1-87:12
+INJECTED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:2:1-87:12
+INJECTED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:2:1-87:12
+INJECTED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:2:1-87:12
 MERGED from [androidx.databinding:viewbinding:7.0.2] C:\Users\hazar\.gradle\caches\transforms-3\620e574f95cf7e7e93ac68ed08666fcb\transformed\jetified-viewbinding-7.0.2\AndroidManifest.xml:17:1-22:12
 MERGED from [org.osmdroid:osmdroid-android:6.1.10] C:\Users\hazar\.gradle\caches\transforms-3\80daca20ccb25c3b48442cd094bff203\transformed\jetified-osmdroid-android-6.1.10\AndroidManifest.xml:2:1-29:12
 MERGED from [com.google.firebase:firebase-analytics:19.0.2] C:\Users\hazar\.gradle\caches\transforms-3\a3745b3e5224e65eb98eed5e41031e1b\transformed\jetified-firebase-analytics-19.0.2\AndroidManifest.xml:2:1-9:12
@@ -63,20 +63,20 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\hazar\.gradle\caches\transform
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\hazar\.gradle\caches\transforms-3\9ccd4574ebca9c86103f7bd859ba1dfd\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [io.grpc:grpc-android:1.28.0] C:\Users\hazar\.gradle\caches\transforms-3\a1b6a2558cae7a50244f7d82767cb4ec\transformed\jetified-grpc-android-1.28.0\AndroidManifest.xml:2:1-13:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\hazar\.gradle\caches\transforms-3\07ee67b71d61179709c3749373524324\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
-INJECTED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:2:1-84:12
-INJECTED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:2:1-84:12
-INJECTED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:2:1-84:12
+INJECTED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:2:1-87:12
+INJECTED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:2:1-87:12
+INJECTED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:2:1-87:12
 	package
 		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:3:5-36
 		INJECTED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:2:1-84:12
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:2:1-87:12
 		INJECTED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:2:1-84:12
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:2:1-87:12
 		INJECTED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:2:11-69
@@ -123,7 +123,7 @@ ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\mai
 	android:name
 		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:8:22-78
 application
-ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:10:5-82:19
+ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:10:5-85:19
 MERGED from [com.google.firebase:firebase-analytics:19.0.2] C:\Users\hazar\.gradle\caches\transforms-3\a3745b3e5224e65eb98eed5e41031e1b\transformed\jetified-firebase-analytics-19.0.2\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-analytics:19.0.2] C:\Users\hazar\.gradle\caches\transforms-3\a3745b3e5224e65eb98eed5e41031e1b\transformed\jetified-firebase-analytics-19.0.2\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\hazar\.gradle\caches\transforms-3\c2e76fb5e086b5c906002f45c03cd24a\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
@@ -184,102 +184,108 @@ ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\mai
 		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:19:13-36
 	android:name
 		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:18:13-44
-activity#com.example.redsearch.SearchUsersActivity
+activity#com.example.redsearch.ViewFriendActivity
 ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:20:9-22:39
 	android:exported
 		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:22:13-36
 	android:name
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:21:13-48
-activity#com.example.redsearch.FollowRequestActivity
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:21:13-47
+activity#com.example.redsearch.SearchUsersActivity
 ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:23:9-25:39
 	android:exported
 		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:25:13-36
 	android:name
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:24:13-50
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:24:13-48
+activity#com.example.redsearch.FollowRequestActivity
+ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:26:9-28:39
+	android:exported
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:28:13-36
+	android:name
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:27:13-50
 activity#com.example.redsearch.ViewHabitEventActivity
-ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:34:9-41:20
+ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:37:9-44:20
 	android:parentActivityName
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:37:13-65
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:40:13-65
 	android:exported
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:36:13-36
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:39:13-36
 	android:name
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:35:13-51
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:38:13-51
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:38:13-40:59
+ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:41:13-43:59
 	android:value
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:40:17-56
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:43:17-56
 	android:name
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:39:17-63
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:42:17-63
 activity#com.example.redsearch.AddHabitEventActivity
-ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:42:9-45:58
+ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:45:9-48:58
 	android:parentActivityName
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:45:13-55
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:48:13-55
 	android:exported
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:44:13-36
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:47:13-36
 	android:name
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:43:13-50
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:46:13-50
 activity#com.example.redsearch.SignupActivity
-ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:46:9-49:58
+ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:49:9-52:58
 	android:parentActivityName
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:49:13-55
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:52:13-55
 	android:exported
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:48:13-36
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:51:13-36
 	android:name
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:47:13-43
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:50:13-43
 activity#com.example.redsearch.ViewHabitActivity
-ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:50:9-53:62
+ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:53:9-56:62
 	android:parentActivityName
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:53:13-59
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:56:13-59
 	android:exported
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:52:13-36
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:55:13-36
 	android:name
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:51:13-46
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:54:13-46
 activity#com.example.redsearch.AddHabitActivity
-ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:54:9-57:62
+ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:57:9-60:62
 	android:parentActivityName
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:57:13-59
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:60:13-59
 	android:exported
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:56:13-36
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:59:13-36
 	android:name
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:55:13-45
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:58:13-45
 activity#com.example.redsearch.MyHabitsActivity
-ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:58:9-65:20
+ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:61:9-68:20
 	android:parentActivityName
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:61:13-55
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:64:13-55
 	android:exported
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:60:13-36
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:63:13-36
 	android:name
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:59:13-45
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:62:13-45
 activity#com.example.redsearch.HomeActivity
-ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:66:9-68:39
-	android:exported
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:68:13-36
-	android:name
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:67:13-41
-activity#com.example.redsearch.HabitView
-ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:69:9-72:62
-	android:parentActivityName
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:72:13-59
+ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:69:9-71:39
 	android:exported
 		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:71:13-36
 	android:name
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:70:13-38
-activity#com.example.redsearch.MainActivity
-ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:73:9-81:20
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:70:13-41
+activity#com.example.redsearch.HabitView
+ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:72:9-75:62
+	android:parentActivityName
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:75:13-59
 	android:exported
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:75:13-36
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:74:13-36
 	android:name
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:74:13-41
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:73:13-38
+activity#com.example.redsearch.MainActivity
+ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:76:9-84:20
+	android:exported
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:78:13-36
+	android:name
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:77:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:76:13-80:29
+ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:79:13-83:29
 action#android.intent.action.MAIN
-ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:77:17-69
+ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:80:17-69
 	android:name
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:77:25-66
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:80:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:79:17-77
+ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:82:17-77
 	android:name
-		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:79:27-74
+		ADDED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml:82:27-74
 uses-sdk
 INJECTED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Code_Files\CMPUT_301_group_project\RedSearch\RedSearch\app\src\main\AndroidManifest.xml

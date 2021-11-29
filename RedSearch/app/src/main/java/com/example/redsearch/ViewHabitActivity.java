@@ -45,7 +45,7 @@ public class ViewHabitActivity extends AppCompatActivity {
         dateText.setText(date);
         weekdaysText.setText(weekdaysplanned);
     }
-    
+
 
         /**
          * Create a string that displays the days of the week a habit is planned for
