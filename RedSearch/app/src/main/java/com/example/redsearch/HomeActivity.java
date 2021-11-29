@@ -30,28 +30,19 @@ public class HomeActivity extends AppCompatActivity {
         Intent intent = getIntent();
         // This is the username that the user gave in the login activity
         String username = intent.getStringExtra(MainActivity.USERNAME);
-        username = "TEST";
 
         ListView list = (ListView) findViewById(R.id.listView);
 
         DataBaseAccess db = new DataBaseAccess();
 
-
         // TEMP STUFF
         Date date = new Date();
         Habit thing = new Habit("Title", "For cars", new Date(), true);
         thing.getHabitEventList().addHabitEvent(new HabitEvent("thing", date));
+        thing.setWeekday(6);
         db.dataInsert("TEST", thing.getTitle(), thing);
         // TEMP ENDS HERE
         ArrayList<Habit> allHabits = new ArrayList<Habit>();
-
-        Habit thing2 = new Habit("drink water", "do it", new Date(), true);
-        thing.setWeekday(6);
-        Habit other = new Habit("other thing", "dont do it", new Date(), false);
-        other.setWeekday(3);
-        allHabits.add(thing);
-        allHabits.add(other);
-
         while(!db.returnHabits("TEST", allHabits));  // TODO time out checker
         ArrayList<Habit> todayHabits = getTodayHabits(allHabits);
         //todayHabits.add(new Habit("Drink water","I am thirsty",new Date(),true));
@@ -65,7 +56,7 @@ public class HomeActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(view.getContext(), AddHabitEventActivity.class);
                 intent.putExtra("USER", finalUsername);
-                //intent.putExtra("HABIT", )
+                intent.putExtra("HABIT", todayHabits.get(i).getTitle());
                 startActivity(intent);
             }
         });
@@ -81,12 +72,9 @@ public class HomeActivity extends AppCompatActivity {
         int today = Calendar.DAY_OF_WEEK - 1;
         System.out.println(today);
         for (int i = 0; i < allHabits.size(); i++) {
-
-            /*
             if (allHabits.get(i).getWeekday(today)) {
                 todayHabits.add(allHabits.get(i));
             }
-             */
         }
         return todayHabits;
     }
