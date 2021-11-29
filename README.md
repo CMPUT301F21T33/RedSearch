@@ -14,22 +14,40 @@ Created by:
 
 Work completed by each memeber for Project Part 3:
 * Balreet: 
-  * Worked on Habits, and Habit Events (US 01, and US 02) ensuring there was testing and javadocs implemented
-  * Worked on UML Class diagram
-  * Integrated testing on GitHub
-  * Worked on updating the wiki
+  * Part 3: 
+   * Worked on Habits, and Habit Events (US 01, and US 02) ensuring there was testing and javadocs implemented
+   * Worked on UML Class diagram
+   * Integrated testing on GitHub
+   * Worked on updating the wiki
+  * Part 4: 
+   * blank
 * Emily:
-  * Worked on User class
-  * Worked on UML Class diagram
-  * Worked on updating the wiki and product backlog
-  * Worked on Javadocs and UI
+  * Part 3:
+   * Worked on User class
+   * Worked on UML Class diagram
+   * Worked on updating the wiki and product backlog
+   * Worked on Javadocs and UI
+  * Part 4: 
+   * blank
 * Justin:
-  * Worked on implementing Firebase for the entire project and creating a class to allow easy access to Firebase
+  * Part 3: 
+   * Worked on implementing Firebase for the entire project and creating a class to allow easy access to Firebase
+  * Part 4: 
+   * blank
 * Lauren:
-  * Worked on creating user interface
+  * Part 3:
+   * Worked on creating user interface
+  * Part 4: 
+   * blank
 * Matthew:
-  * Worked on user profiles (US 03.01.01)
+  * Part 3:
+   * Worked on user profiles (US 03.01.01)
+  * Part 4: 
+   * blank
 * Samantha:
-  * Addressed TA feedback from Project Part 2
-  * Worked on Habits, and Habit Events (US 01, and US 02) ensuring there was testing and javadocs implemented
-  * Worked on creating product backlog
+  * Part 3:
+   * Addressed TA feedback from Project Part 2
+   * Worked on Habits, and Habit Events (US 01, and US 02) ensuring there was testing and javadocs implemented
+   * Worked on creating product backlog
+  * Part 4: 
+   * blank
