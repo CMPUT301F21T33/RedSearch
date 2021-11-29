@@ -57,7 +57,7 @@ public class HomeActivity extends AppCompatActivity {
         //todayHabits.add(new Habit("Drink water","I am thirsty",new Date(),true));
 
         HabitListAdapter adapter = new HabitListAdapter(this,todayHabits);
-        list.setAdapter(adapter);
+        list.setAdapter(adapter);*/
 
         String finalUsername = username;
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {

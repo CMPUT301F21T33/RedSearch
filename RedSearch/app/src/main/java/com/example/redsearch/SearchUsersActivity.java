@@ -3,9 +3,12 @@ package com.example.redsearch;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -14,6 +17,7 @@ import java.util.ArrayList;
 
 public class SearchUsersActivity extends AppCompatActivity {
     private ArrayAdapter adapter;
+    DataBaseAccess db = new DataBaseAccess();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,19 +33,17 @@ public class SearchUsersActivity extends AppCompatActivity {
 
         ArrayList<String> usernames = new ArrayList<>();
 
-        DataBaseAccess db = new DataBaseAccess();
-        while(!db.returnUsers(usernames));
-        int x = 0;
+        //while(!db.returnUsers(usernames)){}
 
-//        if (!db.returnUsers(usernames)){
-//            usernames.add("Lauren");
-//            usernames.add("Sam");
-//        }
-
+        if (!db.returnUsers(usernames)){
+            usernames.add("Lauren");
+            usernames.add("Sam");
+        }
 
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, usernames);
 
         list.setAdapter(adapter);
+
 
         editText.addTextChangedListener(new TextWatcher() {
             @Override
@@ -56,6 +58,17 @@ public class SearchUsersActivity extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable editable) {
+
+            }
+        });
+
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                /*Intent intent = getIntent();
+                String username = intent.getStringExtra(MainActivity.USERNAME);*/
+                //db.addFollowerRequest(usernames.get(i),"Lauren");
+
 
             }
         });
