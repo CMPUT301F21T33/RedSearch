@@ -101,6 +101,7 @@ public class MyHabitsActivity extends AppCompatActivity {
 
     public void returnHome(View v){
         Intent intent = new Intent(this, HomeActivity.class);
+        intent.putExtra("USER", username);
         startActivity(intent);
     }
 
