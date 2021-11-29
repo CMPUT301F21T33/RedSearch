@@ -20,7 +20,8 @@ Work completed by each memeber for Project Part 3:
    * Integrated testing on GitHub
    * Worked on updating the wiki
   * Part 4: 
-   * Camera functionality 
+   * Camera functionality
+   * Worked on Habit UI
    * Updated UML Class diagram
    * Addressing TA feedback from part 3
 * Emily:
@@ -31,6 +32,7 @@ Work completed by each memeber for Project Part 3:
    * Worked on Javadocs and UI
   * Part 4: 
    * Geolocation functionality
+   * Login UI
    * Updated UML Class diagram 
    * Addressing TA feedback from part 3
 * Justin:
@@ -38,16 +40,18 @@ Work completed by each memeber for Project Part 3:
    * Worked on implementing Firebase for the entire project and creating a class to allow easy access to Firebase
   * Part 4: 
    * Worked on implementing Firebase for the entire project and creating a class to allow easy access to Firebase
+   * Habit UI
 * Lauren:
   * Part 3:
    * Worked on creating user interface
   * Part 4: 
    * following functionality
+   * Overall UI
 * Matthew:
   * Part 3:
    * Worked on user profiles (US 03.01.01)
   * Part 4: 
-   * following functionality
+   * following/follower functionality
 * Samantha:
   * Part 3:
    * Addressed TA feedback from Project Part 2
