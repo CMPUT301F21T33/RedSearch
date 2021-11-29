@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         password = findViewById(R.id.password);
         userError = findViewById(R.id.userError);
         passwordError = findViewById(R.id.passwordError);
+
     }
 
 
