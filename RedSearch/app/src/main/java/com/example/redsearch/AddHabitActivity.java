@@ -22,7 +22,12 @@ import java.util.Date;
 public class AddHabitActivity extends AppCompatActivity {
 
     DataBaseAccess db = new DataBaseAccess();
+    private String username;
 
+    /**
+     * On creation of the activity
+     * @param savedInstanceState {@code Bundle}
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +37,11 @@ public class AddHabitActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         setTitle("Add Habit");
 
+        Intent intent = getIntent();
+        // Get username
+        username = intent.getStringExtra(MainActivity.USERNAME);
+
+        // Get date instance to set the minimum start date of a habit as today
         Date date = new Date();
         DatePicker datePicker = findViewById(R.id.datePicker);
         datePicker.setMinDate(date.getDate());
@@ -99,7 +109,7 @@ public class AddHabitActivity extends AppCompatActivity {
             daysPlanned++;
             habit.setWeekday(6);
         }
-        habit.setDaysplanned(daysPlanned);
+        habit.setDaysplanned(daysPlanned);  // Update days planned in habit class
     }
 
     /**
@@ -107,21 +117,22 @@ public class AddHabitActivity extends AppCompatActivity {
      * @param view (@code view} This is the view variable it takes in
      */
     public void goToMyHabits(View view) {
+
+        // Find the UI elements
         EditText title = findViewById(R.id.editTextTitle);
         EditText reason = findViewById(R.id.editTextReason);
         DatePicker date = findViewById(R.id.datePicker);
         CheckBox visPublic = findViewById(R.id.checkBox);
+
+        // Create new habit with inputted information
         Habit addedHabit = new Habit(title.getText().toString(), reason.getText().toString(),
                 readDatePicker(date), visPublic.isChecked());
-        checkDaysPlanned(addedHabit);
+        checkDaysPlanned(addedHabit);  // Select the weekdays planned
 
+        // Update the database
+        db.dataInsert(username,title.getText().toString(),addedHabit);
 
-
-        /*
-        Intent intent = getIntent();
-        String username = intent.getStringExtra(MainActivity.USERNAME);
-        db.dataInsert(username,title.getText().toString(),addedHabit);*/
-
+        // Change the activity
         Intent intent = new Intent(this, MyHabitsActivity.class);
         startActivity(intent);
     }

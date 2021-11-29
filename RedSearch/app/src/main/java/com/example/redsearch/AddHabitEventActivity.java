@@ -111,21 +111,27 @@ public class AddHabitEventActivity extends AppCompatActivity implements SelectLo
         }
     }
 
+    /**
+     * Add the new habit event to the database
+     * @param habitEvent {@code HabitEvent} The new habit event
+     */
     private void addNewHabitEvent(HabitEvent habitEvent) {
-        DataBaseAccess db = new DataBaseAccess();
-        Date date = new Date();
-        // TEMP STUFF
-        Habit thing = new Habit("Title", "For cars", new Date(), true);
-        thing.getHabitEventList().addHabitEvent(new HabitEvent("thing", date));
-        thing.setWeekday(6);
-        db.dataInsert("TEST", thing.getTitle(), thing);
-        // TEMP ENDS HERE
-        ArrayList<Habit> theHabit = new ArrayList<Habit>();
-        while(!db.returnSingleHabits("TEST", "Title", theHabit));  // TODO time out checker
-        Habit updatedHabit = theHabit.get(0);
-        updatedHabit.getHabitEventList().addHabitEvent(habitEvent);
-        db.dataInsert("TEST", updatedHabit.getTitle(), updatedHabit);
+        DataBaseAccess db = new DataBaseAccess();  // instance of database
 
+        // An array list to retrieve the data for the particular habit
+        ArrayList<Habit> theHabit = new ArrayList<Habit>();
+
+        // Get the habit from the database
+        while(!db.returnSingleHabits(user, habit, theHabit));
+
+        Habit updatedHabit = theHabit.get(0);  // Store the habit
+        int dayshappened = updatedHabit.getDayshappened();  // Get number of days happened
+        dayshappened++;  // Update it by one
+        updatedHabit.setDayshappened(dayshappened);  // Set the new number
+        updatedHabit.getHabitEventList().addHabitEvent(habitEvent);  // Add the habit event
+
+        // Insert the updated habit to the database
+        db.dataInsert(user, updatedHabit.getTitle(), updatedHabit);
 
     }
 
@@ -195,8 +201,9 @@ public class AddHabitEventActivity extends AppCompatActivity implements SelectLo
             newHabitEvent = new HabitEvent(comment.getText().toString(), date);
         }
 
+        addNewHabitEvent(newHabitEvent);
+
         Intent intent = new Intent(this, HomeActivity.class);
-        intent.putExtra("HabitDone", "Done");
         startActivity(intent);
 
     }
