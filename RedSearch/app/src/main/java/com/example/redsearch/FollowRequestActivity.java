@@ -1,19 +1,27 @@
 package com.example.redsearch;
 
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ListView;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ListView;
-
 import java.util.ArrayList;
 
+/**
+ * This is the Activity where the current user can see who has requested to follow them
+ * @author: Matt
+ * @see DataBaseAccess
+ */
 public class FollowRequestActivity extends AppCompatActivity {
     DataBaseAccess db = new DataBaseAccess();
     FollowRequestAdapter adapter;
 
+    /**
+     * This is the onCreate method that happens when the class is created
+     * @param savedInstanceState the bundle that is passed into the class
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +44,10 @@ public class FollowRequestActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * This is method that adds a follower to the user
+     * @param v the view method required for onClick functions
+     */
     public void addFollow(View v){
         String follower = (String)v.getTag();
         db.addFollower("Sam","Lauren");
@@ -43,6 +55,10 @@ public class FollowRequestActivity extends AppCompatActivity {
         adapter.remove("Lauren");
     }
 
+    /**
+     * This is the delete request, where a user denies that they want this user to follow them
+     * @param v
+     */
     public void deleteRequest(View v){
         String follower = (String)v.getTag();
         db.removeFollowerRequest("Sam","Lauren");

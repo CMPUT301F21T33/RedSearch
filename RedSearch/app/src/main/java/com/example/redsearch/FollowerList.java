@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 /**
  * Data class to store a User's following
+ * @Author: Matt
  */
 public class FollowerList {
     private ArrayList<User> followerList = new ArrayList<>();

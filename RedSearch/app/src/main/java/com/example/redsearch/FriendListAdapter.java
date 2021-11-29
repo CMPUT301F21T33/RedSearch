@@ -10,10 +10,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 
+/**
+ * @author Justin, Matt, Balreet
+ */
 public class FriendListAdapter extends ArrayAdapter<User> {
     private ArrayList<User> friends;
     private Context context;
@@ -29,6 +30,13 @@ public class FriendListAdapter extends ArrayAdapter<User> {
         this.context = context;
     }
 
+    /**
+     * Get the View of the adapter
+     * @param position
+     * @param convertView
+     * @param parent
+     * @return
+     */
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {

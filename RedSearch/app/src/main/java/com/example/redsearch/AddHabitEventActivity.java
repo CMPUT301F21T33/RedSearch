@@ -25,10 +25,12 @@ import java.util.Date;
 
 /**
  * This is the AddHabitEventActivity that is used to add a habit event
+ * @Author: Emily, Balreet, Sam, Lauren
  */
 
 public class AddHabitEventActivity extends AppCompatActivity implements SelectLocation.OnFragmentInteractionListener {
 
+    // The values for the camera and image sections
     private final int PICK_IMAGE_REQUEST = 141;
     private final int CAMERA_IMAGE_REQUEST = 232;
     private Uri filePath;
@@ -40,7 +42,8 @@ public class AddHabitEventActivity extends AppCompatActivity implements SelectLo
 
     /**
      * To run at the start of the activity
-     * @param savedInstanceState {@code Bundle}
+     * @param savedInstanceState {@code Bundle} This Bundle must contain two values, the string of the user
+     *                                         and the string of the habit that this event is being added to
      */
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -202,7 +205,7 @@ public class AddHabitEventActivity extends AppCompatActivity implements SelectLo
         }
 
         addNewHabitEvent(newHabitEvent);
-
+        // This brings the doer back into the hoe activity
         Intent intent = new Intent(this, HomeActivity.class);
         intent.putExtra("USER", user);
         startActivity(intent);

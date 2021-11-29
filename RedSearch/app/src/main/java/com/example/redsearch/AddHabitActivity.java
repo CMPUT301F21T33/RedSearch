@@ -15,6 +15,9 @@ import java.util.Date;
 
 /**
  * This is an activity that is where the user can add a habit
+ * @author Emily, Lauren, Balreet, Sam
+ * @see Habit* This activity creates a habit and assigns it to a certain user
+ * @see DataBaseAccess * This is used to access the Database
  */
 
 public class AddHabitActivity extends AppCompatActivity {
@@ -24,13 +27,15 @@ public class AddHabitActivity extends AppCompatActivity {
 
     /**
      * On creation of the activity
-     * @param savedInstanceState {@code Bundle}
+     * @param savedInstanceState {@code Bundle} The bundle that is added into the code
+     * This bundle should contain the User that is adding the habit
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_habit);
 
+        // Set the toolbar for the activity
         Toolbar toolbar = findViewById(R.id.toolbar_add_habit);
         setSupportActionBar(toolbar);
         setTitle("Add Habit");
@@ -64,6 +69,7 @@ public class AddHabitActivity extends AppCompatActivity {
     /**
      * Check for what days the habit is planned for
      * @param habit {@code Habit} The habit to be updated for days planned
+     * This value can not be null, it must contain a valid habit
      */
     private void checkDaysPlanned(Habit habit) {
         int daysPlanned = 0;  // Keep track of number of days planned
