@@ -13,12 +13,16 @@ import java.util.ArrayList;
 
 public class FriendsActivity extends AppCompatActivity {
 
+    private String username;
     public static final String FRIENDNAME = "com.example.redsearch.FRIENDNAME";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_friends);
+
+        Intent intent = getIntent();
+        username = intent.getStringExtra("USER");
 
         Toolbar toolbar = findViewById(R.id.toolbar_friends);
         setSupportActionBar(toolbar);
@@ -31,13 +35,13 @@ public class FriendsActivity extends AppCompatActivity {
         FriendListAdapter adapter = new FriendListAdapter(this, friends);
         friendList.setAdapter(adapter);
 
-        Intent intent = new Intent(this, ViewFriendActivity.class);
-
         friendList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(view.getContext(), ViewFriendActivity.class);
                 User user = adapter.getItem(i);
                 intent.putExtra(FRIENDNAME, user.getUsername());
+                intent.putExtra("USER", username);
                 startActivity(intent);
             }
         });

@@ -30,9 +30,7 @@
         android:minHeight="48dp"
         android:paddingRight="10dp"
         app:showAsAction="ifRoom"
-        app:srcCompat="@drawable/ic_baseline_edit_24"
-        android:onClick="editHabit"
-        />
+        app:srcCompat="@drawable/ic_baseline_edit_24" />
 
 
 </androidx.appcompat.widget.Toolbar>

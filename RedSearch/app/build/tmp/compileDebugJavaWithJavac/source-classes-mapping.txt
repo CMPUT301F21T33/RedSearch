@@ -85,16 +85,17 @@ com/example/redsearch/databinding/ActivityHabitEventListBinding.java
  com.example.redsearch.databinding.ActivityHabitEventListBinding
 com/example/redsearch/HabitEventListAdapter.java
  com.example.redsearch.HabitEventListAdapter
-com/example/redsearch/MainActivity.java
- com.example.redsearch.MainActivity
 com/example/redsearch/HabitView.java
  com.example.redsearch.HabitView
+com/example/redsearch/MainActivity.java
+ com.example.redsearch.MainActivity
 com/example/redsearch/databinding/ActivityViewFriendBinding.java
  com.example.redsearch.databinding.ActivityViewFriendBinding
 com/example/redsearch/AddHabitEventActivity.java
  com.example.redsearch.AddHabitEventActivity
-com/example/redsearch/Habit.java
- com.example.redsearch.Habit
+com/example/redsearch/MyHabitsActivity.java
+ com.example.redsearch.MyHabitsActivity
+ com.example.redsearch.MyHabitsActivity$1
 com/example/redsearch/MyHabitList.java
  com.example.redsearch.MyHabitList
 com/example/redsearch/databinding/CustomListviewBinding.java
@@ -112,8 +113,8 @@ com/example/redsearch/User.java
  com.example.redsearch.User
 com/example/redsearch/databinding/CustomHomelistBinding.java
  com.example.redsearch.databinding.CustomHomelistBinding
-com/example/redsearch/databinding/ActivityFollowRequestBinding.java
- com.example.redsearch.databinding.ActivityFollowRequestBinding
+com/example/redsearch/ViewHabitActivity.java
+ com.example.redsearch.ViewHabitActivity
 com/example/redsearch/databinding/ToolbarFriendsBinding.java
  com.example.redsearch.databinding.ToolbarFriendsBinding
 com/example/redsearch/SelectLocation.java
@@ -128,8 +129,7 @@ com/example/redsearch/databinding/CustomFriendListBinding.java
  com.example.redsearch.databinding.CustomFriendListBinding
 com/example/redsearch/databinding/ActivitySignupBinding.java
  com.example.redsearch.databinding.ActivitySignupBinding
-com/example/redsearch/MyHabitsActivity.java
- com.example.redsearch.MyHabitsActivity
- com.example.redsearch.MyHabitsActivity$1
-com/example/redsearch/ViewHabitActivity.java
- com.example.redsearch.ViewHabitActivity
+com/example/redsearch/databinding/ActivityFollowRequestBinding.java
+ com.example.redsearch.databinding.ActivityFollowRequestBinding
+com/example/redsearch/Habit.java
+ com.example.redsearch.Habit
