@@ -28,10 +28,16 @@ public class SearchUsersActivity extends AppCompatActivity {
         ListView list = (ListView) findViewById(R.id.listView);
 
         ArrayList<String> usernames = new ArrayList<>();
-        usernames.add("Laura");
-        usernames.add("Max");
-        usernames.add("Lauren");
-        usernames.add("Lloyd");
+
+        DataBaseAccess db = new DataBaseAccess();
+        while(!db.returnUsers(usernames));
+        int x = 0;
+
+//        if (!db.returnUsers(usernames)){
+//            usernames.add("Lauren");
+//            usernames.add("Sam");
+//        }
+
 
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, usernames);
 
