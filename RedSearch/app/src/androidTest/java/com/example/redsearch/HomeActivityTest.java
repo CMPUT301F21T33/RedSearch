@@ -11,6 +11,7 @@ import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 
+import androidx.test.espresso.intent.rule.IntentsTestRule;
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
@@ -27,6 +28,9 @@ public class HomeActivityTest {
     @Rule
     public ActivityScenarioRule<HomeActivity> activityRule =
             new ActivityScenarioRule<>(HomeActivity.class);
+    @Rule
+    public IntentsTestRule<HomeActivity> intentsTestRule =
+            new IntentsTestRule<>(HomeActivity.class);
 
     @Test
     public void testViewAllButton(){
