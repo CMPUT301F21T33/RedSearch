@@ -39,7 +39,7 @@ public class AddHabitActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         // Get username
-        username = intent.getStringExtra(MainActivity.USERNAME);
+        username = intent.getStringExtra("USER");
 
         // Get date instance to set the minimum start date of a habit as today
         Date date = new Date();
@@ -130,7 +130,7 @@ public class AddHabitActivity extends AppCompatActivity {
         checkDaysPlanned(addedHabit);  // Select the weekdays planned
 
         // Update the database
-        db.dataInsert(username,title.getText().toString(),addedHabit);
+        db.dataInsert(username,addedHabit.getTitle(),addedHabit);
 
         // Change the activity
         Intent intent = new Intent(this, MyHabitsActivity.class);

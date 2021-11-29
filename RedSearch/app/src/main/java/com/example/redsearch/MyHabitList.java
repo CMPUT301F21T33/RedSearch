@@ -51,6 +51,7 @@ public class MyHabitList extends ArrayAdapter<Habit> {
         //set text of TextView
         list_txt.setText(habit.getTitle());
         //change indicator color
+        habit.setColor();
         list_ind.setColorFilter(Color.parseColor(habit.getColor()), PorterDuff.Mode.MULTIPLY);
 
         return convertView;

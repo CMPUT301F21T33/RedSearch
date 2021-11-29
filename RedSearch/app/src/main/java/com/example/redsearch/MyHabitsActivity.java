@@ -94,6 +94,7 @@ public class MyHabitsActivity extends AppCompatActivity {
      */
     public void goToAddHabit(View view) {
         Intent intent = new Intent(this, AddHabitActivity.class);
+        intent.putExtra("USER", username);
         startActivity(intent);
     }
 }
