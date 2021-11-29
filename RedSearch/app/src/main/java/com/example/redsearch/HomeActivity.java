@@ -36,7 +36,7 @@ public class HomeActivity extends AppCompatActivity {
 
         DataBaseAccess db = new DataBaseAccess();
 
-        /*
+
         // TEMP STUFF
         Date date = new Date();
         Habit thing = new Habit("Title", "For cars", new Date(), true);
@@ -44,14 +44,14 @@ public class HomeActivity extends AppCompatActivity {
         db.dataInsert("TEST", thing.getTitle(), thing);
         // TEMP ENDS HERE
         ArrayList<Habit> allHabits = new ArrayList<Habit>();
-        /*
-        Habit thing = new Habit("drink water", "do it", new Date(), true);
+
+        Habit thing2 = new Habit("drink water", "do it", new Date(), true);
         thing.setWeekday(6);
         Habit other = new Habit("other thing", "dont do it", new Date(), false);
         other.setWeekday(3);
         allHabits.add(thing);
         allHabits.add(other);
-         */
+
         while(!db.returnHabits("TEST", allHabits));  // TODO time out checker
         ArrayList<Habit> todayHabits = getTodayHabits(allHabits);
         //todayHabits.add(new Habit("Drink water","I am thirsty",new Date(),true));
