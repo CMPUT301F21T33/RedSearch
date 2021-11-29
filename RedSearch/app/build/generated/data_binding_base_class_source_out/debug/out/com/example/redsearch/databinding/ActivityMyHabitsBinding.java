@@ -4,6 +4,7 @@ package com.example.redsearch.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import androidx.annotation.NonNull;
@@ -21,6 +22,9 @@ public final class ActivityMyHabitsBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final Button DateSort;
+
+  @NonNull
   public final ImageButton imageButton;
 
   @NonNull
@@ -29,10 +33,11 @@ public final class ActivityMyHabitsBinding implements ViewBinding {
   @NonNull
   public final ToolbarBinding toolbarMyHabits;
 
-  private ActivityMyHabitsBinding(@NonNull ConstraintLayout rootView,
+  private ActivityMyHabitsBinding(@NonNull ConstraintLayout rootView, @NonNull Button DateSort,
       @NonNull ImageButton imageButton, @NonNull ListView listView,
       @NonNull ToolbarBinding toolbarMyHabits) {
     this.rootView = rootView;
+    this.DateSort = DateSort;
     this.imageButton = imageButton;
     this.listView = listView;
     this.toolbarMyHabits = toolbarMyHabits;
@@ -65,6 +70,12 @@ public final class ActivityMyHabitsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.Date_sort;
+      Button DateSort = ViewBindings.findChildViewById(rootView, id);
+      if (DateSort == null) {
+        break missingId;
+      }
+
       id = R.id.imageButton;
       ImageButton imageButton = ViewBindings.findChildViewById(rootView, id);
       if (imageButton == null) {
@@ -84,8 +95,8 @@ public final class ActivityMyHabitsBinding implements ViewBinding {
       }
       ToolbarBinding binding_toolbarMyHabits = ToolbarBinding.bind(toolbarMyHabits);
 
-      return new ActivityMyHabitsBinding((ConstraintLayout) rootView, imageButton, listView,
-          binding_toolbarMyHabits);
+      return new ActivityMyHabitsBinding((ConstraintLayout) rootView, DateSort, imageButton,
+          listView, binding_toolbarMyHabits);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

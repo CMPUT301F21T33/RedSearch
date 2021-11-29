@@ -1911,6 +1911,7 @@ id BOTTOM_END
 id BOTTOM_START
 id CTRL
 id Comment
+id Date_sort
 id Donebutton
 id FUNCTION
 id HabitTitle

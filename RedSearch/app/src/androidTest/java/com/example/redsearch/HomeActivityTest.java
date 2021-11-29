@@ -25,14 +25,17 @@ import org.junit.runner.RunWith;
 @RunWith(AndroidJUnit4.class)
 public class HomeActivityTest {
     @Rule
-    public ActivityScenarioRule<MainActivity> activityRule =
-            new ActivityScenarioRule<>(MainActivity.class);
+    public ActivityScenarioRule<HomeActivity> activityRule =
+            new ActivityScenarioRule<>(HomeActivity.class);
 
     @Test
     public void testViewAllButton(){
 
-        // Check that the activity changed to
-        intended(hasComponent(HomeActivity.class.getName()));
+        // Click view all button
+        onView(withId(R.id.viewAll)).perform(click());
+
+        // Check that the activity changed to MyHabitsActivity
+        intended(hasComponent(MyHabitsActivity.class.getName()));
     }
 
 }
