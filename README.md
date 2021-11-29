@@ -42,12 +42,12 @@ Work completed by each memeber for Project Part 3:
   * Part 3:
    * Worked on creating user interface
   * Part 4: 
-   * following
+   * following functionality
 * Matthew:
   * Part 3:
    * Worked on user profiles (US 03.01.01)
   * Part 4: 
-   * following
+   * following functionality
 * Samantha:
   * Part 3:
    * Addressed TA feedback from Project Part 2
@@ -55,3 +55,4 @@ Work completed by each memeber for Project Part 3:
    * Worked on creating product backlog
   * Part 4: 
    * UI testing
+   * git updates
