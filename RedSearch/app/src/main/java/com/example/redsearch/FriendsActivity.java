@@ -6,11 +6,14 @@ import androidx.appcompat.widget.Toolbar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
 public class FriendsActivity extends AppCompatActivity {
+
+    public static final String USERNAME = "com.example.redsearch.USERNAME";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +31,16 @@ public class FriendsActivity extends AppCompatActivity {
         FriendListAdapter adapter = new FriendListAdapter(this, friends);
         friendList.setAdapter(adapter);
 
+        Intent intent = new Intent(this, ViewFriendActivity.class);
+
+        friendList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                User user = adapter.getItem(i);
+                intent.putExtra(USERNAME, user.getUsername());
+                startActivity(intent);
+            }
+        });
     }
 
     public void goToSearchUsers(View view) {
